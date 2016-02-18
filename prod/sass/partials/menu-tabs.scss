@@ -1,0 +1,168 @@
+.menuTabs {
+	@include span-columns(12);
+	margin:0;
+	@include media($notebook) {
+		@include span-columns(12);
+		margin: 0;
+	}
+	.menu-secundario {
+		@include span-columns(12);
+		@include omega;
+		background:$bg_white;
+		.logotipe-menuTabs {
+			display: none;
+			height: 50px;
+			background: $first_color;
+			@include media($notebook) {
+				@include span-columns(2);
+				margin:0;
+			}
+		}
+		ul{ 
+			@include span-columns(12);
+			text:{transform:uppercase;}
+			margin:0;
+			@include pad(0);
+			height: 50px;
+			@include media($notebook) {
+				@include span-columns(6);
+				margin: 0;
+			}
+			li{
+				@include span-columns(4);
+				display: inline-block;
+				list-style: none;
+				text:{align:center;}
+				border:{right:1px solid $grey_four;}
+				outline: none !important;
+				@include media($notebook) {
+					@include span-columns(3);
+					margin: 0;
+				} 
+				a {
+					@include span-columns(12);
+					height: 50px;
+					text:{decoration:none;}
+					color:$grey_one;
+					font:{family:$first_font;size:11px;weight:600;}
+					display: table;
+					outline: none;
+					.content-menuAll {
+						display: table-cell;
+						vertical-align: middle;
+					}
+					.icon-menuTabs {
+						display: inline-block;
+						width: auto;
+						font:{size: 14px;}
+						margin:{right:5px;}
+					}
+					.text-menuTabs{
+						display: inline-block;
+						word-break: keep-all ;
+						text:{align:left;}
+						width: 60px;
+						@include media($notebook) {
+							word-break:initial;
+							width:122px;
+						}
+					}
+				}
+				&.back-MenuTabs {
+					display: none;
+					float: left;
+					width: 50px;
+					height: 50px;
+					@include media($notebook) {
+						display: block;
+					}
+					button {
+						background: none;
+						border: 0;
+						width: 100%;
+						height: 100%;
+						display: table;
+						outline: none;
+						i {
+							display: table-cell;
+							vertical-align: middle;
+							font:{size:20px;}
+							padding:{left: 13px;}
+							color:$grey_one;
+						}
+					}
+				}
+				&.ui-tabs-active {
+					outline: none !important;
+					a {
+						color:$first_color;
+						border:{bottom:2px solid $first_color;}
+					}
+				}
+				&.ui-state-hover {
+					outline: none !important;
+				}
+			}
+		}
+		.image-user {
+			display: none;
+			height: 50px;
+			@include media($notebook) {
+				@include span-columns(4);
+				margin: 0;
+				float: right;
+			}	
+			ul {
+				@include span-columns(12);
+				@include omega;
+				@include pad(0);
+				li {
+					float: right;
+					margin:0;
+					border:0;
+					.content-right {
+						margin:0;
+						width: 100%;
+						height: 100%;
+						display: table;
+						.icon-right {
+							width: 20px;
+							display: table-cell;
+							vertical-align: middle;
+						}
+						.text-menuTabs {
+							font:{size:10px;}
+							display: table-cell;
+							vertical-align: middle;
+						}
+						.img-user-menu {
+							
+							img {
+								display: block;
+								width: 30px;
+								height: 30px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.tabs {
+		display: none;
+		background:$bg_gray;
+		height: 100%;
+	}
+	&.show-MenuLateral {
+		@include shift(-9 of 12 !important);
+		@include media($mobileLand) {
+			@include shift(-6 of 12 !important);
+		}
+		@include media($tablet) {
+			@include shift(-5 of 12 !important); 
+		}
+		@include media($tabletLand) {
+			@include shift(-4 of 12 !important); 
+		} 
+	}
+}

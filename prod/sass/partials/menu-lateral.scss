@@ -1,0 +1,180 @@
+.menuLateral {
+	@include span-columns(9);
+	background: $bg_menu;
+	margin:{right:0;}
+	padding:{top:30px;}
+	height:100%;
+	position:fixed;
+	right: 0;
+	z-index: 1;
+	display: none;
+	overflow: scroll;
+	top:0;
+	@include media($mobileLand) {
+		@include span-columns(6);
+		@include omega;
+		display: none;
+	}
+	@include media($tablet) {
+		@include span-columns(5);
+		@include omega;
+		display: none;
+	}
+	@include media($tabletLand) {
+		@include span-columns(4);
+		@include omega;
+		display: none;
+	}
+	@include media($notebook) {
+		@include span-columns(2);	
+		@include omega;
+		display: block;
+		left:0;
+		top:50px;
+		overflow: initial;
+		@include pad(0);
+	}
+	@include media($desktop) {
+		@include span-columns(2);	
+		@include omega;
+		display: block;
+		left:0;
+		top:50px;
+		overflow: initial;
+		@include pad(0);
+	}
+	.icon-menuLa {
+		width: 50px;
+		height: 50px;
+		text:{align:center;}
+		color:$bg_white;
+		float: right;
+		display: none;
+		@include media($desktop) {
+			display: table;
+		}
+		@include media($notebook) {
+			display: table;
+		}
+		@include media($desktop) {
+			display: table;
+		}
+		i {
+			display: table-cell;
+			vertical-align: middle;
+			font:{size:20px;}
+		}
+	}
+	.user-MenuLateral {
+		@include span-columns(12);
+		margin:{bottom:30px;}
+		@include media($notebook) {
+			margin:{bottom:20px;}
+		}
+		img {
+			width:130px;
+			height:130px;
+			@include borderRadius(50%);
+			border:2px solid $bg_white;
+			margin: 0 auto;
+			display: block;
+			@include media($notebook) {
+				width:110px;
+				height:110px;
+			}
+		}
+		.name-userMenuLa {
+			@include span-columns(12);
+			text:{align:center;}
+			font:{size:16px;}
+			color:$grey_two;
+			margin:{top:10px;}
+		}
+		.cargo-userMenuLa {
+			@include span-columns(12);
+			text:{align:center;}
+			font:{size:14px;style:italic;}
+			color:$grey_two;
+			margin:{top:5px;}
+			@include media($notebook) {
+				margin:{top:0px;}
+			}
+		}
+	}
+	.option-MenuLateral {
+		@include span-columns(12);
+		ul {
+			@include span-columns(12);
+			@include pad(0);
+			margin:0;
+			li {
+				@include span-columns(12);
+				margin: 0;
+				list-style: none;
+				display: block;
+				border:{bottom:1px solid $grey_two;}
+				a {
+					@include span-columns(12);
+					color:$grey_three;
+					@include media(12);
+					margin: 0;
+					height: 55px;
+					.content-MenuLa {
+						@include span-columns(12);
+						margin:0;
+						height: 100%;
+						display: table;
+						.icon-menuLa {
+							@include span-columns(3);
+							margin: 0;
+							height: auto;
+							display: table-cell;
+							vertical-align: middle;
+							float: none;
+							text:{align:center;}
+							i {
+								font:{size:18px;}
+								padding: {left:25px;}
+								@include media($mobileIphone) {
+									padding: {left:32px;}
+								}
+								@include media($notebook) {
+									font:{size:16px;}
+									padding: {left:15px;}
+								}
+								@include media($desktop) {
+									font:{size:16px;}
+									padding: {left:15px;}
+								}
+							}
+						}
+						.text-menuLa {
+							@include span-columns(9);
+							margin: 0;
+							text:{transform:uppercase;}
+							font:{size:12px;}
+							display: table-cell;
+							vertical-align: middle;
+							float: none;
+							@include media($notebook) {
+								font:{size:11px;}
+							}
+						}
+					}	
+				}
+			}
+		}
+	}
+	&.close-menulateral {
+		width: 50px;
+		.text-menuLa {
+			display: none !important;
+		}
+		.user-MenuLateral {
+			display: none !important;
+		}	
+	}
+	&.show-MenuLateral {
+		display: block;
+	}
+}

@@ -1,0 +1,175 @@
+#ofertas-laborales {
+	@include span-columns(12);
+	padding: 10px;
+	.buscar-ofertalaboral {
+		@include span-columns(12);
+		border:0;
+		@include media($notebook){
+			@include outer-container(60%);
+			float: none;
+			margin:20px auto;
+		}
+		.field-search {
+			@include span-columns(8);
+			@include appearance(none);
+			border:0;
+			@include borderRadius(4px);
+			@include pad(8px 10px);
+			background:$grey_three;
+			outline: none;
+			color:$grey_two;
+			font:{weight:400;size:12px;};
+			@include placeholder {
+				font:{style:italic;weight:400;}
+			}
+		}
+		.btn-search {
+			@include span-columns(4);
+			@include borderRadius(4px);
+			@include pad(7px 10px);
+			border:1px solid $grey_one;
+			background: none;
+			outline: none;
+			color:$grey_one;
+			font:{weight:600;size:11px;};
+			text:{transform:uppercase;}
+		}
+	}
+	.directorio-ofertas {
+		@include span-columns(12);
+		@include pad(10px 0);
+		@include media($notebook) {
+			@include outer-container(70%);
+			float: none;
+			margin:0 auto !important;
+		}
+		.single-oferta {
+			@include span-columns(12);
+			@include media($mobileLand) {
+				@include span-columns(12);
+			}
+			@include media($mobileTomobileLand) {
+				@include span-columns(12);
+			}
+			@include media($tablet) {
+				@include span-columns(6);
+				margin:{right:8px;}
+			}
+			@include media($tabletLand) {
+				@include span-columns(4);
+				margin:{right:10px;}
+			}
+			@include media($notebook) {
+				@include span-columns(4);
+				margin:{right:10px;}
+			}
+			@include borderRadius(4px);
+			background: $bg_white;
+			position: relative;
+			margin:{bottom:5px;}
+			.image-single {
+				@include span-columns(4);
+				margin:0;
+				svg {
+					width: 100%;
+					height: auto;
+					display: block;
+				}
+				img {
+					width: 115%;
+					position: absolute;
+					top:0;
+					left:0;
+					z-index: 999;
+					height: auto;
+				}
+				.mask-img {
+					-webkit-clip-path: url(#svgPath);
+    				clip-path: url(#svgPath);
+				}
+			}
+			.content-single {
+				@include span-columns(8);
+				float: right;
+				@include pad(5px);
+				.title-single {
+					font:{family:$first_font;size:12px;}
+					text:{transform:uppercase;}
+					color:$grey_two;
+					margin:{bottom:8px;}
+					@include media($mobileIphone) {
+						font:{size:15px;}
+						line-height: 19px;
+					}
+					@include media($mobileLand) {
+						font:{size:16px;}
+						margin:{top: 42px;}
+						padding:{right: 35px;}
+					}
+					@include media($tablet) {
+						font:{size:15px;}
+						line-height: 22px;
+					}
+					@include media($notebook) {
+						margin:{top:8px;}
+					}
+				}
+				ul{
+					@include span-columns(12);
+					@include pad(0);
+					margin: 0;
+					li {
+						@include span-columns(12);
+						display: block;
+						font:{family:$first_font;size:11px;}
+						color:$grey_one;
+						border:0;
+						@include media($mobileLand) {
+							margin:{bottom: 5px;}
+						}
+						.list-single {
+							@include span-columns(12);
+							display: table;
+							.icon-part {
+								display: table-cell;
+								vertical-align: middle;
+								font:{;size:14px;}
+								color:$first_color;
+								width: 20px;
+								@include media($mobileLand) {
+									font:{size:17px;}
+								}
+							}
+							.info-part {
+								display: table-cell !important;
+								vertical-align: middle;
+								font:{family:$first_font;size:10px;}
+								text:{align:left;}
+								@include media($mobileLand) {
+									font:{size:13px;}
+								}
+								@include media($tablet) {
+									font:{size:11px;}
+								}
+							}
+						}
+					}
+				}
+				.btn-vermas {
+					position: absolute;
+					right: 7px;
+					bottom:7px;
+					@include media($mobileLand) {
+						right: 10px;
+						bottom: 10px;
+						width: 35px;
+						height: 35px;
+					}
+				}
+			}
+		}
+	}
+}
+#perfil-persona {
+	@include span-columns(12);
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Registro Persona</title>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/TMP.css">
+</head>
+<body class="login-bg">
+	<div class="bg-windows windows-login">
+		<h2 class="title-windws">Registro Persona</h2>
+		<p class="bajada-title">Proin et erat at urna efficitur consequat. Nullam ornare tortor ligula vehicula</p>
+		<div class="form-login">
+			<form action="">
+				<input class="field-tmp" type="text" placeholder="Nombre" required>
+				<input class="field-tmp" type="text" placeholder="Apellido" required>
+				<input class="field-tmp" type="email" placeholder="Correo" required>
+				<input class="field-tmp" type="password" placeholder="Contraseña" required>
+				<input class="field-tmp" type="password" placeholder="Repetir Contraseña" required>
+				<input class="field-tmp" type="text" placeholder="Profesión" required>
+
+				<label class="btn-tmp line-green success-file" for="file">Subir imagen de perfil</label>
+				<input id="file" type="file" name="file" accept="image/*">
+
+				<div class="icon-alert-file file-success"><div class="check-icon"><i class="fa fa-check"></i></div></div>
+				<!--div class="icon-alert-file file-error"><div class="check-icon"><i class="fa fa-close"></i></div></div-->
+
+				<button class="btn-tmp bg-green" onclick="location.href='procesar-solicitud.html'">ingresar</button> 
+				<div class="cuenta-registrada">
+					¿Ya tienes una cuenta? <a href="../index.html"> Ingresa aquí</a>
+				</div>
+				<div class="opcion-rss">
+					<ul>
+						<li><div class="text-opcion">o ingresa con</div></li>
+						<li><a class="rrss-opcion" href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a class="rrss-opcion op-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a class="rrss-opcion op-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

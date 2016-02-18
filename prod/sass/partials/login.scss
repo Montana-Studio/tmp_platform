@@ -1,0 +1,152 @@
+.login-bg {
+	@include background(linear-gradient(left, $first_color 0%, $second_color 100%));  
+	@include span-columns(12);
+	height: 100%;
+	margin:{left:0;}
+	@include pad(0);
+	.windows-login {
+		@include outer-container(90%);
+		text:{align:center;}
+		@include media($mobileLand) {
+			margin:{top:80px;}
+			@include outer-container(80%);
+		}
+		@include media($tablet){
+			@include outer-container(70%);
+			margin:{top:80px;}
+		} 
+		@include media($tabletLand) {
+			@include outer-container(60%);
+		}
+		@include media($notebook) {
+			@include outer-container(30%);
+			margin:{top:120px;}
+		}
+		@include media($desktop) {
+			@include outer-container(23%);
+			margin:{top:140px;}
+		}
+		@include media($tabletLandTonotebook){
+			@include outer-container(27%);
+		}
+		.form-login {
+			@include span-columns(12);
+			.field-tmp {
+				@include span-columns(12);
+			}	
+			input[type="file"]{
+				display: none;
+			}
+			.cuenta-registrada {
+				@include span-columns(12);
+				font:{size:10px;}
+				text:{align:right;}
+				color:$grey_one;
+				a {
+					text:{decoration:underline;}
+					color:$first_color;
+				}
+			}
+			.opcion-rss {
+				@include outer-container(80%);
+				text:{align:center;}
+				margin:{top:10px;left:auto;bottom:0;right:auto;}
+				@include media($mobileIphone) {
+					@include outer-container(70%);
+				}
+				@include media($tablet) {
+					@include outer-container(45%);
+				}
+				@include media($tabletLand) {
+					@include outer-container(45%);
+				}
+				@include media($notebook) {
+					@include outer-container(58%);
+				}
+				@include media($desktop) {
+					@include outer-container(55%);
+				}
+				ul {
+					@include span-columns(12);
+					margin:{top:20px;left:0;right:0;}
+					@include pad(0);
+					display: table;
+					li {
+						display: table-cell;
+						vertical-align: middle;
+						.text-opcion {
+							font:{size:10px;}
+							color:$grey_one;
+							display: inline-block;
+							padding: {right:5px;}
+						}
+						.rrss-opcion {
+							display: inline-block;
+							width: 35px;
+							height:35px;
+							@include borderRadius(50%);
+							background:#3b5998;
+							display: table;
+							text:{decoration:none;}
+							padding: {right:3px;}
+							i {
+								display: table-cell;
+								vertical-align: middle;
+								color:$bg_white;
+							}
+							&.op-twitter{
+								background: $twitter;
+							}
+							&.op-linkedin{
+								background: $linkedin;
+							}
+						}
+					}
+				}
+			}
+			.btn-tmp {
+				&.line-green {
+					&.success-file {
+						@include span-columns(10);
+					}
+				}
+			}
+			.icon-alert-file {
+				@include span-columns(2);
+				margin:0;
+				.check-icon {
+					width: 45px;
+					height: 45px;
+					@include borderRadius(50%);
+					display: table;
+					i {
+						display: table-cell;
+						vertical-align: middle;
+						color:$bg_white;
+						font:{size:19px;}
+					}
+				}
+				&.file-success {
+					.check-icon {
+						background: $first_color;
+					}
+				}
+				&.file-error {
+					.check-icon {
+						background:#bd0052;
+					}		
+				}
+			}
+		}
+	&.mask-windows {
+			padding: 0;
+			margin:{top:60px;}
+			@include media($notebook) {
+				margin:{top:150px;}
+			}
+			@include media($desktop) {
+				margin:{top:160px;}
+			}
+		}
+	}
+}

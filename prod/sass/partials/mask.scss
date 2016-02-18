@@ -1,0 +1,21 @@
+.mask-content {
+	@include span-columns(12);
+	svg {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+}
+.content-rest {
+	@include span-columns(12);
+	padding:{top:10px;left:20px;bottom:15px;right:20px;}
+	@include media($mobileLand) {
+		padding:{left:40px;bottom:20px;right:20px;}
+	}
+	@include media($tablet) {
+		padding:{left:40px;right:40px;}
+	}
+	@include media($tabletLand) {
+		padding:{left:60px;bottom:25px;right:60px;}
+	}
+}

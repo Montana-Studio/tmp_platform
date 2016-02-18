@@ -1,0 +1,26 @@
+{
+  "name": "_TMP",
+  "title": "tmp",
+  "description": "Best project ever.",
+  "version": "0.1.0",
+  "homepage": "www.themarketpost.com",
+  "author": {
+    "name": "Montana Studio",
+    "email": "mauro@montana-studio.com",
+    "url": "http://www.montana-studio.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Mediatrends/_TMP.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mediatrends/_TMP/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "www.themarketpost.com/blob/master/LICENSE-MIT"
+    }
+  ],
+  "keywords": []
+}

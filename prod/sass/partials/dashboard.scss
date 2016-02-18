@@ -1,0 +1,9 @@
+.dashboard-bg {
+	@include span-columns(12);
+	margin:0;
+	background:$bg_gray;
+	font:{family:$first_font;}
+	.dashboardPersona {
+		@include span-columns(12);
+	}
+}

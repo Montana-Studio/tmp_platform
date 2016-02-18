@@ -1,0 +1,44 @@
+//COLOR
+
+$bg_white:#fff;
+$bg_gray:#f0f0f0;
+$bg_menu:#343434;
+
+$first_color: #63ae5d;
+$second_color: #02aab0;
+
+$grey_one: #9e9e9e;
+$grey_two:#757575;
+$grey_three:#dedede;
+$grey_four:#e4e4e4;
+
+$facebook:#3b5998;
+$twitter:#00aced;
+$linkedin:#007bb5;
+$whatsapp:#43d854;
+
+//FONTS
+$first_font:'Open Sans', sans-serif;
+
+//RESPONSIVE WIDTH
+$mobile:(max-width em(320));
+$mobileLand:(min-width em(480) max-width em(690));
+$tablet:(min-width em(768) max-width em(1023));
+$tabletLand:(min-width em(1024) max-width em(1279));
+$notebook:(min-width em(1280));
+$notebookLand:(min-width em(1281) max-width em(1439));
+$desktop:(min-width em(1440));
+
+$mobileIphone:(min-width em(360) max-width em(480));
+
+$mobileTomobileLand: (min-width em(320) max-width em(640));
+$mobileLandTotablet: (min-width em(480) max-width em(1024));
+$tabletLandTonotebook: (min-width em(1024) max-width em(1440));
+$notebookTodesktop: (min-width em(1280) min-width em(1440));
+
+@mixin borderRadius($roundness){
+	@include border-top-radius($roundness);
+	@include border-left-radius($roundness);
+	@include border-right-radius($roundness);
+	@include border-bottom-radius($roundness);
+}

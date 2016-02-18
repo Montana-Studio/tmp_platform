@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>The Market Post</title>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/TMP.css">
+	<script src="../js/svg.min.js"></script>
+</head>
+<body class="login-bg">
+	<div class="bg-windows windows-login mask-windows">
+
+		<div id="mask-image" class="mask-content"></div>
+		<div id="imageMain"></div>
+
+		<div class="content-rest">
+			<h2 class="title-windws">Procesando Solicitud</h2>
+			<p class="bajada-title">Nunc eleifend urna eget tortor egestas auctor. Nullam aliquet libero nulla, non tristique nisl commodo ut. Duis mi quam, tristique nec faucibus eu, faucibus sit amet dolor.</p>
+			<button class="btn-tmp bg-green" onclick="location.href='../index.html'">volver al home</button>	
+		</div>
+		
+	</div>
+
+	<script>
+		var draw = SVG('imageMain').viewbox(0, 0,338, 250)
+
+		var rect = draw.path('M359,222c-103,29-208.333,41-354,0V5c0-1.105,1.564-2,2.66-2h349.355C358.111,3,359,3.895,359,5V222z').stroke('none').fill('#fff').x(0).y(0)
+		var text = draw.image('../img/tmp_test.jpg').style({'width':'150%','height':'100%','display':'block'}).y('-1').x('-20%')
+		var mask = draw.mask().add(rect)
+
+		text.maskWith(mask)
+		
+	</script>
+</body> 
+</html>

@@ -1,0 +1,147 @@
+.bg-windows {
+	font:{family:$first_font;};
+	background: $bg_white;
+	@include borderRadius(6px);
+	@include pad(10px 20px);
+	@include media($mobileLand) {
+		padding:{left:40px;bottom:20px;right:20px;}
+	}
+	@include media($tablet) {
+		padding:{left:40px;right:40px;}
+	}
+	@include media($tabletLand) {
+		margin:{top:20px;}
+		padding:{left:60px;bottom:25px;right:60px;}
+	}
+}
+.title-windws {
+	font:{weight:600};
+	color:$grey_two;
+	font:{size:14px;} 
+	text:{transform:uppercase;}
+	letter-spacing: 1px;
+	@include media($mobileLand) {
+		font:{size:15px;} 
+		margin:20px 0;
+	}
+	@include media($tablet) {
+		font:{size:18px;}
+		margin:20px 0;
+	}	
+	@include media($tabletLand) {
+		font:{size:18px;}
+		margin:25px 0;
+	}
+}
+.title-inside{
+	font:{weight:600};
+	color:$grey_two;
+	font:{size:11px;} 
+	text:{transform:uppercase;}
+}
+.line-title {
+	@include span-columns(12);
+	border:0;
+	border:{bottom:1px solid $grey_three};
+	margin:{bottom:15px;}
+}
+.bajada-title {
+	@include outer-container(90%);
+	font:{weight:400};
+	color:$grey_one;
+	font:{size:11px;} 
+	line-height: 19px;
+	margin:{bottom:10px;}
+	@include media($mobileIphone) {
+		margin:{bottom:20px;}
+	}
+	@include media($mobileLand) {
+		@include outer-container(80%);
+		font:{size:12px;} 
+		margin:{bottom:20px;}
+		line-height: 24px;
+	}
+	@include media($tablet) {
+		@include outer-container(80%);
+		font:{size:13px;} 
+		margin:{bottom:25px;}
+		line-height: 20px;
+	}
+	@include media($tabletLand) {
+		font:{size:12px;} 
+		margin:{bottom:30px;}
+	}
+}
+.txt-inside {
+	font:{weight:400;size:11px;};
+	color:$grey_one;
+	line-height: 18px;
+    padding: 0 5px;
+}
+.habilidad {
+	font:{weight:600;size:11px;};
+	text:{transform:uppercase;}
+	background:$bg_gray;
+	color:$grey_two;
+	padding: 4px 20px;
+	@include borderRadius(25%);
+	margin:{bottom:4px;right:4px;}
+	width: auto;
+    display: inline-block;
+    border-radius: 20px;
+}
+.field-tmp {
+	@include appearance(none);
+	border:1px solid $grey_four;
+	@include borderRadius(4px);
+	@include pad(14px 10px);
+	background: #fff;
+	outline: none;
+	margin:{bottom:5px;}
+	color:$grey_two;
+	font:{weight:600;size:12px;};
+	@include placeholder {
+		font:{weight:400;style:italic;size:11px;};
+	}
+	@include media($mobileLand) {
+		@include placeholder {
+			font:{size:12px;};
+		}
+	}
+	@include media($tablet) {
+		margin:{bottom:10px;}
+		@include placeholder {
+			font:{size:13px;};
+		}
+	}
+	@include media($tabletLand) {
+		margin:{bottom:10px;}
+		@include placeholder {
+			font:{size:13px;};
+		}
+	}
+	@include media($notebook) {
+		@include placeholder {
+			font:{size:12px;}
+		}
+	}
+}
+.content-tmp {
+	@include span-columns(12);
+	@include omega();
+	position: relative;
+	top: 0;
+	overflow: hidden;
+}
+.show-MenuLateral {
+	@include shift(-9 of 12 !important);
+	@include media($mobileLand) {
+		@include shift(-6 of 12 !important);
+	}
+	@include media($tablet) {
+		@include shift(-5 of 12 !important);
+	}
+	@include media($tabletLand) {
+		@include shift(-4 of 12 !important); 
+	}
+}
