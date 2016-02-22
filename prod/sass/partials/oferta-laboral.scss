@@ -1,37 +1,19 @@
 .oferta-sigle {
-	@include span-columns(12);
 	@include pad(10px);
 	font:{family:$first_font;}
 	background: $bg_gray;
 	overflow: hidden;
+	@include media($mobileTomobileLand) {
+		@include span-columns(12);
+	}
 	@include media($tabletLand) {
 		@include outer-container(70%);
 		float: none;
    		margin: 0 auto !important;
 	}
-	@include media($notebook) {
-		@include outer-container(70%);
-		float: none;
-   		margin: 0 auto !important;
-	}
-	.oferta-content {
-		@include span-columns(12);
-		@include borderRadius(4px);
-		background: $bg_white;
-		overflow: hidden;
-		.single-header {
-			@include span-columns(12);
-			margin: 0;
-			position: relative;
+	.signleContent {
+		.singleHeader {
 			.single-inside {
-				@include span-columns(12);
-				margin:{right:0;}
-				position: absolute;
-				z-index: 999;
-				top:0;
-				left:0;
-				text:{align:center;}
-				color:$bg_white;
 				h3 {
 					font:{weight:600;}
 					margin:{bottom:5px;}
@@ -40,23 +22,23 @@
 					}
 					@include media($tablet) {
 						margin:{top: 120px;}
-    					font:{size: 30px;}
+						font:{size: 30px;}
 					}
 					@include media($tabletLand) {
 						margin:{top: 120px;}
-    					font:{size: 30px;}
+						font:{size: 30px;}
 					}
 					@include media($notebook) {
 						@include outer-container(60%);
 						float: none;
 						font:{size: 25px;}
-    					margin:{top: 90px;left:auto;right:auto;}
+						margin:{top: 60px;left:auto;right:auto;}
 					}
 					@include media($desktop) {
 						@include outer-container(60%);
 						float: none;
 						font:{size: 28px;}
-    					margin:{top: 100px;left:auto;right:auto;}
+						margin:{top: 100px;left:auto;right:auto;}
 					}
 				}
 				.header-ubicacion {
@@ -216,19 +198,19 @@
 							@include media($tablet) {
 								@include span-columns(9);
 								font:{size: 12px;}
-    							padding: 12px;
+								padding: 12px;
 							}
 							@include media($tabletLand) {
 								@include span-columns(9);
 								font:{size: 12px;}
-    							padding: 12px;
+								padding: 12px;
 							}
 							@include media($notebook) {
 								@include span-columns(8);
 							}
 							@include media($desktop) {
 								font:{size: 11px;}
-    							padding: 10px;
+								padding: 10px;
 							}
 						}
 					}
@@ -240,7 +222,7 @@
 						display: block;
 						position: absolute;
 						right: 10px;
-						top:50px;
+						top:30px;
 					}
 					@include media($desktop) {
 						right: 10px;
@@ -251,136 +233,6 @@
 						margin: {right:0;}
 					}
 				}
-			}
-			.bg-mask-color {
-				@include span-columns(12);
-				margin:{right:0;}
-				position: absolute;
-				z-index: 990;
-				top:0;
-				left:0;
-				height: 100%;
-				svg {
-					width: 100%;
-					height: auto;
-					path {
-						opacity: 0.5;
-						@include media($tablet) {
-							opacity: 0.6;
-						}
-					}
-				}
-			}
-			.single-img-mask {
-				@include span-columns(12);
-				margin:{right:0;}
-				@include media($notebook) {
-					margin:{top:-250px;}
-				}
-				@include media($desktop) {
-					margin:{top:-450px;}
-				}
-				svg {
-					width: 100%;
-					height: auto;
-					@include media($notebook) {
-						height: 50%;
-					}
-					@include media($desktop) {
-						height: 50%;
-					}
-				}
-				.imagen-ofertas {
-					width: 115%;
-					position: absolute;
-					top:0;
-					left:0;
-					z-index: 999;
-					height: auto;
-				}
-			}
-		}
-		.single-content {
-			@include span-columns(12);
-			@include pad(10px);
-			@include media($tablet) {
-				@include pad(10px 40px);
-			}
-			@include media($tabletLand) {
-				@include pad(10px 40px);
-			}
-			.block-single {
-				@include span-columns(12);
-				margin:{bottom:10px;}
-				@include media($notebook) {
-					@include span-columns(6);
-					margin:{right:5px;}
-					@include pad(0 5px);
-				}
-				.block-interior {
-					@include span-columns(12);
-					margin:0;
-					@include pad(0 5px);
-					@include media($tablet) {
-						@include pad(0 10px);
-					}
-					.block-inside-single {
-						@include span-columns(6);
-						margin:{bottom:20px;right:0;};
-						.icon-block {
-							@include span-columns(2);
-							text:{align:center;}
-							i{ 
-								display: block;
-								margin: 0 auto;
-								color:$first_color;
-								font:{size:24px;}
-								@include media($tablet) {
-									font:{size: 33px;}
-								}
-								@include media($tabletLand) {
-									font:{size:33px;}
-								}
-							}
-						}
-						.txt-block {
-							@include span-columns(9);
-							margin:{left:10px;}
-							.title-dato {
-								font:{size:10px;}
-								color:$first_color;
-								text:{transform:uppercase;}
-								@include media($tablet) {
-									 font:{size: 13px;}
-								}
-								@include media($tabletLand) {
-									font:{size:12px;}
-								}
-							}
-							.all-dato{
-								font:{size:10px;}
-								color:$grey_one;
-								@include media($tablet) {
-									 font:{size: 13px;}
-								}
-								@include media($tabletLand) {
-									font:{size:12px;}
-								}
-							}
-
-						}
-					}
-					.btn-tmp {
-						&.bg-green {
-							margin:{bottom:0;}
-						}
-						&.btn-rrss {
-							@include media($notebook) {
-								display: none;
-							}
-						}
-					}
-				}	
 			}
 		}
 	}

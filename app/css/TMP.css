@@ -417,6 +417,46 @@ html {
     .show-MenuLateral {
       margin-left: -34.11922%; } }
 
+.hover-oferta, #ofertas-laborales .directorio-ofertas .single-oferta:hover {
+  -webkit-animation: hover-oferta 0.6s ease forwards;
+  -moz-animation: hover-oferta 0.6s ease forwards;
+  animation: hover-oferta 0.6s ease forwards; }
+
+@-webkit-keyframes hover-oferta {
+  0% {
+    -webkit-transform: translateY(0);
+    box-shadow: 0;
+    -webkit-box-shadow: 0; }
+  100% {
+    -webkit-transform: translateY(-4px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); } }
+@-moz-keyframes hover-oferta {
+  0% {
+    -moz-transform: translateY(0);
+    box-shadow: 0;
+    -webkit-box-shadow: 0; }
+  100% {
+    -moz-transform: translateY(-4px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); } }
+@keyframes hover-oferta {
+  0% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    box-shadow: 0;
+    -webkit-box-shadow: 0; }
+  100% {
+    -webkit-transform: translateY(-4px);
+    -moz-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    -o-transform: translateY(-4px);
+    transform: translateY(-4px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); } }
 .login-bg {
   background: -webkit-linear-gradient(left, #63ae5d 0%, #02aab0 100%);
   background: linear-gradient(to right, #63ae5d 0%, #02aab0 100%);
@@ -825,7 +865,7 @@ html {
             float: left;
             display: block;
             margin-right: 2.35765%;
-            width: 23.23176%;
+            width: 27.49666%;
             margin: 0; }
             .menuTabs .menu-secundario ul li:last-child {
               margin-right: 0; } }
@@ -902,6 +942,15 @@ html {
           float: right; }
           .menuTabs .menu-secundario .image-user:last-child {
             margin-right: 0; } }
+      @media screen and (min-width: desktop) {
+        .menuTabs .menu-secundario .image-user {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 23.23176%;
+          float: right; }
+          .menuTabs .menu-secundario .image-user:last-child {
+            margin-right: 0; } }
       .menuTabs .menu-secundario .image-user ul {
         float: left;
         display: block;
@@ -912,9 +961,14 @@ html {
         .menuTabs .menu-secundario .image-user ul:last-child {
           margin-right: 0; }
         .menuTabs .menu-secundario .image-user ul li {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 31.76157%;
           float: right;
-          margin: 0;
           border: 0; }
+          .menuTabs .menu-secundario .image-user ul li:last-child {
+            margin-right: 0; }
           .menuTabs .menu-secundario .image-user ul li .content-right {
             margin: 0;
             width: 100%;
@@ -928,14 +982,106 @@ html {
               font-size: 10px;
               display: table-cell;
               vertical-align: middle; }
-            .menuTabs .menu-secundario .image-user ul li .content-right .img-user-menu img {
-              display: block;
-              width: 30px;
+              @media screen and (min-width: 90em) {
+                .menuTabs .menu-secundario .image-user ul li .content-right .text-menuTabs {
+                  padding-left: 5px; } }
+            .menuTabs .menu-secundario .image-user ul li .content-right .img-user-menu {
+              display: table-cell;
+              vertical-align: middle;
               height: 30px; }
+              .menuTabs .menu-secundario .image-user ul li .content-right .img-user-menu img {
+                display: block;
+                width: 30px;
+                height: 30px;
+                border-top-left-radius: 50%;
+                border-top-right-radius: 50%;
+                border-bottom-left-radius: 50%;
+                border-top-left-radius: 50%;
+                border-bottom-right-radius: 50%;
+                border-top-right-radius: 50%;
+                border-bottom-left-radius: 50%;
+                border-bottom-right-radius: 50%; }
+          .menuTabs .menu-secundario .image-user ul li:nth-child(1) {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 14.70196%;
+            float: right; }
+            .menuTabs .menu-secundario .image-user ul li:nth-child(1):last-child {
+              margin-right: 0; }
+            @media screen and (min-width: 90em) {
+              .menuTabs .menu-secundario .image-user ul li:nth-child(1) {
+                float: left;
+                display: block;
+                margin-right: 2.35765%;
+                width: 10.43705%;
+                float: right; }
+                .menuTabs .menu-secundario .image-user ul li:nth-child(1):last-child {
+                  margin-right: 0; } }
+          .menuTabs .menu-secundario .image-user ul li:nth-child(2) {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 14.70196%;
+            float: right; }
+            .menuTabs .menu-secundario .image-user ul li:nth-child(2):last-child {
+              margin-right: 0; }
+            @media screen and (min-width: 90em) {
+              .menuTabs .menu-secundario .image-user ul li:nth-child(2) {
+                float: left;
+                display: block;
+                margin-right: 2.35765%;
+                width: 10.43705%;
+                float: right; }
+                .menuTabs .menu-secundario .image-user ul li:nth-child(2):last-child {
+                  margin-right: 0; } }
+          @media screen and (min-width: 90em) {
+            .menuTabs .menu-secundario .image-user ul li:nth-child(3) {
+              float: left;
+              display: block;
+              margin-right: 2.35765%;
+              width: 23.23176%;
+              float: right; }
+              .menuTabs .menu-secundario .image-user ul li:nth-child(3):last-child {
+                margin-right: 0; } }
+          .menuTabs .menu-secundario .image-user ul li.name-user-li.show-image-Menu {
+            display: none; }
   .menuTabs .tabs {
     display: none;
     background: #f0f0f0;
     height: 100%; }
+    .menuTabs .tabs.content-tabs {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      padding: 10px; }
+      .menuTabs .tabs.content-tabs:last-child {
+        margin-right: 0; }
+      @media screen and (min-width: 80em) {
+        .menuTabs .tabs.content-tabs {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 95.7351%;
+          margin-right: 0;
+          float: right; }
+          .menuTabs .tabs.content-tabs:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 80em) {
+        .menuTabs .tabs.content-tabs.Menu-Collapsed-width {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 85.49933%;
+          margin-right: 0;
+          float: right; }
+          .menuTabs .tabs.content-tabs.Menu-Collapsed-width:last-child {
+            margin-right: 0; } }
+  @media screen and (min-width: 80em) and (min-width: 80em) {
+    .menuTabs .tabs.content-tabs.Menu-Collapsed-width .directorio-ofertas {
+      max-width: 100% !important; } }
+
   .menuTabs.show-MenuLateral {
     margin-left: -76.76824%; }
     @media screen and (min-width: 30em) and (max-width: 43.125em) {
@@ -1197,6 +1343,363 @@ html {
   .menuLateral.show-MenuLateral {
     display: block; }
 
+.signleContent {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background: #fff;
+  position: relative;
+  margin-bottom: 5px;
+  font-family: "Open Sans", sans-serif; }
+  .signleContent:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 30em) and (max-width: 43.125em) {
+    .signleContent {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .signleContent:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 20em) and (max-width: 40em) {
+    .signleContent {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .signleContent:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 48em) and (max-width: 63.9375em) {
+    .signleContent {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-right: 8px; }
+      .signleContent:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+    .signleContent {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      margin-right: 10px; }
+      .signleContent:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 80em) {
+    .signleContent {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      display: inline-block; }
+      .signleContent:last-child {
+        margin-right: 0; } }
+  .signleContent .singleHeader {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-right: 0; }
+    .signleContent .singleHeader:last-child {
+      margin-right: 0; }
+    .signleContent .singleHeader .single-inside {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-right: 0;
+      position: absolute;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      text-align: center;
+      color: #fff; }
+      .signleContent .singleHeader .single-inside:last-child {
+        margin-right: 0; }
+    .signleContent .singleHeader .single-img-mask {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-right: 0; }
+      .signleContent .singleHeader .single-img-mask:last-child {
+        margin-right: 0; }
+      @media screen and (min-width: 80em) {
+        .signleContent .singleHeader .single-img-mask {
+          margin-top: -35%; } }
+      @media screen and (min-width: 90em) {
+        .signleContent .singleHeader .single-img-mask {
+          margin-top: -450px; } }
+      .signleContent .singleHeader .single-img-mask svg {
+        width: 100%;
+        height: auto; }
+        @media screen and (min-width: 80em) {
+          .signleContent .singleHeader .single-img-mask svg {
+            height: 50%; } }
+        @media screen and (min-width: 90em) {
+          .signleContent .singleHeader .single-img-mask svg {
+            height: 50%; } }
+      .signleContent .singleHeader .single-img-mask .imagen-ofertas {
+        width: 115%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        height: auto; }
+    .signleContent .singleHeader .bg-mask-color {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-right: 0;
+      position: absolute;
+      z-index: 990;
+      top: 0;
+      left: 0; }
+      .signleContent .singleHeader .bg-mask-color:last-child {
+        margin-right: 0; }
+      .signleContent .singleHeader .bg-mask-color svg {
+        width: 100%;
+        height: auto; }
+        .signleContent .singleHeader .bg-mask-color svg path {
+          opacity: 0.5; }
+          @media screen and (min-width: 48em) and (max-width: 63.9375em) {
+            .signleContent .singleHeader .bg-mask-color svg path {
+              opacity: 0.6; } }
+  .signleContent .singleBody {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    padding: 10px; }
+    .signleContent .singleBody:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 48em) and (max-width: 63.9375em) {
+      .signleContent .singleBody {
+        padding: 10px 40px; } }
+    @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+      .signleContent .singleBody {
+        padding: 10px 40px; } }
+    .signleContent .singleBody .block-single {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-bottom: 10px; }
+      .signleContent .singleBody .block-single:last-child {
+        margin-right: 0; }
+      @media screen and (min-width: 80em) {
+        .signleContent .singleBody .block-single {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 48.82117%;
+          margin-right: 5px;
+          padding: 0 5px; }
+          .signleContent .singleBody .block-single:last-child {
+            margin-right: 0; } }
+      .signleContent .singleBody .block-single .block-interior {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        margin: 0;
+        padding: 0 5px; }
+        .signleContent .singleBody .block-single .block-interior:last-child {
+          margin-right: 0; }
+        @media screen and (min-width: 48em) and (max-width: 63.9375em) {
+          .signleContent .singleBody .block-single .block-interior {
+            padding: 0 10px; } }
+        .signleContent .singleBody .block-single .block-interior .btn-block-inside {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%;
+          margin-right: 0; }
+          .signleContent .singleBody .block-single .block-interior .btn-block-inside:last-child {
+            margin-right: 0; }
+        .signleContent .singleBody .block-single .block-interior .block-inside-single {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 48.82117%;
+          margin-bottom: 20px;
+          margin-right: 0; }
+          .signleContent .singleBody .block-single .block-interior .block-inside-single:last-child {
+            margin-right: 0; }
+          .signleContent .singleBody .block-single .block-interior .block-inside-single .icon-block {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 14.70196%;
+            text-align: center; }
+            .signleContent .singleBody .block-single .block-interior .block-inside-single .icon-block:last-child {
+              margin-right: 0; }
+            .signleContent .singleBody .block-single .block-interior .block-inside-single .icon-block i {
+              display: block;
+              margin: 0 auto;
+              color: #63ae5d;
+              font-size: 24px; }
+              @media screen and (min-width: 48em) and (max-width: 63.9375em) {
+                .signleContent .singleBody .block-single .block-interior .block-inside-single .icon-block i {
+                  font-size: 33px; } }
+              @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+                .signleContent .singleBody .block-single .block-interior .block-inside-single .icon-block i {
+                  font-size: 33px; } }
+          .signleContent .singleBody .block-single .block-interior .block-inside-single .txt-block {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 74.41059%;
+            margin-left: 10px; }
+            .signleContent .singleBody .block-single .block-interior .block-inside-single .txt-block:last-child {
+              margin-right: 0; }
+            .signleContent .singleBody .block-single .block-interior .block-inside-single .txt-block .title-dato {
+              font-size: 10px;
+              color: #63ae5d;
+              text-transform: uppercase; }
+              @media screen and (min-width: 48em) and (max-width: 63.9375em) {
+                .signleContent .singleBody .block-single .block-interior .block-inside-single .txt-block .title-dato {
+                  font-size: 13px; } }
+              @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+                .signleContent .singleBody .block-single .block-interior .block-inside-single .txt-block .title-dato {
+                  font-size: 12px; } }
+            .signleContent .singleBody .block-single .block-interior .block-inside-single .txt-block .all-dato {
+              font-size: 10px;
+              color: #9e9e9e; }
+              @media screen and (min-width: 48em) and (max-width: 63.9375em) {
+                .signleContent .singleBody .block-single .block-interior .block-inside-single .txt-block .all-dato {
+                  font-size: 13px; } }
+              @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+                .signleContent .singleBody .block-single .block-interior .block-inside-single .txt-block .all-dato {
+                  font-size: 12px; } }
+        .signleContent .singleBody .block-single .block-interior .btn-tmp.bg-green {
+          margin-bottom: 0; }
+        @media screen and (min-width: 80em) {
+          .signleContent .singleBody .block-single .block-interior .btn-tmp.btn-rrss {
+            display: none; } }
+
+.agregarAll {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  padding: 10px 20px; }
+  .agregarAll:last-child {
+    margin-right: 0; }
+  .agregarAll .titleAgregar {
+    font-weight: 300;
+    color: #757575;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+    @media screen and (min-width: 30em) and (max-width: 43.125em) {
+      .agregarAll .titleAgregar {
+        font-size: 15px;
+        margin: 20px 0; } }
+    @media screen and (min-width: 48em) and (max-width: 63.9375em) {
+      .agregarAll .titleAgregar {
+        font-size: 18px;
+        margin: 20px 0; } }
+    @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+      .agregarAll .titleAgregar {
+        font-size: 18px;
+        margin: 25px 0; } }
+  .agregarAll .formAgregar {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-right: 0; }
+    .agregarAll .formAgregar:last-child {
+      margin-right: 0; }
+    .agregarAll .formAgregar .field-tmp {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-bottom: 10px;
+      margin-right: 0; }
+      .agregarAll .formAgregar .field-tmp:last-child {
+        margin-right: 0; }
+
+.addAnother {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  text-decoration: none; }
+  .addAnother:last-child {
+    margin-right: 0; }
+  .addAnother a {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    height: 30px;
+    display: table; }
+    .addAnother a:last-child {
+      margin-right: 0; }
+    .addAnother a .btn-circle {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 10.43705%;
+      margin-right: 0; }
+      .addAnother a .btn-circle:last-child {
+        margin-right: 0; }
+      .addAnother a .btn-circle .circle {
+        width: 30px;
+        height: 30px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-top-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        background: #63ae5d;
+        text-align: center;
+        display: table; }
+        .addAnother a .btn-circle .circle i {
+          display: table-cell;
+          vertical-align: middle;
+          color: #fff;
+          font-size: 16px; }
+          @media screen and (min-width: 30em) and (max-width: 43.125em) {
+            .addAnother a .btn-circle .circle i {
+              font-size: 18px; } }
+    .addAnother a .text-circle {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 87.20529%;
+      margin-right: 0;
+      float: none;
+      font-size: 10px;
+      color: #9e9e9e;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: left; }
+      .addAnother a .text-circle:last-child {
+        margin-right: 0; }
+
 .dashboard-bg {
   float: left;
   display: block;
@@ -1215,311 +1718,310 @@ html {
     .dashboard-bg .dashboardPersona:last-child {
       margin-right: 0; }
 
-#ofertas-laborales {
+#ofertas-laborales .buscar-ofertalaboral {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  padding: 10px; }
-  #ofertas-laborales:last-child {
+  border: 0; }
+  #ofertas-laborales .buscar-ofertalaboral:last-child {
     margin-right: 0; }
-  #ofertas-laborales .buscar-ofertalaboral {
+  @media screen and (min-width: 80em) {
+    #ofertas-laborales .buscar-ofertalaboral {
+      max-width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+      margin: 20px auto; }
+      #ofertas-laborales .buscar-ofertalaboral::after {
+        clear: both;
+        content: "";
+        display: table; } }
+  #ofertas-laborales .buscar-ofertalaboral .field-search {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 100%;
-    border: 0; }
-    #ofertas-laborales .buscar-ofertalaboral:last-child {
+    width: 65.88078%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border: 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 8px 10px;
+    background: #dedede;
+    outline: none;
+    color: #757575;
+    font-weight: 400;
+    font-size: 12px; }
+    #ofertas-laborales .buscar-ofertalaboral .field-search:last-child {
       margin-right: 0; }
-    @media screen and (min-width: 80em) {
-      #ofertas-laborales .buscar-ofertalaboral {
-        max-width: 60%;
-        margin-left: auto;
-        margin-right: auto;
-        float: none;
-        margin: 20px auto; }
-        #ofertas-laborales .buscar-ofertalaboral::after {
-          clear: both;
-          content: "";
-          display: table; } }
-    #ofertas-laborales .buscar-ofertalaboral .field-search {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 65.88078%;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      -ms-appearance: none;
-      -o-appearance: none;
-      appearance: none;
-      border: 0;
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-top-left-radius: 4px;
-      border-bottom-right-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
-      padding: 8px 10px;
-      background: #dedede;
-      outline: none;
-      color: #757575;
-      font-weight: 400;
-      font-size: 12px; }
-      #ofertas-laborales .buscar-ofertalaboral .field-search:last-child {
-        margin-right: 0; }
-      #ofertas-laborales .buscar-ofertalaboral .field-search::-webkit-input-placeholder {
-        font-style: italic;
-        font-weight: 400; }
-      #ofertas-laborales .buscar-ofertalaboral .field-search::-moz-placeholder {
-        font-style: italic;
-        font-weight: 400; }
-      #ofertas-laborales .buscar-ofertalaboral .field-search:-moz-placeholder {
-        font-style: italic;
-        font-weight: 400; }
-      #ofertas-laborales .buscar-ofertalaboral .field-search:-ms-input-placeholder {
-        font-style: italic;
-        font-weight: 400; }
-    #ofertas-laborales .buscar-ofertalaboral .btn-search {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 31.76157%;
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-top-left-radius: 4px;
-      border-bottom-right-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
-      padding: 7px 10px;
-      border: 1px solid #9e9e9e;
-      background: none;
-      outline: none;
-      color: #9e9e9e;
-      font-weight: 600;
-      font-size: 11px;
-      text-transform: uppercase; }
-      #ofertas-laborales .buscar-ofertalaboral .btn-search:last-child {
-        margin-right: 0; }
-  #ofertas-laborales .directorio-ofertas {
+    #ofertas-laborales .buscar-ofertalaboral .field-search::-webkit-input-placeholder {
+      font-style: italic;
+      font-weight: 400; }
+    #ofertas-laborales .buscar-ofertalaboral .field-search::-moz-placeholder {
+      font-style: italic;
+      font-weight: 400; }
+    #ofertas-laborales .buscar-ofertalaboral .field-search:-moz-placeholder {
+      font-style: italic;
+      font-weight: 400; }
+    #ofertas-laborales .buscar-ofertalaboral .field-search:-ms-input-placeholder {
+      font-style: italic;
+      font-weight: 400; }
+  #ofertas-laborales .buscar-ofertalaboral .btn-search {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 100%;
-    padding: 10px 0; }
-    #ofertas-laborales .directorio-ofertas:last-child {
+    width: 31.76157%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 7px 10px;
+    border: 1px solid #9e9e9e;
+    background: none;
+    outline: none;
+    color: #9e9e9e;
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase; }
+    #ofertas-laborales .buscar-ofertalaboral .btn-search:last-child {
       margin-right: 0; }
-    @media screen and (min-width: 80em) {
-      #ofertas-laborales .directorio-ofertas {
-        max-width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-        float: none;
-        margin: 0 auto !important; }
-        #ofertas-laborales .directorio-ofertas::after {
-          clear: both;
-          content: "";
-          display: table; } }
-    #ofertas-laborales .directorio-ofertas .single-oferta {
+#ofertas-laborales .directorio-ofertas {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  padding: 10px 0; }
+  #ofertas-laborales .directorio-ofertas:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 80em) {
+    #ofertas-laborales .directorio-ofertas {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 100%;
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-top-left-radius: 4px;
-      border-bottom-right-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
-      background: #fff;
-      position: relative;
-      margin-bottom: 5px; }
-      #ofertas-laborales .directorio-ofertas .single-oferta:last-child {
-        margin-right: 0; }
-      @media screen and (min-width: 30em) and (max-width: 43.125em) {
-        #ofertas-laborales .directorio-ofertas .single-oferta {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 100%; }
-          #ofertas-laborales .directorio-ofertas .single-oferta:last-child {
-            margin-right: 0; } }
-      @media screen and (min-width: 20em) and (max-width: 40em) {
-        #ofertas-laborales .directorio-ofertas .single-oferta {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 100%; }
-          #ofertas-laborales .directorio-ofertas .single-oferta:last-child {
-            margin-right: 0; } }
-      @media screen and (min-width: 48em) and (max-width: 63.9375em) {
-        #ofertas-laborales .directorio-ofertas .single-oferta {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 48.82117%;
-          margin-right: 8px; }
-          #ofertas-laborales .directorio-ofertas .single-oferta:last-child {
-            margin-right: 0; } }
-      @media screen and (min-width: 64em) and (max-width: 79.9375em) {
-        #ofertas-laborales .directorio-ofertas .single-oferta {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 31.76157%;
-          margin-right: 10px; }
-          #ofertas-laborales .directorio-ofertas .single-oferta:last-child {
-            margin-right: 0; } }
-      @media screen and (min-width: 80em) {
-        #ofertas-laborales .directorio-ofertas .single-oferta {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 31.76157%;
-          margin-right: 10px; }
-          #ofertas-laborales .directorio-ofertas .single-oferta:last-child {
-            margin-right: 0; } }
-      #ofertas-laborales .directorio-ofertas .single-oferta .image-single {
+      float: none;
+      margin: 0 auto !important; }
+      #ofertas-laborales .directorio-ofertas:last-child {
+        margin-right: 0; } }
+  #ofertas-laborales .directorio-ofertas .single-oferta {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #fff;
+    position: relative;
+    margin-bottom: 5px; }
+    #ofertas-laborales .directorio-ofertas .single-oferta:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 30em) and (max-width: 43.125em) {
+      #ofertas-laborales .directorio-ofertas .single-oferta {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        #ofertas-laborales .directorio-ofertas .single-oferta:last-child {
+          margin-right: 0; } }
+    @media screen and (min-width: 20em) and (max-width: 40em) {
+      #ofertas-laborales .directorio-ofertas .single-oferta {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        #ofertas-laborales .directorio-ofertas .single-oferta:last-child {
+          margin-right: 0; } }
+    @media screen and (min-width: 48em) and (max-width: 63.9375em) {
+      #ofertas-laborales .directorio-ofertas .single-oferta {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%;
+        margin-right: 8px; }
+        #ofertas-laborales .directorio-ofertas .single-oferta:last-child {
+          margin-right: 0; } }
+    @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+      #ofertas-laborales .directorio-ofertas .single-oferta {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 31.76157%;
-        margin: 0; }
-        #ofertas-laborales .directorio-ofertas .single-oferta .image-single:last-child {
-          margin-right: 0; }
-        #ofertas-laborales .directorio-ofertas .single-oferta .image-single svg {
-          width: 100%;
-          height: auto;
-          display: block; }
-        #ofertas-laborales .directorio-ofertas .single-oferta .image-single img {
-          width: 115%;
-          position: absolute;
-          top: 0;
-          left: 0;
-          z-index: 999;
-          height: auto; }
-        #ofertas-laborales .directorio-ofertas .single-oferta .image-single .mask-img {
-          -webkit-clip-path: url(#svgPath);
-          clip-path: url(#svgPath); }
-      #ofertas-laborales .directorio-ofertas .single-oferta .content-single {
+        margin-right: 10px; }
+        #ofertas-laborales .directorio-ofertas .single-oferta:last-child {
+          margin-right: 0; } }
+    @media screen and (min-width: 80em) {
+      #ofertas-laborales .directorio-ofertas .single-oferta {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 65.88078%;
-        float: right;
-        padding: 5px; }
-        #ofertas-laborales .directorio-ofertas .single-oferta .content-single:last-child {
+        width: 31.76157%;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        display: inline-block; }
+        #ofertas-laborales .directorio-ofertas .single-oferta:last-child {
+          margin-right: 0; } }
+    #ofertas-laborales .directorio-ofertas .single-oferta .image-single {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      margin: 0; }
+      #ofertas-laborales .directorio-ofertas .single-oferta .image-single:last-child {
+        margin-right: 0; }
+      #ofertas-laborales .directorio-ofertas .single-oferta .image-single svg {
+        width: 100%;
+        height: auto;
+        display: block; }
+      #ofertas-laborales .directorio-ofertas .single-oferta .image-single img {
+        width: 115%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        height: auto; }
+      #ofertas-laborales .directorio-ofertas .single-oferta .image-single .mask-img {
+        -webkit-clip-path: url(#svgPath);
+        clip-path: url(#svgPath); }
+    #ofertas-laborales .directorio-ofertas .single-oferta .content-single {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      float: right;
+      padding: 5px; }
+      #ofertas-laborales .directorio-ofertas .single-oferta .content-single:last-child {
+        margin-right: 0; }
+      #ofertas-laborales .directorio-ofertas .single-oferta .content-single .title-single {
+        font-family: "Open Sans", sans-serif;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #757575;
+        margin-bottom: 8px; }
+        @media screen and (min-width: 22.5em) and (max-width: 30em) {
+          #ofertas-laborales .directorio-ofertas .single-oferta .content-single .title-single {
+            font-size: 15px;
+            line-height: 19px; } }
+        @media screen and (min-width: 30em) and (max-width: 43.125em) {
+          #ofertas-laborales .directorio-ofertas .single-oferta .content-single .title-single {
+            font-size: 16px;
+            margin-top: 42px;
+            padding-right: 35px; } }
+        @media screen and (min-width: 48em) and (max-width: 63.9375em) {
+          #ofertas-laborales .directorio-ofertas .single-oferta .content-single .title-single {
+            font-size: 15px;
+            line-height: 22px; } }
+        @media screen and (min-width: 80em) {
+          #ofertas-laborales .directorio-ofertas .single-oferta .content-single .title-single {
+            margin-top: 8px;
+            padding-right: 20px; } }
+        @media screen and (min-width: 90em) {
+          #ofertas-laborales .directorio-ofertas .single-oferta .content-single .title-single {
+            font-size: 18px;
+            margin-top: 28px;
+            margin-bottom: 10px; } }
+      #ofertas-laborales .directorio-ofertas .single-oferta .content-single ul {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        padding: 0;
+        margin: 0; }
+        #ofertas-laborales .directorio-ofertas .single-oferta .content-single ul:last-child {
           margin-right: 0; }
-        #ofertas-laborales .directorio-ofertas .single-oferta .content-single .title-single {
-          font-family: "Open Sans", sans-serif;
-          font-size: 12px;
-          text-transform: uppercase;
-          color: #757575;
-          margin-bottom: 8px; }
-          @media screen and (min-width: 22.5em) and (max-width: 30em) {
-            #ofertas-laborales .directorio-ofertas .single-oferta .content-single .title-single {
-              font-size: 15px;
-              line-height: 19px; } }
-          @media screen and (min-width: 30em) and (max-width: 43.125em) {
-            #ofertas-laborales .directorio-ofertas .single-oferta .content-single .title-single {
-              font-size: 16px;
-              margin-top: 42px;
-              padding-right: 35px; } }
-          @media screen and (min-width: 48em) and (max-width: 63.9375em) {
-            #ofertas-laborales .directorio-ofertas .single-oferta .content-single .title-single {
-              font-size: 15px;
-              line-height: 22px; } }
-          @media screen and (min-width: 80em) {
-            #ofertas-laborales .directorio-ofertas .single-oferta .content-single .title-single {
-              margin-top: 8px; } }
-        #ofertas-laborales .directorio-ofertas .single-oferta .content-single ul {
+        #ofertas-laborales .directorio-ofertas .single-oferta .content-single ul li {
           float: left;
           display: block;
           margin-right: 2.35765%;
           width: 100%;
-          padding: 0;
-          margin: 0; }
-          #ofertas-laborales .directorio-ofertas .single-oferta .content-single ul:last-child {
+          display: block;
+          font-family: "Open Sans", sans-serif;
+          font-size: 11px;
+          color: #9e9e9e;
+          border: 0; }
+          #ofertas-laborales .directorio-ofertas .single-oferta .content-single ul li:last-child {
             margin-right: 0; }
-          #ofertas-laborales .directorio-ofertas .single-oferta .content-single ul li {
+          @media screen and (min-width: 30em) and (max-width: 43.125em) {
+            #ofertas-laborales .directorio-ofertas .single-oferta .content-single ul li {
+              margin-bottom: 5px; } }
+          #ofertas-laborales .directorio-ofertas .single-oferta .content-single ul li .list-single {
             float: left;
             display: block;
             margin-right: 2.35765%;
             width: 100%;
-            display: block;
-            font-family: "Open Sans", sans-serif;
-            font-size: 11px;
-            color: #9e9e9e;
-            border: 0; }
-            #ofertas-laborales .directorio-ofertas .single-oferta .content-single ul li:last-child {
+            display: table; }
+            #ofertas-laborales .directorio-ofertas .single-oferta .content-single ul li .list-single:last-child {
               margin-right: 0; }
-            @media screen and (min-width: 30em) and (max-width: 43.125em) {
-              #ofertas-laborales .directorio-ofertas .single-oferta .content-single ul li {
-                margin-bottom: 5px; } }
-            #ofertas-laborales .directorio-ofertas .single-oferta .content-single ul li .list-single {
-              float: left;
-              display: block;
-              margin-right: 2.35765%;
-              width: 100%;
-              display: table; }
-              #ofertas-laborales .directorio-ofertas .single-oferta .content-single ul li .list-single:last-child {
-                margin-right: 0; }
-              #ofertas-laborales .directorio-ofertas .single-oferta .content-single ul li .list-single .icon-part {
-                display: table-cell;
-                vertical-align: middle;
-                font-size: 14px;
-                color: #63ae5d;
-                width: 20px; }
-                @media screen and (min-width: 30em) and (max-width: 43.125em) {
-                  #ofertas-laborales .directorio-ofertas .single-oferta .content-single ul li .list-single .icon-part {
-                    font-size: 17px; } }
-              #ofertas-laborales .directorio-ofertas .single-oferta .content-single ul li .list-single .info-part {
-                display: table-cell !important;
-                vertical-align: middle;
-                font-family: "Open Sans", sans-serif;
-                font-size: 10px;
-                text-align: left; }
-                @media screen and (min-width: 30em) and (max-width: 43.125em) {
-                  #ofertas-laborales .directorio-ofertas .single-oferta .content-single ul li .list-single .info-part {
-                    font-size: 13px; } }
-                @media screen and (min-width: 48em) and (max-width: 63.9375em) {
-                  #ofertas-laborales .directorio-ofertas .single-oferta .content-single ul li .list-single .info-part {
-                    font-size: 11px; } }
-        #ofertas-laborales .directorio-ofertas .single-oferta .content-single .btn-vermas {
-          position: absolute;
-          right: 7px;
-          bottom: 7px; }
-          @media screen and (min-width: 30em) and (max-width: 43.125em) {
-            #ofertas-laborales .directorio-ofertas .single-oferta .content-single .btn-vermas {
-              right: 10px;
-              bottom: 10px;
-              width: 35px;
-              height: 35px; } }
-
-#perfil-persona {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%; }
-  #perfil-persona:last-child {
-    margin-right: 0; }
+            #ofertas-laborales .directorio-ofertas .single-oferta .content-single ul li .list-single .icon-part {
+              display: table-cell;
+              vertical-align: middle;
+              font-size: 14px;
+              color: #63ae5d;
+              width: 20px; }
+              @media screen and (min-width: 30em) and (max-width: 43.125em) {
+                #ofertas-laborales .directorio-ofertas .single-oferta .content-single ul li .list-single .icon-part {
+                  font-size: 17px; } }
+              @media screen and (min-width: 90em) {
+                #ofertas-laborales .directorio-ofertas .single-oferta .content-single ul li .list-single .icon-part {
+                  font-size: 17px; } }
+            #ofertas-laborales .directorio-ofertas .single-oferta .content-single ul li .list-single .info-part {
+              display: table-cell !important;
+              vertical-align: middle;
+              font-family: "Open Sans", sans-serif;
+              font-size: 10px;
+              text-align: left; }
+              @media screen and (min-width: 30em) and (max-width: 43.125em) {
+                #ofertas-laborales .directorio-ofertas .single-oferta .content-single ul li .list-single .info-part {
+                  font-size: 13px; } }
+              @media screen and (min-width: 48em) and (max-width: 63.9375em) {
+                #ofertas-laborales .directorio-ofertas .single-oferta .content-single ul li .list-single .info-part {
+                  font-size: 11px; } }
+              @media screen and (min-width: 90em) {
+                #ofertas-laborales .directorio-ofertas .single-oferta .content-single ul li .list-single .info-part {
+                  font-size: 14px; } }
+      #ofertas-laborales .directorio-ofertas .single-oferta .content-single .btn-vermas {
+        position: absolute;
+        right: 7px;
+        bottom: 7px; }
+        @media screen and (min-width: 30em) and (max-width: 43.125em) {
+          #ofertas-laborales .directorio-ofertas .single-oferta .content-single .btn-vermas {
+            right: 10px;
+            bottom: 10px;
+            width: 35px;
+            height: 35px; } }
 
 .oferta-sigle {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
   padding: 10px;
   font-family: "Open Sans", sans-serif;
   background: #f0f0f0;
   overflow: hidden; }
-  .oferta-sigle:last-child {
-    margin-right: 0; }
+  @media screen and (min-width: 20em) and (max-width: 40em) {
+    .oferta-sigle {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .oferta-sigle:last-child {
+        margin-right: 0; } }
   @media screen and (min-width: 64em) and (max-width: 79.9375em) {
     .oferta-sigle {
       max-width: 70%;
@@ -1531,543 +2033,498 @@ html {
         clear: both;
         content: "";
         display: table; } }
-  @media screen and (min-width: 80em) {
-    .oferta-sigle {
-      max-width: 70%;
-      margin-left: auto;
-      margin-right: auto;
-      float: none;
-      margin: 0 auto !important; }
-      .oferta-sigle::after {
-        clear: both;
-        content: "";
-        display: table; } }
-  .oferta-sigle .oferta-content {
+  .oferta-sigle .signleContent .singleHeader .single-inside h3 {
+    font-weight: 600;
+    margin-bottom: 5px; }
+    @media screen and (min-width: 22.5em) and (max-width: 30em) {
+      .oferta-sigle .signleContent .singleHeader .single-inside h3 {
+        margin-top: 45px; } }
+    @media screen and (min-width: 48em) and (max-width: 63.9375em) {
+      .oferta-sigle .signleContent .singleHeader .single-inside h3 {
+        margin-top: 120px;
+        font-size: 30px; } }
+    @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+      .oferta-sigle .signleContent .singleHeader .single-inside h3 {
+        margin-top: 120px;
+        font-size: 30px; } }
+    @media screen and (min-width: 80em) {
+      .oferta-sigle .signleContent .singleHeader .single-inside h3 {
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        font-size: 25px;
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto; }
+        .oferta-sigle .signleContent .singleHeader .single-inside h3::after {
+          clear: both;
+          content: "";
+          display: table; } }
+    @media screen and (min-width: 90em) {
+      .oferta-sigle .signleContent .singleHeader .single-inside h3 {
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        font-size: 28px;
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto; }
+        .oferta-sigle .signleContent .singleHeader .single-inside h3::after {
+          clear: both;
+          content: "";
+          display: table; } }
+  .oferta-sigle .signleContent .singleHeader .single-inside .header-ubicacion {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-top-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    background: #fff;
-    overflow: hidden; }
-    .oferta-sigle .oferta-content:last-child {
+    margin-right: 0;
+    margin-bottom: 20px;
+    display: table; }
+    .oferta-sigle .signleContent .singleHeader .single-inside .header-ubicacion:last-child {
       margin-right: 0; }
-    .oferta-sigle .oferta-content .single-header {
+    @media screen and (min-width: 48em) and (max-width: 63.9375em) {
+      .oferta-sigle .signleContent .singleHeader .single-inside .header-ubicacion {
+        margin-bottom: 30px; } }
+    @media screen and (min-width: 80em) {
+      .oferta-sigle .signleContent .singleHeader .single-inside .header-ubicacion {
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        margin-left: auto;
+        margin-right: auto; }
+        .oferta-sigle .signleContent .singleHeader .single-inside .header-ubicacion::after {
+          clear: both;
+          content: "";
+          display: table; } }
+    @media screen and (min-width: 90em) {
+      .oferta-sigle .signleContent .singleHeader .single-inside .header-ubicacion {
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px; }
+        .oferta-sigle .signleContent .singleHeader .single-inside .header-ubicacion::after {
+          clear: both;
+          content: "";
+          display: table; } }
+    .oferta-sigle .signleContent .singleHeader .single-inside .header-ubicacion .ubicacion-txt {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 13px; }
+      @media screen and (min-width: 48em) and (max-width: 63.9375em) {
+        .oferta-sigle .signleContent .singleHeader .single-inside .header-ubicacion .ubicacion-txt {
+          font-size: 20px; } }
+      @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+        .oferta-sigle .signleContent .singleHeader .single-inside .header-ubicacion .ubicacion-txt {
+          font-size: 20px; } }
+      @media screen and (min-width: 80em) {
+        .oferta-sigle .signleContent .singleHeader .single-inside .header-ubicacion .ubicacion-txt {
+          font-size: 16px; } }
+      .oferta-sigle .signleContent .singleHeader .single-inside .header-ubicacion .ubicacion-txt i {
+        font-size: 16px;
+        margin-right: 5px; }
+        @media screen and (min-width: 48em) and (max-width: 63.9375em) {
+          .oferta-sigle .signleContent .singleHeader .single-inside .header-ubicacion .ubicacion-txt i {
+            font-size: 24px; } }
+        @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+          .oferta-sigle .signleContent .singleHeader .single-inside .header-ubicacion .ubicacion-txt i {
+            font-size: 24px; } }
+  .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto; }
+    .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa::after {
+      clear: both;
+      content: "";
+      display: table; }
+    @media screen and (min-width: 48em) and (max-width: 63.9375em) {
+      .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa {
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto; }
+        .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa::after {
+          clear: both;
+          content: "";
+          display: table; } }
+    @media screen and (min-width: 80em) {
+      .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa {
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        margin: 0 auto; }
+        .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa::after {
+          clear: both;
+          content: "";
+          display: table; } }
+    .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-img-empresa {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 100%;
-      margin: 0;
-      position: relative; }
-      .oferta-sigle .oferta-content .single-header:last-child {
+      width: 40.29137%;
+      margin-right: 0; }
+      .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-img-empresa:last-child {
         margin-right: 0; }
-      .oferta-sigle .oferta-content .single-header .single-inside {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%;
-        margin-right: 0;
-        position: absolute;
-        z-index: 999;
-        top: 0;
-        left: 0;
-        text-align: center;
-        color: #fff; }
-        .oferta-sigle .oferta-content .single-header .single-inside:last-child {
-          margin-right: 0; }
-        .oferta-sigle .oferta-content .single-header .single-inside h3 {
-          font-weight: 600;
-          margin-bottom: 5px; }
-          @media screen and (min-width: 22.5em) and (max-width: 30em) {
-            .oferta-sigle .oferta-content .single-header .single-inside h3 {
-              margin-top: 45px; } }
-          @media screen and (min-width: 48em) and (max-width: 63.9375em) {
-            .oferta-sigle .oferta-content .single-header .single-inside h3 {
-              margin-top: 120px;
-              font-size: 30px; } }
-          @media screen and (min-width: 64em) and (max-width: 79.9375em) {
-            .oferta-sigle .oferta-content .single-header .single-inside h3 {
-              margin-top: 120px;
-              font-size: 30px; } }
-          @media screen and (min-width: 80em) {
-            .oferta-sigle .oferta-content .single-header .single-inside h3 {
-              max-width: 60%;
-              margin-left: auto;
-              margin-right: auto;
-              float: none;
-              font-size: 25px;
-              margin-top: 90px;
-              margin-left: auto;
-              margin-right: auto; }
-              .oferta-sigle .oferta-content .single-header .single-inside h3::after {
-                clear: both;
-                content: "";
-                display: table; } }
-          @media screen and (min-width: 90em) {
-            .oferta-sigle .oferta-content .single-header .single-inside h3 {
-              max-width: 60%;
-              margin-left: auto;
-              margin-right: auto;
-              float: none;
-              font-size: 28px;
-              margin-top: 100px;
-              margin-left: auto;
-              margin-right: auto; }
-              .oferta-sigle .oferta-content .single-header .single-inside h3::after {
-                clear: both;
-                content: "";
-                display: table; } }
-        .oferta-sigle .oferta-content .single-header .single-inside .header-ubicacion {
+      @media screen and (min-width: 80em) {
+        .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-img-empresa {
           float: left;
           display: block;
           margin-right: 2.35765%;
-          width: 100%;
-          margin-right: 0;
-          margin-bottom: 20px;
-          display: table; }
-          .oferta-sigle .oferta-content .single-header .single-inside .header-ubicacion:last-child {
-            margin-right: 0; }
-          @media screen and (min-width: 48em) and (max-width: 63.9375em) {
-            .oferta-sigle .oferta-content .single-header .single-inside .header-ubicacion {
-              margin-bottom: 30px; } }
-          @media screen and (min-width: 80em) {
-            .oferta-sigle .oferta-content .single-header .single-inside .header-ubicacion {
-              max-width: 60%;
-              margin-left: auto;
-              margin-right: auto;
-              float: none;
-              margin-left: auto;
-              margin-right: auto; }
-              .oferta-sigle .oferta-content .single-header .single-inside .header-ubicacion::after {
-                clear: both;
-                content: "";
-                display: table; } }
-          @media screen and (min-width: 90em) {
-            .oferta-sigle .oferta-content .single-header .single-inside .header-ubicacion {
-              max-width: 60%;
-              margin-left: auto;
-              margin-right: auto;
-              float: none;
-              margin-left: auto;
-              margin-right: auto;
-              margin-bottom: 40px; }
-              .oferta-sigle .oferta-content .single-header .single-inside .header-ubicacion::after {
-                clear: both;
-                content: "";
-                display: table; } }
-          .oferta-sigle .oferta-content .single-header .single-inside .header-ubicacion .ubicacion-txt {
-            display: table-cell;
-            vertical-align: middle;
-            font-size: 13px; }
-            @media screen and (min-width: 48em) and (max-width: 63.9375em) {
-              .oferta-sigle .oferta-content .single-header .single-inside .header-ubicacion .ubicacion-txt {
-                font-size: 20px; } }
-            @media screen and (min-width: 64em) and (max-width: 79.9375em) {
-              .oferta-sigle .oferta-content .single-header .single-inside .header-ubicacion .ubicacion-txt {
-                font-size: 20px; } }
-            @media screen and (min-width: 80em) {
-              .oferta-sigle .oferta-content .single-header .single-inside .header-ubicacion .ubicacion-txt {
-                font-size: 16px; } }
-            .oferta-sigle .oferta-content .single-header .single-inside .header-ubicacion .ubicacion-txt i {
-              font-size: 16px;
-              margin-right: 5px; }
-              @media screen and (min-width: 48em) and (max-width: 63.9375em) {
-                .oferta-sigle .oferta-content .single-header .single-inside .header-ubicacion .ubicacion-txt i {
-                  font-size: 24px; } }
-              @media screen and (min-width: 64em) and (max-width: 79.9375em) {
-                .oferta-sigle .oferta-content .single-header .single-inside .header-ubicacion .ubicacion-txt i {
-                  font-size: 24px; } }
-        .oferta-sigle .oferta-content .single-header .single-inside .header-empresa {
-          max-width: 80%;
-          margin-left: auto;
-          margin-right: auto; }
-          .oferta-sigle .oferta-content .single-header .single-inside .header-empresa::after {
-            clear: both;
-            content: "";
-            display: table; }
-          @media screen and (min-width: 48em) and (max-width: 63.9375em) {
-            .oferta-sigle .oferta-content .single-header .single-inside .header-empresa {
-              max-width: 60%;
-              margin-left: auto;
-              margin-right: auto; }
-              .oferta-sigle .oferta-content .single-header .single-inside .header-empresa::after {
-                clear: both;
-                content: "";
-                display: table; } }
-          @media screen and (min-width: 80em) {
-            .oferta-sigle .oferta-content .single-header .single-inside .header-empresa {
-              max-width: 50%;
-              margin-left: auto;
-              margin-right: auto;
-              float: none;
-              margin: 0 auto; }
-              .oferta-sigle .oferta-content .single-header .single-inside .header-empresa::after {
-                clear: both;
-                content: "";
-                display: table; } }
-          .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-img-empresa {
-            float: left;
-            display: block;
-            margin-right: 2.35765%;
-            width: 40.29137%;
-            margin-right: 0; }
-            .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-img-empresa:last-child {
-              margin-right: 0; }
-            @media screen and (min-width: 80em) {
-              .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-img-empresa {
-                float: left;
-                display: block;
-                margin-right: 2.35765%;
-                width: 40.29137%; }
-                .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-img-empresa:last-child {
-                  margin-right: 0; } }
-            .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-img-empresa img {
-              width: 80px;
-              height: 80px;
-              border-top-left-radius: 50%;
-              border-top-right-radius: 50%;
-              border-bottom-left-radius: 50%;
-              border-top-left-radius: 50%;
-              border-bottom-right-radius: 50%;
-              border-top-right-radius: 50%;
-              border-bottom-left-radius: 50%;
-              border-bottom-right-radius: 50%;
-              border: 2px solid #fff; }
-              @media screen and (min-width: 22.5em) and (max-width: 30em) {
-                .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-img-empresa img {
-                  width: 90px;
-                  height: 90px; } }
-              @media screen and (min-width: 48em) and (max-width: 63.9375em) {
-                .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-img-empresa img {
-                  width: 160px;
-                  height: 160px;
-                  border: 4px solid #fff; } }
-              @media screen and (min-width: 64em) and (max-width: 79.9375em) {
-                .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-img-empresa img {
-                  width: 140px;
-                  height: 140px;
-                  border: 4px solid #fff; } }
-              @media screen and (min-width: 80em) {
-                .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-img-empresa img {
-                  width: 110px;
-                  height: 110px;
-                  float: right; } }
-              @media screen and (min-width: 90em) {
-                .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-img-empresa img {
-                  width: 140px;
-                  height: 140px;
-                  float: right;
-                  border: 3px solid #fff; } }
-          .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-txt-empresa {
-            float: left;
-            display: block;
-            margin-right: 2.35765%;
-            width: 57.35098%;
-            text-align: left;
-            margin-right: 0; }
-            .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-txt-empresa:last-child {
-              margin-right: 0; }
-            @media screen and (min-width: 48em) and (max-width: 63.9375em) {
-              .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-txt-empresa {
-                padding-left: 10px; } }
-            @media screen and (min-width: 80em) {
-              .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-txt-empresa {
-                float: left;
-                display: block;
-                margin-right: 2.35765%;
-                width: 57.35098%;
-                padding-left: 10px; }
-                .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-txt-empresa:last-child {
-                  margin-right: 0; } }
-            .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-txt-empresa .nombre-empresa {
-              float: left;
-              display: block;
-              margin-right: 2.35765%;
-              width: 100%;
-              font-size: 14px;
-              font-weight: 600;
-              margin-right: 0; }
-              .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-txt-empresa .nombre-empresa:last-child {
-                margin-right: 0; }
-              @media screen and (min-width: 22.5em) and (max-width: 30em) {
-                .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-txt-empresa .nombre-empresa {
-                  font-size: 15px; } }
-              @media screen and (min-width: 48em) and (max-width: 63.9375em) {
-                .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-txt-empresa .nombre-empresa {
-                  font-size: 22px;
-                  margin-top: 28px; } }
-              @media screen and (min-width: 64em) and (max-width: 79.9375em) {
-                .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-txt-empresa .nombre-empresa {
-                  font-size: 22px;
-                  margin-top: 17px; } }
-              @media screen and (min-width: 80em) {
-                .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-txt-empresa .nombre-empresa {
-                  font-size: 16px;
-                  margin-top: 17px; } }
-              @media screen and (min-width: 90em) {
-                .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-txt-empresa .nombre-empresa {
-                  font-size: 20px; } }
-            .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-txt-empresa .link-empresa {
-              float: left;
-              display: block;
-              margin-right: 2.35765%;
-              width: 100%;
-              font-size: 11px;
-              font-weight: 400;
-              font-style: italic;
-              margin-right: 0; }
-              .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-txt-empresa .link-empresa:last-child {
-                margin-right: 0; }
-              @media screen and (min-width: 22.5em) and (max-width: 30em) {
-                .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-txt-empresa .link-empresa {
-                  font-size: 12px; } }
-              @media screen and (min-width: 48em) and (max-width: 63.9375em) {
-                .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-txt-empresa .link-empresa {
-                  font-size: 14px; } }
-              @media screen and (min-width: 64em) and (max-width: 79.9375em) {
-                .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-txt-empresa .link-empresa {
-                  font-size: 14px; } }
-              @media screen and (min-width: 80em) {
-                .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-txt-empresa .link-empresa {
-                  font-size: 13px; } }
-              @media screen and (min-width: 90em) {
-                .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-txt-empresa .link-empresa {
-                  font-size: 14px; } }
-              .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-txt-empresa .link-empresa a {
-                color: #fff;
-                text-decoration: none; }
-            .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-txt-empresa .btn-tmp {
-              float: left;
-              display: block;
-              margin-right: 2.35765%;
-              width: 100%;
-              font-size: 9px;
-              text-align: center;
-              padding: 7px;
-              margin-top: 5px;
-              margin-right: 0;
-              margin-bottom: 0; }
-              .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-txt-empresa .btn-tmp:last-child {
-                margin-right: 0; }
-              @media screen and (min-width: 48em) and (max-width: 63.9375em) {
-                .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-txt-empresa .btn-tmp {
-                  float: left;
-                  display: block;
-                  margin-right: 2.35765%;
-                  width: 74.41059%;
-                  font-size: 12px;
-                  padding: 12px; }
-                  .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-txt-empresa .btn-tmp:last-child {
-                    margin-right: 0; } }
-              @media screen and (min-width: 64em) and (max-width: 79.9375em) {
-                .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-txt-empresa .btn-tmp {
-                  float: left;
-                  display: block;
-                  margin-right: 2.35765%;
-                  width: 74.41059%;
-                  font-size: 12px;
-                  padding: 12px; }
-                  .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-txt-empresa .btn-tmp:last-child {
-                    margin-right: 0; } }
-              @media screen and (min-width: 80em) {
-                .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-txt-empresa .btn-tmp {
-                  float: left;
-                  display: block;
-                  margin-right: 2.35765%;
-                  width: 65.88078%; }
-                  .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-txt-empresa .btn-tmp:last-child {
-                    margin-right: 0; } }
-              @media screen and (min-width: 90em) {
-                .oferta-sigle .oferta-content .single-header .single-inside .header-empresa .header-txt-empresa .btn-tmp {
-                  font-size: 11px;
-                  padding: 10px; } }
-        .oferta-sigle .oferta-content .single-header .single-inside .rrss-header {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 18.96686%;
-          display: none; }
-          .oferta-sigle .oferta-content .single-header .single-inside .rrss-header:last-child {
-            margin-right: 0; }
-          @media screen and (min-width: 80em) {
-            .oferta-sigle .oferta-content .single-header .single-inside .rrss-header {
-              display: block;
-              position: absolute;
-              right: 10px;
-              top: 50px; } }
-          @media screen and (min-width: 90em) {
-            .oferta-sigle .oferta-content .single-header .single-inside .rrss-header {
-              right: 10px;
-              top: 80px; } }
-          .oferta-sigle .oferta-content .single-header .single-inside .rrss-header .icon-btn {
-            float: left;
-            display: block;
-            margin-right: 2.35765%;
-            width: 23.23176%;
-            margin-right: 0; }
-            .oferta-sigle .oferta-content .single-header .single-inside .rrss-header .icon-btn:last-child {
-              margin-right: 0; }
-      .oferta-sigle .oferta-content .single-header .bg-mask-color {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%;
-        margin-right: 0;
-        position: absolute;
-        z-index: 990;
-        top: 0;
-        left: 0;
-        height: 100%; }
-        .oferta-sigle .oferta-content .single-header .bg-mask-color:last-child {
-          margin-right: 0; }
-        .oferta-sigle .oferta-content .single-header .bg-mask-color svg {
-          width: 100%;
-          height: auto; }
-          .oferta-sigle .oferta-content .single-header .bg-mask-color svg path {
-            opacity: 0.5; }
-            @media screen and (min-width: 48em) and (max-width: 63.9375em) {
-              .oferta-sigle .oferta-content .single-header .bg-mask-color svg path {
-                opacity: 0.6; } }
-      .oferta-sigle .oferta-content .single-header .single-img-mask {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%;
-        margin-right: 0; }
-        .oferta-sigle .oferta-content .single-header .single-img-mask:last-child {
-          margin-right: 0; }
+          width: 40.29137%; }
+          .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-img-empresa:last-child {
+            margin-right: 0; } }
+      .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-img-empresa img {
+        width: 80px;
+        height: 80px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-top-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border: 2px solid #fff; }
+        @media screen and (min-width: 22.5em) and (max-width: 30em) {
+          .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-img-empresa img {
+            width: 90px;
+            height: 90px; } }
+        @media screen and (min-width: 48em) and (max-width: 63.9375em) {
+          .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-img-empresa img {
+            width: 160px;
+            height: 160px;
+            border: 4px solid #fff; } }
+        @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+          .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-img-empresa img {
+            width: 140px;
+            height: 140px;
+            border: 4px solid #fff; } }
         @media screen and (min-width: 80em) {
-          .oferta-sigle .oferta-content .single-header .single-img-mask {
-            margin-top: -250px; } }
+          .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-img-empresa img {
+            width: 110px;
+            height: 110px;
+            float: right; } }
         @media screen and (min-width: 90em) {
-          .oferta-sigle .oferta-content .single-header .single-img-mask {
-            margin-top: -450px; } }
-        .oferta-sigle .oferta-content .single-header .single-img-mask svg {
-          width: 100%;
-          height: auto; }
-          @media screen and (min-width: 80em) {
-            .oferta-sigle .oferta-content .single-header .single-img-mask svg {
-              height: 50%; } }
-          @media screen and (min-width: 90em) {
-            .oferta-sigle .oferta-content .single-header .single-img-mask svg {
-              height: 50%; } }
-        .oferta-sigle .oferta-content .single-header .single-img-mask .imagen-ofertas {
-          width: 115%;
-          position: absolute;
-          top: 0;
-          left: 0;
-          z-index: 999;
-          height: auto; }
-    .oferta-sigle .oferta-content .single-content {
+          .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-img-empresa img {
+            width: 140px;
+            height: 140px;
+            float: right;
+            border: 3px solid #fff; } }
+    .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 100%;
-      padding: 10px; }
-      .oferta-sigle .oferta-content .single-content:last-child {
+      width: 57.35098%;
+      text-align: left;
+      margin-right: 0; }
+      .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa:last-child {
         margin-right: 0; }
       @media screen and (min-width: 48em) and (max-width: 63.9375em) {
-        .oferta-sigle .oferta-content .single-content {
-          padding: 10px 40px; } }
-      @media screen and (min-width: 64em) and (max-width: 79.9375em) {
-        .oferta-sigle .oferta-content .single-content {
-          padding: 10px 40px; } }
-      .oferta-sigle .oferta-content .single-content .block-single {
+        .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa {
+          padding-left: 10px; } }
+      @media screen and (min-width: 80em) {
+        .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 57.35098%;
+          padding-left: 10px; }
+          .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa:last-child {
+            margin-right: 0; } }
+      .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa .nombre-empresa {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 100%;
-        margin-bottom: 10px; }
-        .oferta-sigle .oferta-content .single-content .block-single:last-child {
+        font-size: 14px;
+        font-weight: 600;
+        margin-right: 0; }
+        .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa .nombre-empresa:last-child {
           margin-right: 0; }
+        @media screen and (min-width: 22.5em) and (max-width: 30em) {
+          .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa .nombre-empresa {
+            font-size: 15px; } }
+        @media screen and (min-width: 48em) and (max-width: 63.9375em) {
+          .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa .nombre-empresa {
+            font-size: 22px;
+            margin-top: 28px; } }
+        @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+          .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa .nombre-empresa {
+            font-size: 22px;
+            margin-top: 17px; } }
         @media screen and (min-width: 80em) {
-          .oferta-sigle .oferta-content .single-content .block-single {
+          .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa .nombre-empresa {
+            font-size: 16px;
+            margin-top: 17px; } }
+        @media screen and (min-width: 90em) {
+          .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa .nombre-empresa {
+            font-size: 20px; } }
+      .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa .link-empresa {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        font-size: 11px;
+        font-weight: 400;
+        font-style: italic;
+        margin-right: 0; }
+        .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa .link-empresa:last-child {
+          margin-right: 0; }
+        @media screen and (min-width: 22.5em) and (max-width: 30em) {
+          .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa .link-empresa {
+            font-size: 12px; } }
+        @media screen and (min-width: 48em) and (max-width: 63.9375em) {
+          .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa .link-empresa {
+            font-size: 14px; } }
+        @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+          .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa .link-empresa {
+            font-size: 14px; } }
+        @media screen and (min-width: 80em) {
+          .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa .link-empresa {
+            font-size: 13px; } }
+        @media screen and (min-width: 90em) {
+          .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa .link-empresa {
+            font-size: 14px; } }
+        .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa .link-empresa a {
+          color: #fff;
+          text-decoration: none; }
+      .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa .btn-tmp {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        font-size: 9px;
+        text-align: center;
+        padding: 7px;
+        margin-top: 5px;
+        margin-right: 0;
+        margin-bottom: 0; }
+        .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa .btn-tmp:last-child {
+          margin-right: 0; }
+        @media screen and (min-width: 48em) and (max-width: 63.9375em) {
+          .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa .btn-tmp {
             float: left;
             display: block;
             margin-right: 2.35765%;
-            width: 48.82117%;
-            margin-right: 5px;
-            padding: 0 5px; }
-            .oferta-sigle .oferta-content .single-content .block-single:last-child {
+            width: 74.41059%;
+            font-size: 12px;
+            padding: 12px; }
+            .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa .btn-tmp:last-child {
               margin-right: 0; } }
-        .oferta-sigle .oferta-content .single-content .block-single .block-interior {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 100%;
-          margin: 0;
-          padding: 0 5px; }
-          .oferta-sigle .oferta-content .single-content .block-single .block-interior:last-child {
-            margin-right: 0; }
-          @media screen and (min-width: 48em) and (max-width: 63.9375em) {
-            .oferta-sigle .oferta-content .single-content .block-single .block-interior {
-              padding: 0 10px; } }
-          .oferta-sigle .oferta-content .single-content .block-single .block-interior .block-inside-single {
+        @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+          .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa .btn-tmp {
             float: left;
             display: block;
             margin-right: 2.35765%;
-            width: 48.82117%;
-            margin-bottom: 20px;
-            margin-right: 0; }
-            .oferta-sigle .oferta-content .single-content .block-single .block-interior .block-inside-single:last-child {
-              margin-right: 0; }
-            .oferta-sigle .oferta-content .single-content .block-single .block-interior .block-inside-single .icon-block {
-              float: left;
-              display: block;
-              margin-right: 2.35765%;
-              width: 14.70196%;
-              text-align: center; }
-              .oferta-sigle .oferta-content .single-content .block-single .block-interior .block-inside-single .icon-block:last-child {
-                margin-right: 0; }
-              .oferta-sigle .oferta-content .single-content .block-single .block-interior .block-inside-single .icon-block i {
-                display: block;
-                margin: 0 auto;
-                color: #63ae5d;
-                font-size: 24px; }
-                @media screen and (min-width: 48em) and (max-width: 63.9375em) {
-                  .oferta-sigle .oferta-content .single-content .block-single .block-interior .block-inside-single .icon-block i {
-                    font-size: 33px; } }
-                @media screen and (min-width: 64em) and (max-width: 79.9375em) {
-                  .oferta-sigle .oferta-content .single-content .block-single .block-interior .block-inside-single .icon-block i {
-                    font-size: 33px; } }
-            .oferta-sigle .oferta-content .single-content .block-single .block-interior .block-inside-single .txt-block {
-              float: left;
-              display: block;
-              margin-right: 2.35765%;
-              width: 74.41059%;
-              margin-left: 10px; }
-              .oferta-sigle .oferta-content .single-content .block-single .block-interior .block-inside-single .txt-block:last-child {
-                margin-right: 0; }
-              .oferta-sigle .oferta-content .single-content .block-single .block-interior .block-inside-single .txt-block .title-dato {
-                font-size: 10px;
-                color: #63ae5d;
-                text-transform: uppercase; }
-                @media screen and (min-width: 48em) and (max-width: 63.9375em) {
-                  .oferta-sigle .oferta-content .single-content .block-single .block-interior .block-inside-single .txt-block .title-dato {
-                    font-size: 13px; } }
-                @media screen and (min-width: 64em) and (max-width: 79.9375em) {
-                  .oferta-sigle .oferta-content .single-content .block-single .block-interior .block-inside-single .txt-block .title-dato {
-                    font-size: 12px; } }
-              .oferta-sigle .oferta-content .single-content .block-single .block-interior .block-inside-single .txt-block .all-dato {
-                font-size: 10px;
-                color: #9e9e9e; }
-                @media screen and (min-width: 48em) and (max-width: 63.9375em) {
-                  .oferta-sigle .oferta-content .single-content .block-single .block-interior .block-inside-single .txt-block .all-dato {
-                    font-size: 13px; } }
-                @media screen and (min-width: 64em) and (max-width: 79.9375em) {
-                  .oferta-sigle .oferta-content .single-content .block-single .block-interior .block-inside-single .txt-block .all-dato {
-                    font-size: 12px; } }
-          .oferta-sigle .oferta-content .single-content .block-single .block-interior .btn-tmp.bg-green {
-            margin-bottom: 0; }
-          @media screen and (min-width: 80em) {
-            .oferta-sigle .oferta-content .single-content .block-single .block-interior .btn-tmp.btn-rrss {
-              display: none; } }
+            width: 74.41059%;
+            font-size: 12px;
+            padding: 12px; }
+            .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa .btn-tmp:last-child {
+              margin-right: 0; } }
+        @media screen and (min-width: 80em) {
+          .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa .btn-tmp {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 65.88078%; }
+            .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa .btn-tmp:last-child {
+              margin-right: 0; } }
+        @media screen and (min-width: 90em) {
+          .oferta-sigle .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa .btn-tmp {
+            font-size: 11px;
+            padding: 10px; } }
+  .oferta-sigle .signleContent .singleHeader .single-inside .rrss-header {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 18.96686%;
+    display: none; }
+    .oferta-sigle .signleContent .singleHeader .single-inside .rrss-header:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 80em) {
+      .oferta-sigle .signleContent .singleHeader .single-inside .rrss-header {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 30px; } }
+    @media screen and (min-width: 90em) {
+      .oferta-sigle .signleContent .singleHeader .single-inside .rrss-header {
+        right: 10px;
+        top: 80px; } }
+    .oferta-sigle .signleContent .singleHeader .single-inside .rrss-header .icon-btn {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%;
+      margin-right: 0; }
+      .oferta-sigle .signleContent .singleHeader .single-inside .rrss-header .icon-btn:last-child {
+        margin-right: 0; }
+
+#perfil-persona .signleContent .singleHeader .personaHeader {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-right: 0;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto; }
+  #perfil-persona .signleContent .singleHeader .personaHeader::after {
+    clear: both;
+    content: "";
+    display: table; }
+  #perfil-persona .signleContent .singleHeader .personaHeader .personaContenedor {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    display: table; }
+    #perfil-persona .signleContent .singleHeader .personaHeader .personaContenedor:last-child {
+      margin-right: 0; }
+    #perfil-persona .signleContent .singleHeader .personaHeader .personaContenedor .imgPersona {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 40.29137%;
+      float: none;
+      margin-right: 0;
+      display: table-cell;
+      vertical-align: middle; }
+      #perfil-persona .signleContent .singleHeader .personaHeader .personaContenedor .imgPersona:last-child {
+        margin-right: 0; }
+      #perfil-persona .signleContent .singleHeader .personaHeader .personaContenedor .imgPersona img {
+        width: 80px;
+        height: 80px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-top-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border: 2px solid #fff;
+        float: right; }
+        @media screen and (min-width: 22.5em) and (max-width: 30em) {
+          #perfil-persona .signleContent .singleHeader .personaHeader .personaContenedor .imgPersona img {
+            width: 90px;
+            height: 90px; } }
+        @media screen and (min-width: 48em) and (max-width: 63.9375em) {
+          #perfil-persona .signleContent .singleHeader .personaHeader .personaContenedor .imgPersona img {
+            width: 160px;
+            height: 160px;
+            border: 4px solid #fff; } }
+        @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+          #perfil-persona .signleContent .singleHeader .personaHeader .personaContenedor .imgPersona img {
+            width: 140px;
+            height: 140px;
+            border: 4px solid #fff; } }
+        @media screen and (min-width: 80em) {
+          #perfil-persona .signleContent .singleHeader .personaHeader .personaContenedor .imgPersona img {
+            width: 110px;
+            height: 110px;
+            float: right; } }
+        @media screen and (min-width: 90em) {
+          #perfil-persona .signleContent .singleHeader .personaHeader .personaContenedor .imgPersona img {
+            width: 140px;
+            height: 140px;
+            float: right;
+            border: 3px solid #fff; } }
+    #perfil-persona .signleContent .singleHeader .personaHeader .personaContenedor .personaInfo {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 57.35098%;
+      float: none;
+      margin-right: 0;
+      text-align: left;
+      padding-left: 10px;
+      display: table-cell;
+      vertical-align: middle;
+      float: none; }
+      #perfil-persona .signleContent .singleHeader .personaHeader .personaContenedor .personaInfo:last-child {
+        margin-right: 0; }
+      #perfil-persona .signleContent .singleHeader .personaHeader .personaContenedor .personaInfo .personaNombre {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        margin-right: 0;
+        font-size: 16px; }
+        #perfil-persona .signleContent .singleHeader .personaHeader .personaContenedor .personaInfo .personaNombre:last-child {
+          margin-right: 0; }
+      #perfil-persona .signleContent .singleHeader .personaHeader .personaContenedor .personaInfo .personaCargo {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        margin-right: 0;
+        font-size: 12px;
+        font-style: italic; }
+        #perfil-persona .signleContent .singleHeader .personaHeader .personaContenedor .personaInfo .personaCargo:last-child {
+          margin-right: 0; }
+#perfil-persona .signleContent .singleHeader .bg-mask-color svg path {
+  fill: #02aab0; }
+#perfil-persona .signleContent .singleBody .block-interior .block-inside-single {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-right: 0; }
+  #perfil-persona .signleContent .singleBody .block-interior .block-inside-single:last-child {
+    margin-right: 0; }
+#perfil-persona .signleContent .singleBody .block-interior .rrssPersona {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-right: 0; }
+  #perfil-persona .signleContent .singleBody .block-interior .rrssPersona:last-child {
+    margin-right: 0; }
+  #perfil-persona .signleContent .singleBody .block-interior .rrssPersona ul {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left; }
+    #perfil-persona .signleContent .singleBody .block-interior .rrssPersona ul:last-child {
+      margin-right: 0; }
+    #perfil-persona .signleContent .singleBody .block-interior .rrssPersona ul li {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 14.70196%;
+      margin-bottom: 10px;
+      float: none;
+      display: inline-block; }
+      #perfil-persona .signleContent .singleBody .block-interior .rrssPersona ul li:last-child {
+        margin-right: 0; }
+      #perfil-persona .signleContent .singleBody .block-interior .rrssPersona ul li a {
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-top-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        background: #63ae5d;
+        text-decoration: none;
+        text-align: center;
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        display: table; }
+        #perfil-persona .signleContent .singleBody .block-interior .rrssPersona ul li a i {
+          font-size: 24px;
+          display: table-cell;
+          vertical-align: middle; }
 
 /*# sourceMappingURL=TMP.css.map */

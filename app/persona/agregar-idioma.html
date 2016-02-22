@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Registro Persona</title>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/TMP.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+	<script src="../js/TMP.min.js"></script>
+</head>
+<body class="dashboard-bg">
+	<div class="menuTop">
+		<button class="icon-left" onclick="window.history.back();"><i class="fa fa-angle-left"></i></button>
+		<div class="logotipe-menuTop"></div>
+		<div class="icon-right"><i class=" fa fa-ellipsis-h"></i></div>
+	</div>
+
+	<div class="menuTabs" id="tabs">
+		<div class="menu-secundario">
+				<div class="logotipe-menuTabs"></div>
+				<ul class="tabs-links">
+					<li class="back-MenuTabs"><button class="icon-left" onclick="window.history.back();"><i class="fa fa-angle-left"></i></button></li>
+					<li><a href="#perfil-persona"><div class="content-menuAll"><div class="icon-menuTabs"><i class="fa fa-user"></i></div><div class="text-menuTabs">Persona</div></div></a></li>
+					<li><a href="#perfil-empresa"><div class="content-menuAll"><div class="icon-menuTabs"><i class="fa fa-newspaper-o"></i></div><div class="text-menuTabs">Empresa</div></div></a></li>
+					<li><a href="#ofertas-laborales"><div class="content-menuAll"><div class="icon-menuTabs"><i class="fa fa-list"></i></div><div class="text-menuTabs">Ofertas Laborales</div></div></a></li>
+				</ul>	
+				<div class="image-user">
+					<ul>
+						<li><a href="#"><div class="content-right"><div class="icon-right"><i class="fa fa-comment-o"></i></div><div class="text-menuTabs">Feedback</div></div></a></li>
+						<li><a href="#"><div class="content-right"><div class="icon-right"><i class="fa fa-life-saver"></i></div><div class="text-menuTabs">Ayuda</div></div></a></li>
+						<li class="name-user-li show-image-Menu"><a href="#"><div class="content-right"><div class="img-user-menu"><img src="../img/tmp_test.jpg" alt=""></div><div class="text-menuTabs">Hola, Samuel</div></div></a></li>
+					</ul>
+				</div>
+		</div>
+
+		<div class="tabs content-tabs Menu-Collapsed-width" id="agregar-idioma">
+			<div class="signleContent agregarAll">
+				<h2 class="titleAgregar">Nuevo Idioma</h2>
+				<div class="formAgregar">
+					<form action="">
+						<input class="field-tmp" type="text" placeholder="Idioma" required>
+						<select name="select" class="field-tmp" placeholder="Elegir Nivel" required>
+							<option value="value1"disabled selected>Elegir Nivel</option> 
+							<option value="value1">Nivel Básico</option> 
+							<option value="value2">Nivel Intermedio</option>
+							<option value="value3">Nivel Avanzado</option>
+							<option value="value3">Nivel Nativo</option>
+						</select>
+						<select name="select2" class="field-tmp" placeholder="Elegir Certificación" required>
+							<option value="value1" disabled selected>Elegir Certificación</option> 
+							<option value="value2">Opción 2</option> 
+							<option value="value3">Opción 3</option> 
+							<option value="value3">Opción 4</option> 
+						</select>
+						<button class="btn-tmp bg-green" onclick="location.href='procesar-solicitud.html'">ingresar</button> 
+					</form>
+				</div>
+			</div>	
+			<div class="addAnother">
+				<a href="#">
+					<div class="btn-circle"><div class="circle"><i class="fa fa-plus"></i></div></div>
+					<div class="text-circle">Agregar otro odioma</div>
+				</a>
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="menuLateral">
+		<div id="icon-closeMenu" class="icon-menuLa"><i class="fa fa-ellipsis-h"></i></div>
+		<div class="user-MenuLateral">
+			<img src="../img/tmp_test.jpg" alt="">
+			<div class="name-userMenuLa">Samuel Jackson</div>
+			<div class="cargo-userMenuLa">Community Manager</div>
+		</div>
+		<div class="option-MenuLateral">
+			<ul>
+				<li><a href="#"><div class="content-MenuLa"><div class="icon-menuLa"><i class="fa fa-eye"></i></div><div class="text-menuLa">ver perfil</div></div></a></li>
+				<li><a href="#"><div class="content-MenuLa"><div class="icon-menuLa"><i class="fa fa-pencil"></i></div><div class="text-menuLa">editar perfil</div></div></a></li>
+				<li><a href="#"><div class="content-MenuLa"><div class="icon-menuLa"><i class="fa fa-list-ul"></i></div><div class="text-menuLa">editar perfil</div></div></a></li>
+				<li><a href="#"><div class="content-MenuLa"><div class="icon-menuLa"><i class="fa fa-plus"></i></div><div class="text-menuLa">crear oferta</div></div></a></li>
+				<li><a href="#"><div class="content-MenuLa"><div class="icon-menuLa"><i class="fa fa-envelope-o"></i></div><div class="text-menuLa">contacto</div></div></a></li>
+				<li><a href="#"><div class="content-MenuLa"><div class="icon-menuLa"><i class="fa fa-sign-out"></i></div><div class="text-menuLa">cerrar sesión</div></div></a></li>
+			</ul>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+#perfil-persona {
+	.signleContent {
+		.singleHeader {
+			.personaHeader {
+				@include outer-container(90%);
+				@include omega;
+				margin:{top:60px;left:auto;right:auto;}
+				.personaContenedor {
+					@include span-columns(12);
+					display: table;
+					.imgPersona {
+						@include span-columns(5);
+						float: none;
+						@include omega;
+						display: table-cell;
+						vertical-align: middle;
+						img {
+							width: 80px;
+							height: 80px;
+							@include borderRadius(50%);
+							border:2px solid $bg_white;
+							float: right;
+							@include media($mobileIphone){
+								width: 90px;
+								height:90px;
+							}
+							@include media($tablet) {
+								width: 160px;
+							    height: 160px;
+							    border:4px solid $bg_white;
+							}
+							@include media($tabletLand) {
+								width: 140px;
+							    height: 140px;
+							    border:4px solid $bg_white;
+							}
+							@include media($notebook) {
+								width: 110px;
+							    height: 110px;
+							    float: right;
+							}
+							@include media($desktop) {
+								width: 140px;
+							    height: 140px;
+							    float: right;
+							    border:3px solid $bg_white;
+							}
+						}
+					}
+					.personaInfo {
+						@include span-columns(7);
+						float: none;
+						@include omega;
+						text:{align: left;}
+		    			padding:{left: 10px;}
+		    			display: table-cell;
+						vertical-align: middle;
+						float: none;
+						.personaNombre {
+							@include span-columns(12);
+							@include omega;
+							font:{size:16px;}
+						}
+						.personaCargo {
+							@include span-columns(12);
+							@include omega;
+							font:{size:12px;style:italic;}
+						}
+					}	
+				}
+			}
+			.bg-mask-color {
+				svg {
+					path {
+						fill:$second_color;
+					}				
+				}
+			}	
+		}
+		.singleBody {
+			.block-interior {
+				.block-inside-single {
+					@include span-columns(12);
+					@include omega;
+				}
+				.rrssPersona {
+					@include span-columns(12);
+					@include omega;
+					ul{
+						@include span-columns(12);
+						margin: 0;
+						@include pad(0);
+						text:{align:left;}
+						li {
+							@include span-columns(2);
+							margin:{bottom:10px;}
+							float: none;
+							display: inline-block;
+							a {
+								@include borderRadius(50%);
+								background: $first_color;
+								text:{decoration:none;align:center;}
+								color:$bg_white;
+								width: 40px;
+								height: 40px;
+								display: table;
+								i {
+									font:{size:24px;}
+									display: table-cell;
+									vertical-align: middle;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

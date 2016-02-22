@@ -1,0 +1,73 @@
+.agregarAll {
+	@include span-columns(12);
+	padding: 10px 20px;
+	.titleAgregar {
+		font:{weight:300};
+		color:$grey_two;
+		font:{size:12px;} 
+		text:{transform:uppercase;}
+		letter-spacing: 1px;
+		@include media($mobileLand) {
+			font:{size:15px;} 
+			margin:20px 0;
+		}
+		@include media($tablet) {
+			font:{size:18px;}
+			margin:20px 0;
+		}	
+		@include media($tabletLand) {
+			font:{size:18px;}
+			margin:25px 0;
+		}
+	}
+	.formAgregar {
+		@include span-columns(12);
+		@include omega;
+		.field-tmp {
+			@include span-columns(12);
+			margin:{bottom:10px;right:0;}
+		}
+	}
+}
+.addAnother {
+	@include span-columns(12);
+	text:{decoration:none;}
+	a {
+		@include span-columns(12);
+		text:{decoration:none;}
+		color:$bg_white;
+		height: 30px;
+		display: table;
+		.btn-circle {
+			@include span-columns(1.5);
+			@include omega;
+			.circle	{
+				width: 30px;
+				height: 30px;
+				@include borderRadius(50%);
+				background: $first_color; 
+				text:{align:center;}
+				display: table;	
+				i {
+					display: table-cell;
+					vertical-align: middle;
+					color:$bg_white;
+					font:{size:16px;}
+					@include media($mobileLand) {
+					font:{size:18px;}
+					}
+				}
+			}
+		}
+		.text-circle {
+			@include span-columns(10.5);
+			@include omega;
+			float: none;
+			font:{size:10px;}
+			color:$grey_one;
+			display: table-cell;
+			vertical-align: middle;
+			text:{align:left;}
+		}
+	}
+}
