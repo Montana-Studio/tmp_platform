@@ -16,11 +16,11 @@ $(document).ready(function() {
 		$('.menuLateral').toggleClass('show-MenuLateral'); 
 	});
 
-	$('.option-MenuLateral ul li').click(function() {
+	/*$('.option-MenuLateral ul li').click(function() {
 		$('.menuTop').toggleClass('show-MenuLateral');
 		$('.menuTabs').toggleClass('show-MenuLateral');
 		$('.menuLateral').toggleClass('show-MenuLateral'); 
-	});
+	});*/
 
 	$('#editarPerfil').click(function(){
 		$('.personaPerfilForm .field-tmp').toggleClass('fields-hide');
