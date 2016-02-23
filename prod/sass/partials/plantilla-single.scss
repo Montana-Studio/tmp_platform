@@ -1,173 +1,239 @@
 .signleContent {
 	@include span-columns(12);
-	@include media($mobileLand) {
+	overflow: hidden;
+	@include media($mobile) {
 		@include span-columns(12);
 	}
-	@include media($mobileTomobileLand) {
-		@include span-columns(12);
+	@include media($mobileLand) {
+		@include outer-container(80%);
+		margin:{left:auto !important;right:auto !important;} 
+		float: none;
 	}
 	@include media($tablet) {
-		@include span-columns(6);
+		@include span-columns(12);
 		margin:{right:8px;}
 	}
 	@include media($tabletLand) {
-		@include span-columns(4);
-		margin:{right:10px;}
+		@include outer-container(80%);
+		margin:{top:10px;left:auto !important;right:auto !important;} 
+		float: none;
 	}
 	@include media($notebook) {
-		@include span-columns(4);
-		margin:{right:10px;bottom:10px;}
-		display:inline-block;
+		@include outer-container(74%);
+		margin: 0 auto !important;
+		display: block;
+		float: none;
+	}
+	@include media($desktop) {
+		@include outer-container(66%);
+		margin: 0 auto !important;
+		display: block;
+		float: none;
 	}
 	@include borderRadius(4px);
 	background: $bg_white;
 	position: relative;
 	margin:{bottom:5px;}
 	font:{family:$first_font;}
-	.singleHeader {
+	.personaPerfilForm {
 		@include span-columns(12);
 		@include omega;
-		.single-inside {
+		.singleHeader {
+			@include span-columns(12);
+			@include omega;
+			.single-inside {
+					@include span-columns(12);
+					margin:{right:0;}
+					position: absolute;
+					z-index: 999;
+					top:0;
+					left:0;
+					text:{align:center;}
+					color:$bg_white;
+			}		
+			.single-img-mask {
+				@include span-columns(12);
+				margin:{right:0;}
+				@include media($mobileLand) {
+					margin:{top: -30%;}
+				}
+				@include media($tablet) {
+					margin:{top: -30%;}
+				}
+				@include media($tabletLand) {
+					margin:{top: -30%;}
+				}
+				@include media($notebook) {
+					margin:{top: -35%;}
+				}
+				@include media($desktop) {
+					margin:{top:-35%;}
+				}
+				svg {
+					width: 100%;
+					height: auto;
+					@include media($notebook) {
+						height: 50%;
+					}
+					@include media($desktop) {
+						height: 50%;
+					}
+				}
+				.imagen-ofertas {
+					width: 115%;
+					position: absolute;
+					top:0;
+					left:0;
+					z-index: 999;
+					height: auto;
+				}
+			}
+			.bg-mask-color {
 				@include span-columns(12);
 				margin:{right:0;}
 				position: absolute;
-				z-index: 999;
+				z-index: 990;
 				top:0;
 				left:0;
-				text:{align:center;}
-				color:$bg_white;
-		}		
-		.single-img-mask {
-			@include span-columns(12);
-			margin:{right:0;}
-			@include media($notebook) {
-				margin:{top: -35%;}
-			}
-			@include media($desktop) {
-				margin:{top:-450px;}
-			}
-			svg {
-				width: 100%;
-				height: auto;
-				@include media($notebook) {
-					height: 50%;
-				}
-				@include media($desktop) {
-					height: 50%;
-				}
-			}
-			.imagen-ofertas {
-				width: 115%;
-				position: absolute;
-				top:0;
-				left:0;
-				z-index: 999;
-				height: auto;
-			}
-		}
-		.bg-mask-color {
-			@include span-columns(12);
-			margin:{right:0;}
-			position: absolute;
-			z-index: 990;
-			top:0;
-			left:0;
-			svg {
-				width: 100%;
-				height: auto;
-				path {
-					opacity: 0.5;
+				svg {
+					width: 100%;
+					height: auto;
+					path {
+						opacity: 0.5;
+						@include media($tablet) {
+							opacity: 0.6;
+						}
+					}
+					@include media($mobileLand) {
+						height: 200px;
+					}
 					@include media($tablet) {
-						opacity: 0.6;
+						height: 300px;
+					}
+					@include media($tabletLand) {
+						height: 300px;
+					}
+					@include media($notebook) {
+						height: 300px;
 					}
 				}
+			}
+		}
+		.singleBody {
+			@include span-columns(12);
+			@include pad(10px);
+			@include media($mobileLand) {
+				@include pad(10px 30px);
+			}
+			@include media($tablet) {
+				@include pad(10px 40px);
+			}
+			@include media($tabletLand) {
+				@include pad(10px 40px);
+			}
+			.block-single {
+				@include span-columns(12);
+				margin:{bottom:10px;}
+				@include media($notebook) {
+					@include span-columns(6);
+					margin:{right:5px;}
+					@include pad(0 5px);
+				}
+				.block-interior {
+					@include span-columns(12);
+					margin:0;
+					@include pad(0 5px);
+					@include media($tablet) {
+						@include pad(0 10px);
+					}
+					.btn-block-inside {
+						@include span-columns(12);
+						@include omega;
+					}
+					.block-inside-single {
+						@include span-columns(6);
+						margin:{bottom:20px;right:0;};
+						.icon-block {
+							@include span-columns(2);
+							text:{align:center;}
+							i{ 
+								display: block;
+								margin: 0 auto;
+								color:$first_color;
+								font:{size:24px;}
+								@include media($tablet) {
+									font:{size: 33px;}
+								}
+								@include media($tabletLand) {
+									font:{size:33px;}
+								}
+							}
+						}
+						.txt-block {
+							@include span-columns(9);
+							margin:{left:10px;}
+							.title-dato {
+								@include span-columns(12);
+								@include omega;
+								font:{size:10px;}
+								color:$first_color;
+								text:{transform:uppercase;}
+								@include media($tablet) {
+									 font:{size: 11px;}
+								}
+								@include media($tabletLand) {
+									font:{size:12px;}
+								}
+							}
+							.all-dato{
+								font:{size:10px;}
+								color:$grey_one;
+								@include media($tablet) {
+									 font:{size: 13px;}
+								}
+								@include media($tabletLand) {
+									font:{size:12px;}
+								}
+							}
+						}
+						.field-tmp {
+							@include span-columns(12);
+							@include omega;
+						}
+					}
+					.btn-tmp {
+						&.bg-green {
+							margin:{bottom:0;}
+						}
+						&.btn-rrss {
+							@include media($notebook) {
+								display: none;
+							}
+						}
+					}
+
+					textarea {
+						@include span-columns(12);
+						@include omega;
+					}
+				}	
 			}
 		}
 	}
-	.singleBody {
-		@include span-columns(12);
-		@include pad(10px);
+	&.agregarAll {
+		padding: 10px;
 		@include media($tablet) {
-			@include pad(10px 40px);
+			padding: 10px 40px 30px;
 		}
 		@include media($tabletLand) {
-			@include pad(10px 40px);
+			padding: 10px 40px 30px;
 		}
-		.block-single {
-			@include span-columns(12);
-			margin:{bottom:10px;}
-			@include media($notebook) {
-				@include span-columns(6);
-				margin:{right:5px;}
-				@include pad(0 5px);
-			}
-			.block-interior {
-				@include span-columns(12);
-				margin:0;
-				@include pad(0 5px);
-				@include media($tablet) {
-					@include pad(0 10px);
-				}
-				.btn-block-inside {
-					@include span-columns(12);
-					@include omega;
-				}
-				.block-inside-single {
-					@include span-columns(6);
-					margin:{bottom:20px;right:0;};
-					.icon-block {
-						@include span-columns(2);
-						text:{align:center;}
-						i{ 
-							display: block;
-							margin: 0 auto;
-							color:$first_color;
-							font:{size:24px;}
-							@include media($tablet) {
-								font:{size: 33px;}
-							}
-							@include media($tabletLand) {
-								font:{size:33px;}
-							}
-						}
-					}
-					.txt-block {
-						@include span-columns(9);
-						margin:{left:10px;}
-						.title-dato {
-							font:{size:10px;}
-							color:$first_color;
-							text:{transform:uppercase;}
-							@include media($tablet) {
-								 font:{size: 13px;}
-							}
-							@include media($tabletLand) {
-								font:{size:12px;}
-							}
-						}
-						.all-dato{
-							font:{size:10px;}
-							color:$grey_one;
-							@include media($tablet) {
-								 font:{size: 13px;}
-							}
-							@include media($tabletLand) {
-								font:{size:12px;}
-							}
-						}
-					}
-				}
-				.btn-tmp {
-					&.bg-green {
-						margin:{bottom:0;}
-					}
-					&.btn-rrss {
-						@include media($notebook) {
-							display: none;
-						}
-					}
-				}
-			}	
+		@include media($notebook) {
+			@include outer-container(50%);
+			margin: 0 auto !important;
+			display: block;
+			float: none;
+			padding: 10px 20px;
 		}
 	}
 }

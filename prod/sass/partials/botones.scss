@@ -14,7 +14,7 @@
 	}
 	@include media($mobileLand) {
 		margin:{bottom:20px;}
-		font:{size:12px;}
+		font:{size:11px;}
 		@include pad(18px);
 	}
 	@include media($tablet) {
@@ -27,6 +27,9 @@
 		font:{size:12px;}
 		margin:{bottom:25px;}
 	}
+   @include media($desktop) {
+      font:{size: 9px;weight: normal;}
+   }
    	&.bg-green {
    		background: $first_color;
    		color:$bg_white;
@@ -36,6 +39,11 @@
    		background:$bg_white;
    		border:1px solid $first_color;
    	}
+      &.line-gray {
+         color:$grey_one;
+         background:none;
+         border:1px solid $grey_one;
+      }
       &.line-white {
          color:$bg_white;
          background:none;
@@ -126,6 +134,11 @@
 	@include borderRadius(50%);
 	background: $first_color; 
 	text:{align:center;}
+   cursor: pointer;
+   @include media($desktop) {
+      width: 45px;
+      height: 45px; 
+   }
 	.content-btn {
 		width: 100%;
 		height: 100%;
@@ -138,6 +151,7 @@
          @include media($mobileLand) {
             font:{size:18px;}
          }
+         
 		}
 	}
 }

@@ -5,6 +5,15 @@
 				@include outer-container(90%);
 				@include omega;
 				margin:{top:60px;left:auto;right:auto;}
+				@include media($mobileLand) {
+					margin: {top:45px;}
+				}
+				@include media($notebook) {
+					margin: {top:95px;}
+				}
+				@include media($desktop) {
+					margin: {top:65px;}
+				}
 				.personaContenedor {
 					@include span-columns(12);
 					display: table;
@@ -14,15 +23,44 @@
 						@include omega;
 						display: table-cell;
 						vertical-align: middle;
+						position: relative;
+						.btn-vermas {
+							display: block;
+							position: absolute;
+							right: 0;
+							bottom: 0;
+							label {
+								width: 100%;
+								height: 100%;
+								display: table;
+								@include media($desktop) {
+						            font:{size:22px;}
+						         }
+								i {
+									display: table-cell;
+									vertical-align: middle;
+								}
+							}
+							&.btn-Hide {
+								display: none;
+							}
+						}
+						input[type="file"]{
+							display: none;
+						}
 						img {
 							width: 80px;
 							height: 80px;
 							@include borderRadius(50%);
 							border:2px solid $bg_white;
 							float: right;
-							@include media($mobileIphone){
+							@include media($mobileIphone) {
 								width: 90px;
 								height:90px;
+							}
+							@include media($mobileLand) {
+								width: 100px;
+								height:100px;
 							}
 							@include media($tablet) {
 								width: 160px;
@@ -56,15 +94,45 @@
 		    			display: table-cell;
 						vertical-align: middle;
 						float: none;
+						@include media($tablet) {
+							padding:{left: 17px;}
+						}
+						@include media($tabletLand) {
+							padding:{left: 20px;}
+						}
 						.personaNombre {
 							@include span-columns(12);
 							@include omega;
 							font:{size:16px;}
+							@include media($mobileLand) {
+								font:{size:27px;}
+							}
+							@include media($tablet) {
+								font:{size:19px;}
+							}
+							@include media($tabletLand) {
+								font:{size:20px;}
+							}
+							@include media($notebook) {
+								font:{size:25px;}
+							}
 						}
 						.personaCargo {
 							@include span-columns(12);
 							@include omega;
 							font:{size:12px;style:italic;}
+							@include media($mobileLand) {
+								font:{size:14px;}
+							}
+							@include media($tablet) {
+								font:{size:20px;}
+							}
+							@include media($tabletLand) {
+								font:{size:18px;}
+							}
+							@include media($notebook) {
+								font:{size:17px;}
+							}
 						}
 					}	
 				}
@@ -82,37 +150,68 @@
 				.block-inside-single {
 					@include span-columns(12);
 					@include omega;
-				}
-				.rrssPersona {
-					@include span-columns(12);
-					@include omega;
-					ul{
+					@include media($tablet) {
+						@include span-columns(6);
+						@include omega;
+					}
+					@include media($tabletLand) {
+						@include span-columns(6);
+						@include omega;
+					}
+					@include media($notebook) {
 						@include span-columns(12);
-						margin: 0;
-						@include pad(0);
-						text:{align:left;}
-						li {
-							@include span-columns(2);
-							margin:{bottom:10px;}
-							float: none;
-							display: inline-block;
-							a {
-								@include borderRadius(50%);
-								background: $first_color;
-								text:{decoration:none;align:center;}
-								color:$bg_white;
-								width: 40px;
-								height: 40px;
-								display: table;
-								i {
-									font:{size:24px;}
-									display: table-cell;
-									vertical-align: middle;
-								}
-							}
+						@include omega;
+					}
+				}
+				&.block-responsive {
+					.txt-inside {
+						@include media($tablet) {
+							@include span-columns(6);
+							@include omega;
+						}
+						@include media($tabletLand) {
+							@include span-columns(6);
+							@include omega;
+						}
+						@include media($notebook) {
+							@include span-columns(6);
+							@include omega;
+						}
+					}
+					.btn-block-inside {
+						@include media($tablet) {
+							@include span-columns(6);
+							@include omega;
+						}
+						@include media($tabletLand) {
+							@include span-columns(6);
+							@include omega;
+						}
+						@include media($notebook) {
+							@include span-columns(6);
+							@include omega;
 						}
 					}
 				}
+			}
+		}
+		.botonera-EditPersona {
+			@include span-columns(12);
+			padding:10px;
+			@include media($notebook) {
+				@include span-columns(6);
+				float: right;
+				padding:0;
+				margin: {right:40px !important;bottom:20px;}
+				.line-green {
+					@include span-columns(5);
+				}
+				.bg-green {
+					@include span-columns(7);
+				}
+			}
+			&.edit-Hide {
+				display: none;
 			}
 		}
 	}

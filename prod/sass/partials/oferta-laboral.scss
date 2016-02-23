@@ -38,7 +38,7 @@
 						@include outer-container(60%);
 						float: none;
 						font:{size: 28px;}
-						margin:{top: 100px;left:auto;right:auto;}
+						margin:{top: 65px;left:auto;right:auto;}
 					}
 				}
 				.header-ubicacion {
@@ -56,7 +56,7 @@
 					@include media($desktop) {
 						@include outer-container(60%);
 						float: none;
-						margin:{left:auto;right:auto;bottom:40px;}
+						margin:{left:auto;right:auto;bottom:15px;}
 					}
 					.ubicacion-txt {
 						display: table-cell;
@@ -226,7 +226,7 @@
 					}
 					@include media($desktop) {
 						right: 10px;
-						top:80px;
+						top:33px;
 					}
 					.icon-btn {
 						@include span-columns(3);

@@ -9,6 +9,19 @@
 		@include span-columns(12);
 		@include omega;
 		background:$bg_white;
+		position: fixed;
+		top:0;
+		left:0;
+		z-index: 9999999;
+		@include media($mobile) {
+			position: relative;
+		}
+		@include media($mobileIphone) {
+			position: relative;
+		}
+		@include media($mobileLand) {
+			position: relative;	
+		}
 		.logotipe-menuTabs {
 			display: none;
 			height: 50px;
@@ -191,12 +204,34 @@
 		height: 100%;
 		&.content-tabs {
 			@include span-columns(12);
+			padding:{top:60px;left:10px;bottom:10px;right:10px;}
+			@include media($mobile) {
+				padding:{top:10px;}
+			}
+			@include media($mobileIphone) {
+				padding:{top:10px;}
+			}
+			@include media($mobileLand) {
+				padding:{top:10px;} 
+			}
+			@include media($tablet) {
+				padding:{top:10px;}
+			}
+			@include media($tabletLand) {
+				padding:{top:10px;}
+				@include span-columns(12);
+				float: none;
+			}
 			@include media($notebook) {
 				@include span-columns(11.5);
 				@include omega;	
 				float: right;
 			}
-			padding: 10px;
+			@include media($desktop) {
+				@include span-columns(11.8);
+				@include omega;	
+				float: right;
+			}
 				&.Menu-Collapsed-width {
 					@include media($notebook) {
 					@include span-columns(10.3);

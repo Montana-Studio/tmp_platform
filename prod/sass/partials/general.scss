@@ -38,7 +38,10 @@
 	color:$grey_two;
 	font:{size:11px;} 
 	text:{transform:uppercase;}
-}
+	@include media($mobileLand) {
+		font:{size:10px;} 
+	}
+ }
 .line-title {
 	@include span-columns(12);
 	border:0;
@@ -57,7 +60,7 @@
 	}
 	@include media($mobileLand) {
 		@include outer-container(80%);
-		font:{size:12px;} 
+		font:{size:11px;} 
 		margin:{bottom:20px;}
 		line-height: 24px;
 	}
@@ -99,9 +102,11 @@
 	outline: none;
 	margin:{bottom:5px;}
 	color:$grey_two;
-	font:{weight:600;size:12px;};
+	font:{weight:400;size:12px;};
+	line-height: 18px;
 	@include placeholder {
-		font:{weight:400;style:italic;size:11px;};
+		color:$grey_two;
+		font:{weight:400;size:12px;};
 	}
 	@include media($mobileLand) {
 		@include placeholder {
@@ -124,6 +129,11 @@
 		@include placeholder {
 			font:{size:12px;}
 		}
+	}
+	&.fields-hide {
+		border:0;
+		background: none;
+		padding: 0;
 	}
 }
 .content-tmp {

@@ -1,6 +1,13 @@
 .agregarAll {
-	@include span-columns(12);
-	padding: 10px 20px;
+	@include media($mobileLand) {
+		padding:{top:10px;left:30px;bottom:20px;right:30px;}
+	}
+	@include media($tablet) {
+		padding:{top:10px;left:30px;bottom:20px;right:30px;}
+	}
+	@include media($tabletLand) {
+		padding:{top:10px;left:40px;bottom:30px;right:40px;}
+	}
 	.titleAgregar {
 		font:{weight:300};
 		color:$grey_two;
@@ -27,19 +34,93 @@
 			@include span-columns(12);
 			margin:{bottom:10px;right:0;}
 		}
+		.botoneraForm {
+			@include span-columns(12);
+			@include omega;
+			@include media($desktop) {
+				@include span-columns(8);
+				@include omega;
+				float: right;
+				margin:{top:10px;}
+			}
+			.line-gray {
+				@include span-columns(3);
+				font:{size:9px;}
+			    padding: 15px 5px;
+				letter-spacing: 0;
+				margin:{bottom:5px;}
+				@include media($tablet) {
+					font:{size:11px;}
+				}
+			}
+			.line-green {
+				@include span-columns(7);
+				font:{size:9px;}
+			    padding: 15px 5px;
+				letter-spacing: 0;
+				margin:{bottom:5px;}
+				@include media($tablet) {
+					font:{size:11px;}
+				}
+			}
+			.bg-green {
+				@include span-columns(2);
+				padding: 9px 5px;
+    			letter-spacing: 0;
+    			margin:{bottom:5px;}
+				i {
+					font:{size:24px;}
+				}
+			}
+		}
 	}
 }
 .addAnother {
 	@include span-columns(12);
 	text:{decoration:none;}
+	@include media($mobileLand) {
+		@include outer-container(80%);
+		float: none;
+		margin: 0 auto !important;
+	}
+	@include media($tabletLand) {
+		@include outer-container(80%);
+		float: none;
+		margin: 0 auto !important;
+	}
+	@include media($notebook) {
+		@include outer-container(50%);
+		float: none;
+		margin:{top:5px;left:auto !important;bottom:0;right:auto !important;}
+	}
 	a {
-		@include span-columns(12);
+		@include span-columns(7);
 		text:{decoration:none;}
 		color:$bg_white;
 		height: 30px;
 		display: table;
+		@include media($mobileLand) {
+			@include span-columns(4);
+			display: table;
+		}
+		@include media($tablet) {
+			@include span-columns(3);
+			display: table;
+		}
+		@include media($tabletLand) {
+			@include span-columns(3);
+			display: table;
+		}
+		@include media($notebook) {
+			@include span-columns(4);
+			display: table;
+		}
+		@include media($desktop) {
+			@include span-columns(3);
+			display: table;
+		}
 		.btn-circle {
-			@include span-columns(1.5);
+			@include span-columns(2);
 			@include omega;
 			.circle	{
 				width: 30px;
@@ -60,7 +141,7 @@
 			}
 		}
 		.text-circle {
-			@include span-columns(10.5);
+			@include span-columns(10);
 			@include omega;
 			float: none;
 			font:{size:10px;}
@@ -68,6 +149,7 @@
 			display: table-cell;
 			vertical-align: middle;
 			text:{align:left;}
+			padding: {left:3px;}
 		}
 	}
 }

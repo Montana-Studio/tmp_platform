@@ -38,8 +38,13 @@
 		@include pad(10px 0);
 		@include media($notebook) {
 			@include span-columns(12);
+			@include omega;
+		}
+		@include media($desktop) {
+			@include span-columns(12);
+			@include omega;
 			float: none;
-			margin:0 auto !important;
+			text:{align: center;}
 		}
 		.single-oferta {
 			@include span-columns(12);
@@ -61,6 +66,12 @@
 				@include span-columns(4);
 				margin:{right:10px;bottom:10px;}
 				display:inline-block;
+			}
+			@include media($desktop) {
+				@include span-columns(3);
+				margin:{right:10px;bottom:10px;}
+				display:inline-block;
+    			float: none;
 			}
 			@include borderRadius(10px);
 			background: $bg_white;
@@ -114,8 +125,9 @@
 						padding: {right:20px;}
 					}
 					@include media($desktop) {
-						font:{size: 18px;}
-    					margin:{top: 28px;bottom:10px;}
+						font:{size: 14px;}
+						margin:{top: 18px;bottom: 5px;}
+						text:{align:left;}
 					}
 				}
 				ul{
