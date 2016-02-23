@@ -27,7 +27,7 @@
 			margin:{top:140px;}
 		}
 		@include media($notebook) {
-			@include outer-container(27%);
+			@include outer-container(24%);
 		}
 		.form-login {
 			@include span-columns(12);

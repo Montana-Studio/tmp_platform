@@ -46,7 +46,7 @@
 				display: inline-block;
 				list-style: none;
 				text:{align:center;}
-				border:{right:1px solid $grey_four;}
+				//border:{right:1px solid $grey_four;}
 				outline: none !important;
 				@include media($notebook) {
 					@include span-columns(3.5);

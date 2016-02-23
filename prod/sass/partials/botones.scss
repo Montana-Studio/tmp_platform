@@ -28,7 +28,7 @@
 		margin:{bottom:25px;}
 	}
    @include media($desktop) {
-      font:{size: 9px;weight: normal;}
+      font:{size: 12px;}
    }
    	&.bg-green {
    		background: $first_color;
@@ -151,7 +151,9 @@
          @include media($mobileLand) {
             font:{size:18px;}
          }
-         
+         @include media($desktop) {
+            font:{size:20px;}
+         }
 		}
 	}
 }

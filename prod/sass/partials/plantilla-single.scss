@@ -169,6 +169,9 @@
 					.txt-block {
 						@include span-columns(9);
 						margin:{left:10px;}
+						@include media($notebook) {
+							margin:{left:0;}
+						}
 						.title-dato {
 							@include span-columns(12);
 							@include omega;

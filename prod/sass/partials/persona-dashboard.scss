@@ -9,10 +9,10 @@
 					margin: {top:45px;}
 				}
 				@include media($notebook) {
-					margin: {top:95px;}
+					margin: {top:73px;}
 				}
 				@include media($desktop) {
-					margin: {top:65px;}
+					margin: {top:114px;}
 				}
 				.personaContenedor {
 					@include span-columns(12);
@@ -187,6 +187,14 @@
 							@include span-columns(6);
 							@include omega;
 						}
+						@include media($notebook) {
+							@include span-columns(6);
+							@include omega;
+						}
+					}
+				}
+				&.blockResponsive {
+					.block-inside-single {
 						@include media($notebook) {
 							@include span-columns(6);
 							@include omega;
