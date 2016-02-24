@@ -92,6 +92,17 @@
 	width: auto;
     display: inline-block;
     border-radius: 20px;
+    position: relative;
+    .delete-habilidad {
+		width: 10px;
+		display: inline-block;
+		position: absolute;
+		top: 3px;
+		right: 5px;
+		&.element-Hide {
+			display: none;
+		}
+    }
 }
 .field-tmp {
 	@include appearance(none);
@@ -154,4 +165,7 @@
 	@include media($tabletLand) {
 		@include shift(-4 of 12 !important); 
 	}
+}
+.element-Hide {
+	display: none;
 }

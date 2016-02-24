@@ -49,7 +49,7 @@ html {
       margin-bottom: 25px; } }
   @media screen and (min-width: 90em) {
     .btn-tmp {
-      font-size: 12px; } }
+      font-size: 11px; } }
   .btn-tmp.bg-green {
     background: #63ae5d;
     color: #fff; }
@@ -171,11 +171,8 @@ html {
   border-bottom-right-radius: 50%;
   background: #63ae5d;
   text-align: center;
-  cursor: pointer; }
-  @media screen and (min-width: 90em) {
-    .btn-vermas {
-      width: 45px;
-      height: 45px; } }
+  cursor: pointer;
+  color: #fff; }
   .btn-vermas .content-btn {
     width: 100%;
     height: 100%;
@@ -191,6 +188,14 @@ html {
       @media screen and (min-width: 90em) {
         .btn-vermas .content-btn i {
           font-size: 20px; } }
+  .btn-vermas .circle {
+    width: 100%;
+    height: 100%;
+    display: table;
+    color: #fff; }
+    .btn-vermas .circle i {
+      display: table-cell;
+      vertical-align: middle; }
 
 .bg-windows {
   font-family: "Open Sans", sans-serif;
@@ -330,7 +335,16 @@ html {
   margin-right: 4px;
   width: auto;
   display: inline-block;
-  border-radius: 20px; }
+  border-radius: 20px;
+  position: relative; }
+  .habilidad .delete-habilidad {
+    width: 10px;
+    display: inline-block;
+    position: absolute;
+    top: 3px;
+    right: 5px; }
+    .habilidad .delete-habilidad.element-Hide {
+      display: none; }
 
 .field-tmp {
   -webkit-appearance: none;
@@ -440,6 +454,9 @@ html {
     .show-MenuLateral {
       margin-left: -34.11922%; } }
 
+.element-Hide {
+  display: none; }
+
 .hover-oferta, #ofertas-laborales .directorio-ofertas .single-oferta:hover {
   -webkit-animation: hover-oferta 0.6s ease forwards;
   -moz-animation: hover-oferta 0.6s ease forwards;
@@ -530,16 +547,6 @@ html {
           clear: both;
           content: "";
           display: table; } }
-    @media screen and (min-width: 80em) {
-      .login-bg .windows-login {
-        max-width: 30%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 120px; }
-        .login-bg .windows-login::after {
-          clear: both;
-          content: "";
-          display: table; } }
     @media screen and (min-width: 90em) {
       .login-bg .windows-login {
         max-width: 23%;
@@ -552,9 +559,10 @@ html {
           display: table; } }
     @media screen and (min-width: 80em) {
       .login-bg .windows-login {
-        max-width: 24%;
+        max-width: 30%;
         margin-left: auto;
-        margin-right: auto; }
+        margin-right: auto;
+        margin-top: 80px; }
         .login-bg .windows-login::after {
           clear: both;
           content: "";
@@ -779,6 +787,9 @@ html {
   height: 50px;
   background: #63ae5d;
   text-align: center; }
+  @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+    .menuTop {
+      display: none; } }
   @media screen and (min-width: 80em) {
     .menuTop {
       display: none; } }
@@ -836,25 +847,26 @@ html {
     width: 100%;
     margin-right: 0;
     background: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999999; }
+    position: relative; }
     .menuTabs .menu-secundario:last-child {
       margin-right: 0; }
-    @media screen and (max-width: 20em) {
+    @media screen and (min-width: 64em) and (max-width: 79.9375em) {
       .menuTabs .menu-secundario {
-        position: relative; } }
-    @media screen and (min-width: 22.5em) and (max-width: 30em) {
-      .menuTabs .menu-secundario {
-        position: relative; } }
-    @media screen and (min-width: 30em) and (max-width: 43.125em) {
-      .menuTabs .menu-secundario {
-        position: relative; } }
+        position: fixed;
+        z-index: 999999; } }
     .menuTabs .menu-secundario .logotipe-menuTabs {
       display: none;
       height: 50px;
       background: #63ae5d; }
+      @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+        .menuTabs .menu-secundario .logotipe-menuTabs {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 14.70196%;
+          margin: 0; }
+          .menuTabs .menu-secundario .logotipe-menuTabs:last-child {
+            margin-right: 0; } }
       @media screen and (min-width: 80em) {
         .menuTabs .menu-secundario .logotipe-menuTabs {
           float: left;
@@ -875,6 +887,15 @@ html {
       height: 50px; }
       .menuTabs .menu-secundario ul:last-child {
         margin-right: 0; }
+      @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+        .menuTabs .menu-secundario ul {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 57.35098%;
+          margin: 0; }
+          .menuTabs .menu-secundario ul:last-child {
+            margin-right: 0; } }
       @media screen and (min-width: 80em) {
         .menuTabs .menu-secundario ul {
           float: left;
@@ -895,6 +916,15 @@ html {
         outline: none !important; }
         .menuTabs .menu-secundario ul li:last-child {
           margin-right: 0; }
+        @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+          .menuTabs .menu-secundario ul li {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 23.23176%;
+            margin: 0; }
+            .menuTabs .menu-secundario ul li:last-child {
+              margin-right: 0; } }
         @media screen and (min-width: 80em) {
           .menuTabs .menu-secundario ul li {
             float: left;
@@ -941,6 +971,9 @@ html {
           float: left;
           width: 50px;
           height: 50px; }
+          @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+            .menuTabs .menu-secundario ul li.back-MenuTabs {
+              display: block; } }
           @media screen and (min-width: 80em) {
             .menuTabs .menu-secundario ul li.back-MenuTabs {
               display: block; } }
@@ -967,6 +1000,16 @@ html {
     .menuTabs .menu-secundario .image-user {
       display: none;
       height: 50px; }
+      @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+        .menuTabs .menu-secundario .image-user {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 27.49666%;
+          margin: 0;
+          float: right; }
+          .menuTabs .menu-secundario .image-user:last-child {
+            margin-right: 0; } }
       @media screen and (min-width: 80em) {
         .menuTabs .menu-secundario .image-user {
           float: left;
@@ -1044,6 +1087,15 @@ html {
             float: right; }
             .menuTabs .menu-secundario .image-user ul li:nth-child(1):last-child {
               margin-right: 0; }
+            @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+              .menuTabs .menu-secundario .image-user ul li:nth-child(1) {
+                float: left;
+                display: block;
+                margin-right: 2.35765%;
+                width: 23.23176%;
+                float: right; }
+                .menuTabs .menu-secundario .image-user ul li:nth-child(1):last-child {
+                  margin-right: 0; } }
             @media screen and (min-width: 90em) {
               .menuTabs .menu-secundario .image-user ul li:nth-child(1) {
                 float: left;
@@ -1061,6 +1113,15 @@ html {
             float: right; }
             .menuTabs .menu-secundario .image-user ul li:nth-child(2):last-child {
               margin-right: 0; }
+            @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+              .menuTabs .menu-secundario .image-user ul li:nth-child(2) {
+                float: left;
+                display: block;
+                margin-right: 2.35765%;
+                width: 23.23176%;
+                float: right; }
+                .menuTabs .menu-secundario .image-user ul li:nth-child(2):last-child {
+                  margin-right: 0; } }
             @media screen and (min-width: 90em) {
               .menuTabs .menu-secundario .image-user ul li:nth-child(2) {
                 float: left;
@@ -1070,6 +1131,15 @@ html {
                 float: right; }
                 .menuTabs .menu-secundario .image-user ul li:nth-child(2):last-child {
                   margin-right: 0; } }
+          @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+            .menuTabs .menu-secundario .image-user ul li:nth-child(3) {
+              float: left;
+              display: block;
+              margin-right: 2.35765%;
+              width: 31.76157%;
+              float: right; }
+              .menuTabs .menu-secundario .image-user ul li:nth-child(3):last-child {
+                margin-right: 0; } }
           @media screen and (min-width: 90em) {
             .menuTabs .menu-secundario .image-user ul li:nth-child(3) {
               float: left;
@@ -1110,12 +1180,13 @@ html {
           padding-top: 10px; } }
       @media screen and (min-width: 64em) and (max-width: 79.9375em) {
         .menuTabs .tabs.content-tabs {
-          padding-top: 10px;
+          padding-top: 60px;
           float: left;
           display: block;
           margin-right: 2.35765%;
-          width: 100%;
-          float: none; }
+          width: 95.7351%;
+          margin-right: 0;
+          float: right; }
           .menuTabs .tabs.content-tabs:last-child {
             margin-right: 0; } }
       @media screen and (min-width: 80em) {
@@ -1138,6 +1209,21 @@ html {
           float: right; }
           .menuTabs .tabs.content-tabs:last-child {
             margin-right: 0; } }
+      @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+        .menuTabs .tabs.content-tabs.Menu-Collapsed-width {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 85.49933%;
+          margin-right: 0;
+          float: right;
+          margin: 0; }
+          .menuTabs .tabs.content-tabs.Menu-Collapsed-width:last-child {
+            margin-right: 0; } }
+  @media screen and (min-width: 64em) and (max-width: 79.9375em) and (min-width: 80em) {
+    .menuTabs .tabs.content-tabs.Menu-Collapsed-width .directorio-ofertas {
+      max-width: 100% !important; } }
+
       @media screen and (min-width: 80em) {
         .menuTabs .tabs.content-tabs.Menu-Collapsed-width {
           float: left;
@@ -1206,9 +1292,14 @@ html {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 31.76157%;
+      width: 23.23176%;
       margin-right: 0;
-      display: none; }
+      display: block;
+      left: 0;
+      top: 50px;
+      overflow: initial;
+      padding: 0;
+      z-index: 99999999; }
       .menuLateral:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 80em) {
@@ -1246,7 +1337,7 @@ html {
     color: #fff;
     float: right;
     display: none; }
-    @media screen and (min-width: 90em) {
+    @media screen and (min-width: 64em) and (max-width: 79.9375em) {
       .menuLateral .icon-menuLa {
         display: table; } }
     @media screen and (min-width: 80em) {
@@ -1267,6 +1358,9 @@ html {
     margin-bottom: 30px; }
     .menuLateral .user-MenuLateral:last-child {
       margin-right: 0; }
+    @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+      .menuLateral .user-MenuLateral {
+        margin-bottom: 20px; } }
     @media screen and (min-width: 80em) {
       .menuLateral .user-MenuLateral {
         margin-bottom: 20px; } }
@@ -1284,6 +1378,10 @@ html {
       border: 2px solid #fff;
       margin: 0 auto;
       display: block; }
+      @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+        .menuLateral .user-MenuLateral img {
+          width: 90px;
+          height: 90px; } }
       @media screen and (min-width: 80em) {
         .menuLateral .user-MenuLateral img {
           width: 110px;
@@ -1384,6 +1482,10 @@ html {
                 @media screen and (min-width: 22.5em) and (max-width: 30em) {
                   .menuLateral .option-MenuLateral ul li a .content-MenuLa .icon-menuLa i {
                     padding-left: 32px; } }
+                @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+                  .menuLateral .option-MenuLateral ul li a .content-MenuLa .icon-menuLa i {
+                    font-size: 16px;
+                    padding-left: 20px; } }
                 @media screen and (min-width: 80em) {
                   .menuLateral .option-MenuLateral ul li a .content-MenuLa .icon-menuLa i {
                     font-size: 16px;
@@ -1405,6 +1507,9 @@ html {
               float: none; }
               .menuLateral .option-MenuLateral ul li a .content-MenuLa .text-menuLa:last-child {
                 margin-right: 0; }
+              @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+                .menuLateral .option-MenuLateral ul li a .content-MenuLa .text-menuLa {
+                  font-size: 11px; } }
               @media screen and (min-width: 80em) {
                 .menuLateral .option-MenuLateral ul li a .content-MenuLa .text-menuLa {
                   font-size: 11px; } }
@@ -1620,9 +1725,20 @@ html {
       display: block;
       margin-right: 2.35765%;
       width: 100%;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      position: relative; }
       .signleContent .singleBody .block-single:last-child {
         margin-right: 0; }
+      @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+        .signleContent .singleBody .block-single {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 48.82117%;
+          margin-right: 5px;
+          padding: 0 5px; }
+          .signleContent .singleBody .block-single:last-child {
+            margin-right: 0; } }
       @media screen and (min-width: 80em) {
         .signleContent .singleBody .block-single {
           float: left;
@@ -1680,7 +1796,7 @@ html {
                   font-size: 33px; } }
               @media screen and (min-width: 64em) and (max-width: 79.9375em) {
                 .signleContent .singleBody .block-single .block-interior .block-inside-single .icon-block i {
-                  font-size: 33px; } }
+                  font-size: 20px; } }
           .signleContent .singleBody .block-single .block-interior .block-inside-single .txt-block {
             float: left;
             display: block;
@@ -1708,7 +1824,7 @@ html {
                   font-size: 11px; } }
               @media screen and (min-width: 64em) and (max-width: 79.9375em) {
                 .signleContent .singleBody .block-single .block-interior .block-inside-single .txt-block .title-dato {
-                  font-size: 12px; } }
+                  font-size: 10px; } }
             .signleContent .singleBody .block-single .block-interior .block-inside-single .txt-block .all-dato {
               font-size: 10px;
               color: #9e9e9e; }
@@ -1717,7 +1833,7 @@ html {
                   font-size: 13px; } }
               @media screen and (min-width: 64em) and (max-width: 79.9375em) {
                 .signleContent .singleBody .block-single .block-interior .block-inside-single .txt-block .all-dato {
-                  font-size: 12px; } }
+                  font-size: 10px; } }
           .signleContent .singleBody .block-single .block-interior .block-inside-single .field-tmp {
             float: left;
             display: block;
@@ -2286,8 +2402,8 @@ html {
             padding-right: 20px; } }
         @media screen and (min-width: 90em) {
           #ofertas-laborales .directorio-ofertas .single-oferta .content-single .title-single {
-            font-size: 14px;
-            margin-top: 18px;
+            font-size: 12px;
+            margin-top: 12px;
             margin-bottom: 5px;
             text-align: left; } }
       #ofertas-laborales .directorio-ofertas .single-oferta .content-single ul {
@@ -2884,104 +3000,450 @@ html {
             font-size: 17px; } }
 #perfil-persona .signleContent .singleHeader .bg-mask-color svg path {
   fill: #02aab0; }
-#perfil-persona .signleContent .singleBody .block-interior .block-inside-single {
+#perfil-persona .signleContent .singleBody .block-single .block-interior .block-inside-single {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  margin-right: 0; }
-  #perfil-persona .signleContent .singleBody .block-interior .block-inside-single:last-child {
+  margin-right: 0;
+  position: relative; }
+  #perfil-persona .signleContent .singleBody .block-single .block-interior .block-inside-single:last-child {
     margin-right: 0; }
   @media screen and (min-width: 48em) and (max-width: 63.9375em) {
-    #perfil-persona .signleContent .singleBody .block-interior .block-inside-single {
+    #perfil-persona .signleContent .singleBody .block-single .block-interior .block-inside-single {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 48.82117%;
       margin-right: 0; }
-      #perfil-persona .signleContent .singleBody .block-interior .block-inside-single:last-child {
+      #perfil-persona .signleContent .singleBody .block-single .block-interior .block-inside-single:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 64em) and (max-width: 79.9375em) {
-    #perfil-persona .signleContent .singleBody .block-interior .block-inside-single {
+    #perfil-persona .signleContent .singleBody .block-single .block-interior .block-inside-single {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 48.82117%;
       margin-right: 0; }
-      #perfil-persona .signleContent .singleBody .block-interior .block-inside-single:last-child {
+      #perfil-persona .signleContent .singleBody .block-single .block-interior .block-inside-single:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 80em) {
-    #perfil-persona .signleContent .singleBody .block-interior .block-inside-single {
+    #perfil-persona .signleContent .singleBody .block-single .block-interior .block-inside-single {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 100%;
       margin-right: 0; }
-      #perfil-persona .signleContent .singleBody .block-interior .block-inside-single:last-child {
+      #perfil-persona .signleContent .singleBody .block-single .block-interior .block-inside-single:last-child {
         margin-right: 0; } }
 @media screen and (min-width: 48em) and (max-width: 63.9375em) {
-  #perfil-persona .signleContent .singleBody .block-interior.block-responsive .txt-inside {
+  #perfil-persona .signleContent .singleBody .block-single .block-interior.block-responsive .txt-inside {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%;
     margin-right: 0; }
-    #perfil-persona .signleContent .singleBody .block-interior.block-responsive .txt-inside:last-child {
+    #perfil-persona .signleContent .singleBody .block-single .block-interior.block-responsive .txt-inside:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 64em) and (max-width: 79.9375em) {
-  #perfil-persona .signleContent .singleBody .block-interior.block-responsive .txt-inside {
+  #perfil-persona .signleContent .singleBody .block-single .block-interior.block-responsive .txt-inside {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%;
     margin-right: 0; }
-    #perfil-persona .signleContent .singleBody .block-interior.block-responsive .txt-inside:last-child {
+    #perfil-persona .signleContent .singleBody .block-single .block-interior.block-responsive .txt-inside:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 80em) {
-  #perfil-persona .signleContent .singleBody .block-interior.block-responsive .txt-inside {
+  #perfil-persona .signleContent .singleBody .block-single .block-interior.block-responsive .txt-inside {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%;
     margin-right: 0; }
-    #perfil-persona .signleContent .singleBody .block-interior.block-responsive .txt-inside:last-child {
+    #perfil-persona .signleContent .singleBody .block-single .block-interior.block-responsive .txt-inside:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 48em) and (max-width: 63.9375em) {
-  #perfil-persona .signleContent .singleBody .block-interior.block-responsive .btn-block-inside {
+  #perfil-persona .signleContent .singleBody .block-single .block-interior.block-responsive .btn-block-inside {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%;
     margin-right: 0; }
-    #perfil-persona .signleContent .singleBody .block-interior.block-responsive .btn-block-inside:last-child {
+    #perfil-persona .signleContent .singleBody .block-single .block-interior.block-responsive .btn-block-inside:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 64em) and (max-width: 79.9375em) {
-  #perfil-persona .signleContent .singleBody .block-interior.block-responsive .btn-block-inside {
+  #perfil-persona .signleContent .singleBody .block-single .block-interior.block-responsive .btn-block-inside {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%;
     margin-right: 0; }
-    #perfil-persona .signleContent .singleBody .block-interior.block-responsive .btn-block-inside:last-child {
+    #perfil-persona .signleContent .singleBody .block-single .block-interior.block-responsive .btn-block-inside:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 80em) {
-  #perfil-persona .signleContent .singleBody .block-interior.block-responsive .btn-block-inside {
+  #perfil-persona .signleContent .singleBody .block-single .block-interior.block-responsive .btn-block-inside {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%;
     margin-right: 0; }
-    #perfil-persona .signleContent .singleBody .block-interior.block-responsive .btn-block-inside:last-child {
+    #perfil-persona .signleContent .singleBody .block-single .block-interior.block-responsive .btn-block-inside:last-child {
       margin-right: 0; } }
-@media screen and (min-width: 80em) {
-  #perfil-persona .signleContent .singleBody .block-interior.blockResponsive .block-inside-single {
+#perfil-persona .signleContent .singleBody .block-single .block-interior.block-responsive.element-Hide {
+  display: none; }
+#perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete.element-Hide {
+  display: none; }
+#perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .btn-vermas {
+  position: absolute;
+  top: 0;
+  right: 0; }
+#perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .txt-block {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 91.4702%;
+  margin-bottom: 10px; }
+  #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .txt-block:last-child {
+    margin-right: 0; }
+#perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .linea-tiempo {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 6.17215%;
+  position: absolute;
+  height: 90%;
+  bottom: 0; }
+  #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .linea-tiempo:last-child {
+    margin-right: 0; }
+  #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .linea-tiempo .ball-inside {
+    width: 10px;
+    height: 10px;
+    background: #dedede;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    margin: 0 auto; }
+  #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .linea-tiempo .linea-inside {
+    width: 1px;
+    border-left: 1px solid #dedede;
+    position: absolute;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    left: 0;
+    right: 0; }
+#perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 91.4702%;
+  float: right; }
+  #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo:last-child {
+    margin-right: 0; }
+  #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 48.82117%;
+    width: 100%;
+    display: table; }
+    #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque:last-child {
+      margin-right: 0; }
+    #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .imagen-blockReg {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      margin-right: 0; }
+      #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .imagen-blockReg:last-child {
+        margin-right: 0; }
+      @media screen and (min-width: 22.5em) and (max-width: 30em) {
+        #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .imagen-blockReg {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 23.23176%;
+          margin-right: 0; }
+          #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .imagen-blockReg:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 30em) and (max-width: 43.125em) {
+        #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .imagen-blockReg {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 31.76157%;
+          margin-right: 0; }
+          #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .imagen-blockReg:last-child {
+            margin-right: 0; } }
+      #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .imagen-blockReg .img-experiencia {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%;
+        margin-right: 0;
+        margin-bottom: 10px;
+        position: relative; }
+        #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .imagen-blockReg .img-experiencia:last-child {
+          margin-right: 0; }
+        #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .imagen-blockReg .img-experiencia img {
+          width: 80px;
+          height: 80px;
+          border-top-left-radius: 50%;
+          border-top-right-radius: 50%;
+          border-bottom-left-radius: 50%;
+          border-top-left-radius: 50%;
+          border-bottom-right-radius: 50%;
+          border-top-right-radius: 50%;
+          border-bottom-left-radius: 50%;
+          border-bottom-right-radius: 50%;
+          border: 3px solid #f0f0f0;
+          float: left; }
+        #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .imagen-blockReg .img-experiencia .btn-vermas {
+          bottom: 0;
+          top: initial; }
+          #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .imagen-blockReg .img-experiencia .btn-vermas.btn-EditImg.element-Hide {
+            display: none; }
+        #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .imagen-blockReg .img-experiencia input[type="file"] {
+          display: none; }
+    #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .body-blockReg {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      margin-right: 0;
+      display: table-cell;
+      vertical-align: bottom;
+      float: none;
+      padding-bottom: 10px; }
+      #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .body-blockReg:last-child {
+        margin-right: 0; }
+      @media screen and (min-width: 22.5em) and (max-width: 30em) {
+        #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .body-blockReg {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 74.41059%;
+          margin-right: 0;
+          display: table-cell;
+          vertical-align: bottom;
+          float: none;
+          padding-left: 10px;
+          padding-bottom: 10px; }
+          #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .body-blockReg:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 30em) and (max-width: 43.125em) {
+        #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .body-blockReg {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 82.94039%;
+          margin-right: 0;
+          display: table-cell;
+          vertical-align: bottom;
+          float: none;
+          padding-left: 10px;
+          padding-bottom: 10px; }
+          #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .body-blockReg:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 48em) and (max-width: 63.9375em) {
+        #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .body-blockReg {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 82.94039%;
+          margin-right: 0;
+          display: table-cell;
+          vertical-align: bottom;
+          float: none;
+          padding-left: 10px;
+          padding-bottom: 10px; }
+          #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .body-blockReg:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 80em) {
+        #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .body-blockReg {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 82.94039%;
+          margin-right: 0;
+          display: table-cell;
+          vertical-align: bottom;
+          float: none;
+          padding-left: 10px;
+          padding-bottom: 10px; }
+          #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .body-blockReg:last-child {
+            margin-right: 0; } }
+      #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .body-blockReg .txt-block {
+        margin: 0;
+        line-height: 7px; }
+        #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .body-blockReg .txt-block .title-dato.element-Hide {
+          display: none; }
+        #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .body-blockReg .txt-block .field-tmp.field-cargo {
+          font-weight: 600; }
+        #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .body-blockReg .txt-block .field-tmp.field-empresa {
+          font-style: italic; }
+        #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .body-blockReg .txt-block .field-tmp.field-fecha {
+          font-family: "Open Sans", sans-serif;
+          font-size: 11px; }
+        #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .body-blockReg .txt-block .field-tmp.field-descrpt {
+          font-size: 11px; }
+        #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .body-blockReg .txt-block .field-tmp.fields-hide {
+          margin-bottom: 0; }
+        #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .body-blockReg .txt-block.fecha-block {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 48.82117%;
+          margin-right: 0;
+          margin: 0; }
+          #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .body-blockReg .txt-block.fecha-block:last-child {
+            margin-right: 0; }
+          @media screen and (min-width: 22.5em) and (max-width: 30em) {
+            #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .body-blockReg .txt-block.fecha-block {
+              float: left;
+              display: block;
+              margin-right: 2.35765%;
+              width: 40.29137%;
+              margin-right: 0;
+              margin: 0; }
+              #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .body-blockReg .txt-block.fecha-block:last-child {
+                margin-right: 0; } }
+          @media screen and (min-width: 30em) and (max-width: 43.125em) {
+            #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .body-blockReg .txt-block.fecha-block {
+              float: left;
+              display: block;
+              margin-right: 2.35765%;
+              width: 31.76157%;
+              margin-right: 0;
+              margin: 0; }
+              #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .body-blockReg .txt-block.fecha-block:last-child {
+                margin-right: 0; } }
+          @media screen and (min-width: 80em) {
+            #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .body-blockReg .txt-block.fecha-block {
+              float: left;
+              display: block;
+              margin-right: 2.35765%;
+              width: 31.76157%;
+              margin-right: 0;
+              margin: 0; }
+              #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque .body-blockReg .txt-block.fecha-block:last-child {
+                margin-right: 0; } }
+    #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque.header-Edit .imagen-blockReg {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-right: 0; }
+      #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque.header-Edit .imagen-blockReg:last-child {
+        margin-right: 0; }
+    #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque.header-Edit .body-blockReg {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-right: 0; }
+      #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque.header-Edit .body-blockReg:last-child {
+        margin-right: 0; }
+    #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque.header-Edit .txt-block {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-right: 0; }
+      #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque.header-Edit .txt-block:last-child {
+        margin-right: 0; }
+      #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque.header-Edit .txt-block .title-dato {
+        margin-bottom: 8px; }
+      #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque.header-Edit .txt-block .field-tmp {
+        margin-bottom: 10px; }
+      #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque.header-Edit .txt-block.fecha-block {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        margin-right: 0; }
+        #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .header-bloque.header-Edit .txt-block.fecha-block:last-child {
+          margin-right: 0; }
+  #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .bloque-tiempo .descript-blockReg .title-dato.element-Hide {
+    display: none; }
+#perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single.bloque-por-idioma {
+  border-bottom: 1px solid #e4e4e4; }
+  @media screen and (min-width: 48em) and (max-width: 63.9375em) {
+    #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single.bloque-por-idioma {
+      border: 0; } }
+  #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single.bloque-por-idioma:last-child {
+    border: 0; }
+#perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single.Full-Block {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-right: 0; }
+  #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single.Full-Block:last-child {
     margin-right: 0; }
-    #perfil-persona .signleContent .singleBody .block-interior.blockResponsive .block-inside-single:last-child {
-      margin-right: 0; } }
+  @media screen and (min-width: 48em) and (max-width: 63.9375em) {
+    #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single.Full-Block {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-right: 0; }
+      #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single.Full-Block:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 48em) and (max-width: 63.9375em) {
+    #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single.Full-Block .txt-block {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-right: 0; }
+      #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single.Full-Block .txt-block:last-child {
+        margin-right: 0; } }
+#perfil-persona .signleContent .singleBody .block-single.block-RRSS .block-inside-single .icon-block {
+  width: 35px;
+  height: 35px;
+  background: #63ae5d;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  display: table; }
+  #perfil-persona .signleContent .singleBody .block-single.block-RRSS .block-inside-single .icon-block i {
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 20px; }
+#perfil-persona .signleContent .singleBody .block-single.block-RRSS .block-inside-single .txt-block.element-Hide {
+  display: none; }
+#perfil-persona .signleContent .singleBody .block-single.block-RRSS .block-inside-single.gridRRSS {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%; }
+  #perfil-persona .signleContent .singleBody .block-single.block-RRSS .block-inside-single.gridRRSS:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 48em) and (max-width: 63.9375em) {
+    #perfil-persona .signleContent .singleBody .block-single.block-RRSS .block-inside-single.gridRRSS {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 6.17215%; }
+      #perfil-persona .signleContent .singleBody .block-single.block-RRSS .block-inside-single.gridRRSS:last-child {
+        margin-right: 0; } }
 #perfil-persona .signleContent .botonera-EditPersona {
   float: left;
   display: block;
@@ -3018,5 +3480,9 @@ html {
           margin-right: 0; } }
   #perfil-persona .signleContent .botonera-EditPersona.edit-Hide {
     display: none; }
+#perfil-persona .signleContent .field-tmp {
+  padding: 8px 10px; }
+  #perfil-persona .signleContent .field-tmp.fields-hide {
+    padding: 0; }
 
 /*# sourceMappingURL=TMP.css.map */

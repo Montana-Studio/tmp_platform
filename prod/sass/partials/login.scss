@@ -18,16 +18,13 @@
 		@include media($tabletLand) {
 			@include outer-container(60%);
 		}
-		@include media($notebook) {
-			@include outer-container(30%);
-			margin:{top:120px;}
-		}
 		@include media($desktop) {
 			@include outer-container(23%);
 			margin:{top:140px;}
 		}
 		@include media($notebook) {
-			@include outer-container(24%);
+			@include outer-container(30%);
+			margin:{top:80px;}
 		}
 		.form-login {
 			@include span-columns(12);

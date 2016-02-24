@@ -131,6 +131,12 @@
 		.block-single {
 			@include span-columns(12);
 			margin:{bottom:10px;}
+			position: relative;
+			@include media($tabletLand) {
+				@include span-columns(6);
+				margin:{right:5px;}
+				@include pad(0 5px);
+			}
 			@include media($notebook) {
 				@include span-columns(6);
 				margin:{right:5px;}
@@ -162,7 +168,7 @@
 								font:{size: 33px;}
 							}
 							@include media($tabletLand) {
-								font:{size:33px;}
+								font:{size:20px;}
 							}
 						}
 					}
@@ -182,7 +188,7 @@
 								 font:{size: 11px;}
 							}
 							@include media($tabletLand) {
-								font:{size:12px;}
+								font:{size:10px;}
 							}
 						}
 						.all-dato{
@@ -192,7 +198,7 @@
 								 font:{size: 13px;}
 							}
 							@include media($tabletLand) {
-								font:{size:12px;}
+								font:{size:10px;}
 							}
 						}
 					}

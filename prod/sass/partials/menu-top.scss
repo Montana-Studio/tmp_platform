@@ -3,6 +3,9 @@
 	height: 50px;
 	background: $first_color;
 	text:{align:center;}
+	@include media($tabletLand) {
+		display: none;
+	}
 	@include media($notebook) {
 		display: none;
 	}

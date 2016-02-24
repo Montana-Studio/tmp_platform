@@ -26,6 +26,13 @@ $(document).ready(function() {
 		$('.personaPerfilForm .field-tmp').toggleClass('fields-hide');
 		$('.personaPerfilForm .btn-vermas').toggleClass('btn-Hide');
 		$('.botonera-EditPersona').toggleClass('edit-Hide');
+		$('.delete-habilidad').toggleClass('element-Hide');
+		$('.btn-EditImg').toggleClass('element-Hide');
+
+		$('.block-RRSS .txt-block').toggleClass('element-Hide');
+		$('.block-RRSS .block-inside-single').toggleClass('gridRRSS');
+		$('.bloque-tiempo .title-dato').toggleClass('element-Hide');
+		$('.header-bloque').toggleClass('header-Edit');
 	});
 
 });

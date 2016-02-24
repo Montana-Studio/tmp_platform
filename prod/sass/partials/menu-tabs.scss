@@ -3,29 +3,25 @@
 	margin:0;
 	@include media($notebook) {
 		@include span-columns(12);
-		margin: 0;
+		margin: 0; 
 	}
 	.menu-secundario {
 		@include span-columns(12);
 		@include omega;
 		background:$bg_white;
-		position: fixed;
-		top:0;
-		left:0;
-		z-index: 9999999;
-		@include media($mobile) {
-			position: relative;
-		}
-		@include media($mobileIphone) {
-			position: relative;
-		}
-		@include media($mobileLand) {
-			position: relative;	
+		position: relative;
+		@include media($tabletLand) {
+			position: fixed;
+			z-index: 999999;
 		}
 		.logotipe-menuTabs {
 			display: none;
 			height: 50px;
 			background: $first_color;
+			@include media($tabletLand) {
+				@include span-columns(2);
+				margin:0;
+			}
 			@include media($notebook) {
 				@include span-columns(2);
 				margin:0;
@@ -37,6 +33,10 @@
 			margin:0;
 			@include pad(0);
 			height: 50px;
+			@include media($tabletLand) {
+				@include span-columns(7);
+				margin: 0;
+			} 
 			@include media($notebook) {
 				@include span-columns(6);
 				margin: 0;
@@ -46,8 +46,11 @@
 				display: inline-block;
 				list-style: none;
 				text:{align:center;}
-				//border:{right:1px solid $grey_four;}
 				outline: none !important;
+				@include media($tabletLand) {
+					@include span-columns(3);
+					margin: 0;
+				} 
 				@include media($notebook) {
 					@include span-columns(3.5);
 					margin: 0;
@@ -86,6 +89,9 @@
 					float: left;
 					width: 50px;
 					height: 50px;
+					@include media($tabletLand) {
+						display: block;
+					}
 					@include media($notebook) {
 						display: block;
 					}
@@ -120,6 +126,11 @@
 		.image-user {
 			display: none;
 			height: 50px;
+			@include media($tabletLand) {
+				@include span-columns(3.5);
+				margin: 0;
+				float: right;
+			}
 			@include media($notebook) {
 				@include span-columns(4);
 				margin: 0;
@@ -170,6 +181,10 @@
 					&:nth-child(1) {
 						@include span-columns(2);
 						float: right;
+						@include media($tabletLand) {
+							@include span-columns(3);
+							float: right;	
+						}
 						@include media($desktop) {
 							@include span-columns(1.5);
 							float: right;	
@@ -178,12 +193,20 @@
 					&:nth-child(2) {
 						@include span-columns(2);
 						float: right;
+						@include media($tabletLand) {
+							@include span-columns(3);
+							float: right;	
+						}
 						@include media($desktop) {
 							@include span-columns(1.5);
 							float: right;	
 						}
 					}
 					&:nth-child(3) {
+						@include media($tabletLand) {
+							@include span-columns(4);
+							float: right;	
+						}
 						@include media($desktop) {
 							@include span-columns(3);
 							float: right;	
@@ -218,9 +241,10 @@
 				padding:{top:10px;}
 			}
 			@include media($tabletLand) {
-				padding:{top:10px;}
-				@include span-columns(12);
-				float: none;
+				padding:{top:60px;}
+				@include span-columns(11.5);
+				@include omega;	
+				float: right;
 			}
 			@include media($notebook) {
 				@include span-columns(11.5);
@@ -233,7 +257,18 @@
 				float: right;
 			}
 				&.Menu-Collapsed-width {
-					@include media($notebook) {
+				@include media($tabletLand) {
+					@include span-columns(10.3);
+					@include omega;
+					float: right;
+   					margin: 0;
+					.directorio-ofertas {
+						@include media($notebook) {
+							max-width: 100% !important;
+						}
+					}
+				}
+				@include media($notebook) {
 					@include span-columns(10.3);
 					@include omega;
 					float: right;

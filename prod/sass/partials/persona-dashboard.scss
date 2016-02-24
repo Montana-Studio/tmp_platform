@@ -146,25 +146,12 @@
 			}	
 		}
 		.singleBody {
-			.block-interior {
-				.block-inside-single {
-					@include span-columns(12);
-					@include omega;
-					@include media($tablet) {
-						@include span-columns(6);
-						@include omega;
-					}
-					@include media($tabletLand) {
-						@include span-columns(6);
-						@include omega;
-					}
-					@include media($notebook) {
+			.block-single {
+				.block-interior { 
+					.block-inside-single {
 						@include span-columns(12);
 						@include omega;
-					}
-				}
-				&.block-responsive {
-					.txt-inside {
+						position: relative;
 						@include media($tablet) {
 							@include span-columns(6);
 							@include omega;
@@ -174,30 +161,299 @@
 							@include omega;
 						}
 						@include media($notebook) {
-							@include span-columns(6);
+							@include span-columns(12);
 							@include omega;
 						}
 					}
-					.btn-block-inside {
-						@include media($tablet) {
-							@include span-columns(6);
-							@include omega;
+					&.block-responsive {
+						.txt-inside {
+							@include media($tablet) {
+								@include span-columns(6);
+								@include omega;
+							}
+							@include media($tabletLand) {
+								@include span-columns(6);
+								@include omega;
+							}
+							@include media($notebook) {
+								@include span-columns(6);
+								@include omega;
+							}
 						}
-						@include media($tabletLand) {
-							@include span-columns(6);
-							@include omega;
+						.btn-block-inside {
+							@include media($tablet) {
+								@include span-columns(6);
+								@include omega;
+							}
+							@include media($tabletLand) {
+								@include span-columns(6);
+								@include omega;
+							}
+							@include media($notebook) {
+								@include span-columns(6);
+								@include omega;
+							}
 						}
-						@include media($notebook) {
-							@include span-columns(6);
-							@include omega;
+						&.element-Hide {
+							display: none;
+						}
+					}
+					&.block-complete {
+						&.element-Hide {
+							display: none; 
+						}
+						.btn-vermas {
+							position: absolute;
+							top:0;
+							right:0;
+						}
+						.block-inside-single {
+							.txt-block {
+								@include span-columns(11);
+								margin:{bottom:10px;}
+							}
+							.linea-tiempo {
+								@include span-columns(1);
+								position: absolute;		
+								height: 90%;
+								bottom: 0;
+								.ball-inside {
+									width: 10px;
+									height: 10px;
+									background: $grey_three;
+									@include borderRadius(50%);
+									position: absolute;
+									top: 0;
+									left:0;
+									right: 0;
+									display: block;
+									margin: 0 auto;
+								}
+								.linea-inside {
+									width: 1px;
+									border:{left:1px solid $grey_three;}
+									position: absolute;
+									height: 100%;
+									display: block;
+									margin: 0 auto;
+									left:0;
+									right: 0;
+								}
+							}
+							.bloque-tiempo {
+								@include span-columns(11);
+								float: right;
+								.header-bloque {
+									@include span-columns(12);
+									display: table;
+									.imagen-blockReg {
+										@include span-columns(4);
+										@include omega;
+										@include media($mobileIphone) {
+											@include span-columns(3);
+											@include omega;
+										}
+										@include media($mobileLand) {
+											@include span-columns(4);
+											@include omega;
+										}
+										.img-experiencia {
+											@include span-columns(4);
+											@include omega;
+											margin:{bottom:10px;}
+											position: relative;
+											img {
+												width: 80px;
+												height: 80px;
+												@include borderRadius(50%);
+												border:3px solid $bg_gray;
+												float:left;
+											}	
+											.btn-vermas {
+												bottom:0;
+												top: initial;
+												&.btn-EditImg {
+													&.element-Hide {
+														display: none;
+													}
+												}
+											}
+											input[type="file"]{
+												display: none;
+											}
+										}	
+									}
+									.body-blockReg {
+										@include span-columns(8);
+										@include media($mobileIphone) {
+											@include span-columns(9);
+											@include omega;
+											display: table-cell;
+											vertical-align: bottom;
+											float: none;
+											padding:{left:10px;bottom:10px;}
+										}
+										@include media($mobileLand) {
+											@include span-columns(10);
+											@include omega;
+											display: table-cell;
+											vertical-align: bottom;
+											float: none;
+											padding:{left:10px;bottom:10px;}
+										}
+										@include media($tablet) {
+											@include span-columns(10);
+											@include omega;
+											display: table-cell;
+											vertical-align: bottom;
+											float: none;
+											padding:{left:10px;bottom:10px;}
+										}
+										@include media($notebook) {
+											@include span-columns(10);
+											@include omega;
+											display: table-cell;
+											vertical-align: bottom;
+											float: none;
+											padding:{left:10px;bottom:10px;}
+										}
+										@include omega;
+										display: table-cell;
+										vertical-align: bottom;
+										float: none;
+										padding:{bottom:10px;}
+										.txt-block {
+											margin:0;
+	    									line-height: 7px;
+											.title-dato {
+												&.element-Hide {
+													display: none;
+												}
+											}
+											.field-tmp {
+												&.field-cargo {
+													font:{weight:600;}
+												}
+												&.field-empresa {
+													font:{style:italic;}
+												}
+												&.field-fecha {
+													font:{family:$first_font;size:11px;}
+												}
+												&.field-descrpt {
+													font:{size:11px;}
+												}
+												&.fields-hide {
+													margin:{bottom:0;}
+												}	
+											}
+											&.fecha-block {
+												@include span-columns(6);
+												@include omega;
+												margin:0;
+												@include media($mobileIphone) {
+													@include span-columns(5);
+													@include omega;
+													margin:0;
+												}
+												@include media($mobileLand) {
+													@include span-columns(4);
+													@include omega;
+													margin:0;
+												}
+												@include media($notebook) {
+													@include span-columns(4);
+													@include omega;
+													margin:0;
+												}
+											}
+										}
+									} 	
+									&.header-Edit {
+										.imagen-blockReg {
+											@include span-columns(12);
+											@include omega;
+										}
+										.body-blockReg {
+											@include span-columns(12);
+											@include omega;
+										}
+										.txt-block {
+											@include span-columns(12);
+											@include omega;
+											.title-dato {
+												margin:{bottom:8px;}
+											}
+											.field-tmp {
+												margin:{bottom:10px;}
+											}
+											&.fecha-block {
+												@include span-columns(12);
+												@include omega;
+											}
+										}
+									}
+								}
+								.descript-blockReg {
+									.title-dato {
+										&.element-Hide {
+											display: none;
+										}
+									}
+								}
+								
+							}
+							&.bloque-por-idioma {
+								border:{bottom:1px solid $grey_four;}
+								@include media($tablet) {
+									border: 0;
+								}
+								&:last-child {
+									border:0;
+								}
+							}
+							&.Full-Block {
+								@include span-columns(12);
+								@include omega;
+								@include media($tablet) {
+									@include span-columns(12);
+									@include omega;
+								}
+								.txt-block {
+									@include media($tablet) {
+										@include span-columns(6);
+										@include omega;
+									}
+								}
+							}
 						}
 					}
 				}
-				&.blockResponsive {
+				&.block-RRSS {
 					.block-inside-single {
-						@include media($notebook) {
-							@include span-columns(6);
-							@include omega;
+						.icon-block {
+							width: 35px;
+							height: 35px;
+							background:$first_color;
+							@include borderRadius(50%);
+							display: table;
+							i {
+								display: table-cell;
+								vertical-align: middle;
+								color:$bg_white;
+								font:{size: 20px;}
+							}
+						}
+						.txt-block {
+							&.element-Hide {
+								display: none;
+							}
+						}	
+						&.gridRRSS {
+							@include span-columns(2);
+							@include media($tablet) {
+								@include span-columns(1);
+							}
 						}
 					}
 				}
@@ -220,6 +476,12 @@
 			}
 			&.edit-Hide {
 				display: none;
+			}
+		}
+		.field-tmp {
+			padding: 8px 10px;
+			&.fields-hide {
+				padding: 0;
 			}
 		}
 	}
