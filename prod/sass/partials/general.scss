@@ -11,7 +11,7 @@
 	}
 	@include media($tabletLand) {
 		margin:{top:20px;}
-		padding:{left:60px;bottom:25px;right:60px;}
+		padding:{left:30px;bottom:25px;right:30px;}
 	}
 }
 .title-windws {
@@ -155,17 +155,26 @@
 	overflow: hidden;
 }
 .show-MenuLateral {
-	@include shift(-9 of 12 !important);
+	@include shift(-8.5 of 12 !important);
 	@include media($mobileLand) {
-		@include shift(-6 of 12 !important);
+		@include shift(-5.5 of 12 !important);
 	}
 	@include media($tablet) {
 		@include shift(-5 of 12 !important);
 	}
-	@include media($tabletLand) {
-		@include shift(-4 of 12 !important); 
-	}
 }
 .element-Hide {
 	display: none;
+}
+.grid-item {
+	@include span-columns(12);
+	@include media($tabletLand) {
+		@include span-columns(6);
+		@include omega;	
+	}
+	@include media($notebook) {
+		@include span-columns(6);
+		@include omega;	
+	}
+	
 }

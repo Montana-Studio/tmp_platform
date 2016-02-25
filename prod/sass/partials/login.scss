@@ -16,7 +16,7 @@
 			margin:{top:80px;}
 		} 
 		@include media($tabletLand) {
-			@include outer-container(60%);
+			@include outer-container(48%);
 		}
 		@include media($desktop) {
 			@include outer-container(23%);

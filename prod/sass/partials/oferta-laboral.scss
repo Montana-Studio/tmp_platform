@@ -6,11 +6,11 @@
 	@include media($mobileTomobileLand) {
 		@include span-columns(12);
 	}
-	@include media($tabletLand) {
+	/*@include media($tabletLand) {
 		@include outer-container(70%);
 		float: none;
    		margin: 0 auto !important;
-	}
+	}*/
 	.signleContent {
 		.singleHeader {
 			.single-inside {
@@ -21,12 +21,12 @@
 						margin:{top:45px;}
 					}
 					@include media($tablet) {
-						margin:{top: 120px;}
-						font:{size: 30px;}
+						margin:{top: 20px;bottom:0;}
+						font:{size: 26px;}
 					}
 					@include media($tabletLand) {
-						margin:{top: 120px;}
-						font:{size: 30px;}
+						margin:{top: 30px;}
+						font:{size: 24px;}
 					}
 					@include media($notebook) {
 						@include outer-container(60%);
@@ -46,7 +46,7 @@
 					margin:{right:0;bottom:20px;}
 					display: table;
 					@include media($tablet) {
-						margin:{bottom:30px;}
+						margin:{bottom:20px;}
 					}
 					@include media($notebook) {
 						@include outer-container(60%);
@@ -63,7 +63,7 @@
 						vertical-align: middle;
 						font:{size:13px;}
 						@include media($tablet) {
-							font:{size:20px;}
+							font:{size:17px;}
 						}
 						@include media($tabletLand) {
 							font:{size:20px;}
@@ -109,14 +109,16 @@
 								height:90px;
 							}
 							@include media($tablet) {
-								width: 160px;
-							    height: 160px;
-							    border:4px solid $bg_white;
+								width: 120px;
+							    height: 120px;
+							    border:2px solid $bg_white;
 							}
 							@include media($tabletLand) {
-								width: 140px;
-							    height: 140px;
-							    border:4px solid $bg_white;
+								width: 120px;
+							    height: 120px;
+							    border:2px solid $bg_white;
+							    float: right;
+    							margin:{right: 13px;}
 							}
 							@include media($notebook) {
 								width: 110px;
@@ -124,8 +126,8 @@
 							    float: right;
 							}
 							@include media($desktop) {
-								width: 140px;
-							    height: 140px;
+								width: 130px;
+							    height: 130px;
 							    float: right;
 							    border:3px solid $bg_white;
 							}
@@ -150,12 +152,12 @@
 								font:{size:15px;}
 							}
 							@include media($tablet) {
-								font:{size:22px;}
-								margin:{top: 28px;}
+								font:{size:17px;}
+								margin:{top: 14px;}
 							}
 							@include media($tabletLand) {
 								font:{size:22px;}
-								margin:{top: 17px;}
+								margin:{top: 6px;}
 							}
 							@include media($notebook) {
 								font:{size:16px;}
@@ -232,6 +234,20 @@
 						@include span-columns(3);
 						margin: {right:0;}
 					}
+				}
+			}
+		}
+		.singleBody {
+			.block-single {
+				.block-interior {
+					.btn-tmp {
+						&.btn-rrss {
+							@include media($tablet) {
+								@include span-columns(6);
+								margin:{right:5px;}
+							}
+						}
+					} 
 				}
 			}
 		}

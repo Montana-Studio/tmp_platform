@@ -9,34 +9,34 @@
 	<link rel="stylesheet" href="../css/TMP.css">
 	<script src="../js/jquery.min.js"></script>
 	<script src="../js/jquery-ui.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
 	<script src="../js/TMP.min.js"></script>
 </head>
 <body class="dashboard-bg">
-	<div class="menuTop">
+	<div class="menuTop" id="menuTop">
 		<button class="icon-left" onclick="window.history.back();"><i class="fa fa-angle-left"></i></button>
 		<div class="logotipe-menuTop"></div>
 		<div class="icon-right"><i class=" fa fa-ellipsis-h"></i></div>
 	</div>
 	
-	<div id="tabs" class="menuTabs">
-
+	<div class="menuTabs" id="tabs">
 		<div class="menu-secundario">
-			<div class="logotipe-menuTabs"></div>
-			<ul class="tabs-links">
-				<li class="back-MenuTabs"><button class="icon-left" onclick="window.history.back();"><i class="fa fa-angle-left"></i></button></li>
-				<li><a href="#perfil-persona"><div class="content-menuAll"><div class="icon-menuTabs"><i class="fa fa-user"></i></div><div class="text-menuTabs">Persona</div></div></a></li>
-				<li><a href="#perfil-empresa"><div class="content-menuAll"><div class="icon-menuTabs"><i class="fa fa-newspaper-o"></i></div><div class="text-menuTabs">Empresa</div></div></a></li>
-				<li><a href="#ofertas-laborales"><div class="content-menuAll"><div class="icon-menuTabs"><i class="fa fa-list"></i></div><div class="text-menuTabs">Ofertas Laborales</div></div></a></li>
-			</ul>	
-			<div class="image-user">
-				<ul>
-					<li><a href="#"><div class="content-right"><div class="icon-right"><i class="fa fa-comment-o"></i></div><div class="text-menuTabs">Feedback</div></div></a></li>
-					<li><a href="#"><div class="content-right"><div class="icon-right"><i class="fa fa-life-saver"></i></div><div class="text-menuTabs">Ayuda</div></div></a></li>
-				</ul>
-			</div>
+				<div class="logotipe-menuTabs"></div>
+				<ul class="tabs-links">
+					<li class="back-MenuTabs"><button class="icon-left" onclick="window.history.back();"><i class="fa fa-angle-left"></i></button></li>
+					<li><a href="#perfil-persona"><div class="content-menuAll"><div class="icon-menuTabs"><i class="fa fa-user"></i></div><div class="text-menuTabs">Persona</div></div></a></li>
+					<li><a href="#perfil-empresa"><div class="content-menuAll"><div class="icon-menuTabs"><i class="fa fa-newspaper-o"></i></div><div class="text-menuTabs">Empresa</div></div></a></li>
+					<li><a href="#ofertas-laborales"><div class="content-menuAll"><div class="icon-menuTabs"><i class="fa fa-list"></i></div><div class="text-menuTabs">Ofertas Laborales</div></div></a></li>
+				</ul>	
+				<div class="image-user">
+					<ul>
+						<li><a href="#"><div class="content-right"><div class="icon-right"><i class="fa fa-comment-o"></i></div><div class="text-menuTabs">Feedback</div></div></a></li>
+						<li><a href="#"><div class="content-right"><div class="icon-right"><i class="fa fa-life-saver"></i></div><div class="text-menuTabs">Ayuda</div></div></a></li>
+						<li class="name-user-li show-image-Menu"><a href="#"><div class="content-right"><div class="img-user-menu"><img src="../img/tmp_test.jpg" alt=""></div><div class="text-menuTabs">Hola, Samuel</div></div></a></li>
+					</ul>
+				</div>
 		</div>
-
-		<div class="tabs content-tabs Menu-Collapsed-width oferta-single">
+		<div class="tabs content-tabs oferta-single">
 			<div class="signleContent">
 				<div class="singleHeader">
 					<div class="single-inside">
@@ -171,7 +171,7 @@
 		</div>
 	</div>
 
-	<div class="menuLateral">
+	<div class="menuLateral close-menulateral" id="menuLateralMobile">
 		<div id="icon-closeMenu" class="icon-menuLa"><i class="fa fa-ellipsis-h"></i></div>
 		<div class="user-MenuLateral">
 			<img src="../img/tmp_test.jpg" alt="">
@@ -181,7 +181,7 @@
 		<div class="option-MenuLateral">
 			<ul>
 				<li><a href="#"><div class="content-MenuLa"><div class="icon-menuLa"><i class="fa fa-eye"></i></div><div class="text-menuLa">ver perfil</div></div></a></li>
-				<li><a href="#"><div class="content-MenuLa"><div class="icon-menuLa"><i class="fa fa-pencil"></i></div><div class="text-menuLa">editar perfil</div></div></a></li>
+				<li><a href="../persona/directorio-ofertas.html"><div class="content-MenuLa"><div class="icon-menuLa"><i class="fa fa-pencil"></i></div><div class="text-menuLa">editar perfil</div></div></a></li>
 				<li><a href="#"><div class="content-MenuLa"><div class="icon-menuLa"><i class="fa fa-list-ul"></i></div><div class="text-menuLa">editar perfil</div></div></a></li>
 				<li><a href="#"><div class="content-MenuLa"><div class="icon-menuLa"><i class="fa fa-plus"></i></div><div class="text-menuLa">crear oferta</div></div></a></li>
 				<li><a href="#"><div class="content-MenuLa"><div class="icon-menuLa"><i class="fa fa-envelope-o"></i></div><div class="text-menuLa">contacto</div></div></a></li>
@@ -189,6 +189,6 @@
 			</ul>
 		</div>
 	</div>
-
+	<script src="../js/packery-mode.pkgd.min.js"></script>
 </body>
 </html>

@@ -14,7 +14,7 @@
 		margin:{right:8px;}
 	}
 	@include media($tabletLand) {
-		@include outer-container(80%);
+		@include outer-container(74%);
 		margin:{top:10px;left:auto !important;right:auto !important;} 
 		float: none;
 	}
@@ -126,21 +126,24 @@
 			@include pad(10px 40px);
 		}
 		@include media($tabletLand) {
-			@include pad(10px 40px);
+			@include pad(10px 20px);
 		}
 		.block-single {
 			@include span-columns(12);
 			margin:{bottom:10px;}
 			position: relative;
 			@include media($tabletLand) {
-				@include span-columns(6);
+				@include span-columns(12);
 				margin:{right:5px;}
 				@include pad(0 5px);
 			}
 			@include media($notebook) {
-				@include span-columns(6);
+				@include span-columns(12);
 				margin:{right:5px;}
 				@include pad(0 5px);
+			}
+			@include media($desktop) {
+				@include pad(0 15px);
 			}
 			.block-interior {
 				@include span-columns(12);

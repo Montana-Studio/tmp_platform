@@ -221,9 +221,9 @@ html {
   @media screen and (min-width: 64em) and (max-width: 79.9375em) {
     .bg-windows {
       margin-top: 20px;
-      padding-left: 60px;
+      padding-left: 30px;
       padding-bottom: 25px;
-      padding-right: 60px; } }
+      padding-right: 30px; } }
 
 .title-windws {
   font-weight: 600;
@@ -443,19 +443,42 @@ html {
     margin-right: 0; }
 
 .show-MenuLateral {
-  margin-left: -76.76824%; }
+  margin-left: -72.50334%; }
   @media screen and (min-width: 30em) and (max-width: 43.125em) {
     .show-MenuLateral {
-      margin-left: -51.17883%; } }
+      margin-left: -46.91392%; } }
   @media screen and (min-width: 48em) and (max-width: 63.9375em) {
     .show-MenuLateral {
       margin-left: -42.64902%; } }
-  @media screen and (min-width: 64em) and (max-width: 79.9375em) {
-    .show-MenuLateral {
-      margin-left: -34.11922%; } }
 
 .element-Hide {
   display: none; }
+
+.grid-item {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .grid-item:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+    .grid-item {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-right: 0; }
+      .grid-item:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 80em) {
+    .grid-item {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-right: 0; }
+      .grid-item:last-child {
+        margin-right: 0; } }
 
 .hover-oferta, #ofertas-laborales .directorio-ofertas .single-oferta:hover {
   -webkit-animation: hover-oferta 0.6s ease forwards;
@@ -540,7 +563,7 @@ html {
           display: table; } }
     @media screen and (min-width: 64em) and (max-width: 79.9375em) {
       .login-bg .windows-login {
-        max-width: 60%;
+        max-width: 48%;
         margin-left: auto;
         margin-right: auto; }
         .login-bg .windows-login::after {
@@ -851,6 +874,10 @@ html {
     .menuTabs .menu-secundario:last-child {
       margin-right: 0; }
     @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+      .menuTabs .menu-secundario {
+        position: fixed;
+        z-index: 999999; } }
+    @media screen and (min-width: 80em) {
       .menuTabs .menu-secundario {
         position: fixed;
         z-index: 999999; } }
@@ -1177,7 +1204,16 @@ html {
           padding-top: 10px; } }
       @media screen and (min-width: 48em) and (max-width: 63.9375em) {
         .menuTabs .tabs.content-tabs {
-          padding-top: 10px; } }
+          max-width: 90%;
+          margin-left: auto;
+          margin-right: auto;
+          float: none;
+          margin: 0 auto !important;
+          padding-top: 10px; }
+          .menuTabs .tabs.content-tabs::after {
+            clear: both;
+            content: "";
+            display: table; } }
       @media screen and (min-width: 64em) and (max-width: 79.9375em) {
         .menuTabs .tabs.content-tabs {
           padding-top: 60px;
@@ -1214,7 +1250,7 @@ html {
           float: left;
           display: block;
           margin-right: 2.35765%;
-          width: 85.49933%;
+          width: 74.41059%;
           margin-right: 0;
           float: right;
           margin: 0; }
@@ -1223,7 +1259,23 @@ html {
   @media screen and (min-width: 64em) and (max-width: 79.9375em) and (min-width: 80em) {
     .menuTabs .tabs.content-tabs.Menu-Collapsed-width .directorio-ofertas {
       max-width: 100% !important; } }
-
+  @media screen and (min-width: 64em) and (max-width: 79.9375em) and (min-width: 64em) and (max-width: 79.9375em) {
+    .menuTabs .tabs.content-tabs.Menu-Collapsed-width .signleContent {
+      max-width: 88%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      float: none; }
+      .menuTabs .tabs.content-tabs.Menu-Collapsed-width .signleContent::after {
+        clear: both;
+        content: "";
+        display: table; } }
+      @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+          .menuTabs .tabs.content-tabs.Menu-Collapsed-width .content-single h3 {
+            font-size: 10px;
+            margin: 0; } }
       @media screen and (min-width: 80em) {
         .menuTabs .tabs.content-tabs.Menu-Collapsed-width {
           float: left;
@@ -1239,14 +1291,11 @@ html {
       max-width: 100% !important; } }
 
   .menuTabs.show-MenuLateral {
-    margin-left: -76.76824%; }
+    margin-left: -72.50334%; }
     @media screen and (min-width: 30em) and (max-width: 43.125em) {
       .menuTabs.show-MenuLateral {
-        margin-left: -51.17883%; } }
+        margin-left: -46.91392%; } }
     @media screen and (min-width: 48em) and (max-width: 63.9375em) {
-      .menuTabs.show-MenuLateral {
-        margin-left: -42.64902%; } }
-    @media screen and (min-width: 64em) and (max-width: 79.9375em) {
       .menuTabs.show-MenuLateral {
         margin-left: -34.11922%; } }
 
@@ -1575,7 +1624,7 @@ html {
         margin-right: 0; } }
   @media screen and (min-width: 64em) and (max-width: 79.9375em) {
     .signleContent {
-      max-width: 80%;
+      max-width: 74%;
       margin-left: auto;
       margin-right: auto;
       margin-top: 10px;
@@ -1719,7 +1768,7 @@ html {
         padding: 10px 40px; } }
     @media screen and (min-width: 64em) and (max-width: 79.9375em) {
       .signleContent .singleBody {
-        padding: 10px 40px; } }
+        padding: 10px 20px; } }
     .signleContent .singleBody .block-single {
       float: left;
       display: block;
@@ -1734,7 +1783,7 @@ html {
           float: left;
           display: block;
           margin-right: 2.35765%;
-          width: 48.82117%;
+          width: 100%;
           margin-right: 5px;
           padding: 0 5px; }
           .signleContent .singleBody .block-single:last-child {
@@ -1744,11 +1793,14 @@ html {
           float: left;
           display: block;
           margin-right: 2.35765%;
-          width: 48.82117%;
+          width: 100%;
           margin-right: 5px;
           padding: 0 5px; }
           .signleContent .singleBody .block-single:last-child {
             margin-right: 0; } }
+      @media screen and (min-width: 90em) {
+        .signleContent .singleBody .block-single {
+          padding: 0 15px; } }
       .signleContent .singleBody .block-single .block-interior {
         float: left;
         display: block;
@@ -2311,7 +2363,7 @@ html {
         display: block;
         margin-right: 2.35765%;
         width: 48.82117%;
-        margin-right: 8px; }
+        margin-right: 7px; }
         #ofertas-laborales .directorio-ofertas .single-oferta:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 64em) and (max-width: 79.9375em) {
@@ -2480,7 +2532,12 @@ html {
   padding: 10px;
   font-family: "Open Sans", sans-serif;
   background: #f0f0f0;
-  overflow: hidden; }
+  overflow: hidden;
+  	/*@include media($tabletLand) {
+  		@include outer-container(70%);
+  		float: none;
+     		margin: 0 auto !important;
+  	}*/ }
   @media screen and (min-width: 20em) and (max-width: 40em) {
     .oferta-single {
       float: left;
@@ -2489,17 +2546,6 @@ html {
       width: 100%; }
       .oferta-single:last-child {
         margin-right: 0; } }
-  @media screen and (min-width: 64em) and (max-width: 79.9375em) {
-    .oferta-single {
-      max-width: 70%;
-      margin-left: auto;
-      margin-right: auto;
-      float: none;
-      margin: 0 auto !important; }
-      .oferta-single::after {
-        clear: both;
-        content: "";
-        display: table; } }
   .oferta-single .signleContent .singleHeader .single-inside h3 {
     font-weight: 600;
     margin-bottom: 5px; }
@@ -2508,12 +2554,13 @@ html {
         margin-top: 45px; } }
     @media screen and (min-width: 48em) and (max-width: 63.9375em) {
       .oferta-single .signleContent .singleHeader .single-inside h3 {
-        margin-top: 120px;
-        font-size: 30px; } }
+        margin-top: 20px;
+        margin-bottom: 0;
+        font-size: 26px; } }
     @media screen and (min-width: 64em) and (max-width: 79.9375em) {
       .oferta-single .signleContent .singleHeader .single-inside h3 {
-        margin-top: 120px;
-        font-size: 30px; } }
+        margin-top: 30px;
+        font-size: 24px; } }
     @media screen and (min-width: 80em) {
       .oferta-single .signleContent .singleHeader .single-inside h3 {
         max-width: 60%;
@@ -2554,7 +2601,7 @@ html {
       margin-right: 0; }
     @media screen and (min-width: 48em) and (max-width: 63.9375em) {
       .oferta-single .signleContent .singleHeader .single-inside .header-ubicacion {
-        margin-bottom: 30px; } }
+        margin-bottom: 20px; } }
     @media screen and (min-width: 80em) {
       .oferta-single .signleContent .singleHeader .single-inside .header-ubicacion {
         max-width: 60%;
@@ -2586,7 +2633,7 @@ html {
       font-size: 13px; }
       @media screen and (min-width: 48em) and (max-width: 63.9375em) {
         .oferta-single .signleContent .singleHeader .single-inside .header-ubicacion .ubicacion-txt {
-          font-size: 20px; } }
+          font-size: 17px; } }
       @media screen and (min-width: 64em) and (max-width: 79.9375em) {
         .oferta-single .signleContent .singleHeader .single-inside .header-ubicacion .ubicacion-txt {
           font-size: 20px; } }
@@ -2664,14 +2711,16 @@ html {
             height: 90px; } }
         @media screen and (min-width: 48em) and (max-width: 63.9375em) {
           .oferta-single .signleContent .singleHeader .single-inside .header-empresa .header-img-empresa img {
-            width: 160px;
-            height: 160px;
-            border: 4px solid #fff; } }
+            width: 120px;
+            height: 120px;
+            border: 2px solid #fff; } }
         @media screen and (min-width: 64em) and (max-width: 79.9375em) {
           .oferta-single .signleContent .singleHeader .single-inside .header-empresa .header-img-empresa img {
-            width: 140px;
-            height: 140px;
-            border: 4px solid #fff; } }
+            width: 120px;
+            height: 120px;
+            border: 2px solid #fff;
+            float: right;
+            margin-right: 13px; } }
         @media screen and (min-width: 80em) {
           .oferta-single .signleContent .singleHeader .single-inside .header-empresa .header-img-empresa img {
             width: 110px;
@@ -2679,8 +2728,8 @@ html {
             float: right; } }
         @media screen and (min-width: 90em) {
           .oferta-single .signleContent .singleHeader .single-inside .header-empresa .header-img-empresa img {
-            width: 140px;
-            height: 140px;
+            width: 130px;
+            height: 130px;
             float: right;
             border: 3px solid #fff; } }
     .oferta-single .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa {
@@ -2719,12 +2768,12 @@ html {
             font-size: 15px; } }
         @media screen and (min-width: 48em) and (max-width: 63.9375em) {
           .oferta-single .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa .nombre-empresa {
-            font-size: 22px;
-            margin-top: 28px; } }
+            font-size: 17px;
+            margin-top: 14px; } }
         @media screen and (min-width: 64em) and (max-width: 79.9375em) {
           .oferta-single .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa .nombre-empresa {
             font-size: 22px;
-            margin-top: 17px; } }
+            margin-top: 6px; } }
         @media screen and (min-width: 80em) {
           .oferta-single .signleContent .singleHeader .single-inside .header-empresa .header-txt-empresa .nombre-empresa {
             font-size: 16px;
@@ -2832,6 +2881,15 @@ html {
       margin-right: 0; }
       .oferta-single .signleContent .singleHeader .single-inside .rrss-header .icon-btn:last-child {
         margin-right: 0; }
+  @media screen and (min-width: 48em) and (max-width: 63.9375em) {
+    .oferta-single .signleContent .singleBody .block-single .block-interior .btn-tmp.btn-rrss {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-right: 5px; }
+      .oferta-single .signleContent .singleBody .block-single .block-interior .btn-tmp.btn-rrss:last-child {
+        margin-right: 0; } }
 
 #perfil-persona .signleContent .singleHeader .personaHeader {
   max-width: 90%;
@@ -2847,13 +2905,13 @@ html {
     display: table; }
   @media screen and (min-width: 30em) and (max-width: 43.125em) {
     #perfil-persona .signleContent .singleHeader .personaHeader {
-      margin-top: 45px; } }
+      margin-top: 32px; } }
   @media screen and (min-width: 80em) {
     #perfil-persona .signleContent .singleHeader .personaHeader {
       margin-top: 73px; } }
   @media screen and (min-width: 90em) {
     #perfil-persona .signleContent .singleHeader .personaHeader {
-      margin-top: 114px; } }
+      margin-top: 75px; } }
   #perfil-persona .signleContent .singleHeader .personaHeader .personaContenedor {
     float: left;
     display: block;
@@ -2916,9 +2974,9 @@ html {
             height: 100px; } }
         @media screen and (min-width: 48em) and (max-width: 63.9375em) {
           #perfil-persona .signleContent .singleHeader .personaHeader .personaContenedor .imgPersona img {
-            width: 160px;
-            height: 160px;
-            border: 4px solid #fff; } }
+            width: 110px;
+            height: 110px;
+            border: 2px solid #fff; } }
         @media screen and (min-width: 64em) and (max-width: 79.9375em) {
           #perfil-persona .signleContent .singleHeader .personaHeader .personaContenedor .imgPersona img {
             width: 140px;
@@ -2966,7 +3024,7 @@ html {
           margin-right: 0; }
         @media screen and (min-width: 30em) and (max-width: 43.125em) {
           #perfil-persona .signleContent .singleHeader .personaHeader .personaContenedor .personaInfo .personaNombre {
-            font-size: 27px; } }
+            font-size: 19px; } }
         @media screen and (min-width: 48em) and (max-width: 63.9375em) {
           #perfil-persona .signleContent .singleHeader .personaHeader .personaContenedor .personaInfo .personaNombre {
             font-size: 19px; } }
@@ -2988,7 +3046,7 @@ html {
           margin-right: 0; }
         @media screen and (min-width: 30em) and (max-width: 43.125em) {
           #perfil-persona .signleContent .singleHeader .personaHeader .personaContenedor .personaInfo .personaCargo {
-            font-size: 14px; } }
+            font-size: 13px; } }
         @media screen and (min-width: 48em) and (max-width: 63.9375em) {
           #perfil-persona .signleContent .singleHeader .personaHeader .personaContenedor .personaInfo .personaCargo {
             font-size: 20px; } }
@@ -3032,7 +3090,7 @@ html {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 100%;
+      width: 48.82117%;
       margin-right: 0; }
       #perfil-persona .signleContent .singleBody .block-single .block-interior .block-inside-single:last-child {
         margin-right: 0; } }
@@ -3097,7 +3155,7 @@ html {
 #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .btn-vermas {
   position: absolute;
   top: 0;
-  right: 0; }
+  right: 10px; }
 #perfil-persona .signleContent .singleBody .block-single .block-interior.block-complete .block-inside-single .txt-block {
   float: left;
   display: block;
@@ -3433,15 +3491,47 @@ html {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 14.70196%; }
+  width: 11.29004%; }
   #perfil-persona .signleContent .singleBody .block-single.block-RRSS .block-inside-single.gridRRSS:last-child {
     margin-right: 0; }
+  @media screen and (min-width: 22.5em) and (max-width: 30em) {
+    #perfil-persona .signleContent .singleBody .block-single.block-RRSS .block-inside-single.gridRRSS {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 10.43705%; }
+      #perfil-persona .signleContent .singleBody .block-single.block-RRSS .block-inside-single.gridRRSS:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 30em) and (max-width: 43.125em) {
+    #perfil-persona .signleContent .singleBody .block-single.block-RRSS .block-inside-single.gridRRSS {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 8.73109%; }
+      #perfil-persona .signleContent .singleBody .block-single.block-RRSS .block-inside-single.gridRRSS:last-child {
+        margin-right: 0; } }
   @media screen and (min-width: 48em) and (max-width: 63.9375em) {
     #perfil-persona .signleContent .singleBody .block-single.block-RRSS .block-inside-single.gridRRSS {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 6.17215%; }
+      #perfil-persona .signleContent .singleBody .block-single.block-RRSS .block-inside-single.gridRRSS:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 80em) {
+    #perfil-persona .signleContent .singleBody .block-single.block-RRSS .block-inside-single.gridRRSS {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 8.73109%; }
+      #perfil-persona .signleContent .singleBody .block-single.block-RRSS .block-inside-single.gridRRSS:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 90em) {
+    #perfil-persona .signleContent .singleBody .block-single.block-RRSS .block-inside-single.gridRRSS {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 7.87811%; }
       #perfil-persona .signleContent .singleBody .block-single.block-RRSS .block-inside-single.gridRRSS:last-child {
         margin-right: 0; } }
 #perfil-persona .signleContent .botonera-EditPersona {
@@ -3452,6 +3542,58 @@ html {
   padding: 10px; }
   #perfil-persona .signleContent .botonera-EditPersona:last-child {
     margin-right: 0; }
+  @media screen and (min-width: 48em) and (max-width: 63.9375em) {
+    #perfil-persona .signleContent .botonera-EditPersona {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      float: right;
+      padding: 0;
+      margin-right: 40px !important;
+      margin-bottom: 20px; }
+      #perfil-persona .signleContent .botonera-EditPersona:last-child {
+        margin-right: 0; }
+      #perfil-persona .signleContent .botonera-EditPersona .line-green {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 40.29137%; }
+        #perfil-persona .signleContent .botonera-EditPersona .line-green:last-child {
+          margin-right: 0; }
+      #perfil-persona .signleContent .botonera-EditPersona .bg-green {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 57.35098%; }
+        #perfil-persona .signleContent .botonera-EditPersona .bg-green:last-child {
+          margin-right: 0; } }
+  @media screen and (min-width: 64em) and (max-width: 79.9375em) {
+    #perfil-persona .signleContent .botonera-EditPersona {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      float: right;
+      padding: 0;
+      margin-right: 40px !important;
+      margin-bottom: 20px; }
+      #perfil-persona .signleContent .botonera-EditPersona:last-child {
+        margin-right: 0; }
+      #perfil-persona .signleContent .botonera-EditPersona .line-green {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 40.29137%; }
+        #perfil-persona .signleContent .botonera-EditPersona .line-green:last-child {
+          margin-right: 0; }
+      #perfil-persona .signleContent .botonera-EditPersona .bg-green {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 57.35098%; }
+        #perfil-persona .signleContent .botonera-EditPersona .bg-green:last-child {
+          margin-right: 0; } }
   @media screen and (min-width: 80em) {
     #perfil-persona .signleContent .botonera-EditPersona {
       float: left;
